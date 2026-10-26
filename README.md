@@ -102,3 +102,21 @@ The site is built so ads never interrupt a throw. Turn each source on in `config
 
 - The catch devices (Commit Cube, Branch Orb, Bracket Trap, Release Capsule) and the star characters are original designs. Keep it that way: using another franchise's creatures, ball or name would put your domain and ad accounts at risk.
 - Not affiliated with Anthropic or GitHub. Data comes from the public GitHub API.
+
+## Growth engine (automatic)
+
+Runs on every 6-hour scan, with no spam and nothing that risks your accounts or ad approval:
+
+| What | How it brings visitors |
+|---|---|
+| **A page per repo** (`r/<owner>/<repo>/`) | ~2,700 pages that rank in Google for searches like "<repo> claude", "<name> mcp server". Each has title, description, stats, related repos and structured data. |
+| **"Best X for Claude" lists** (`c/<category>/`) | Rank for "best MCP servers", "Claude Code skills", "Claude agents" — the searches people actually make. |
+| **README badges** (`badge/<owner>/<repo>.svg`) | Repo owners add the badge to their README: a backlink plus visitors from every repo that shows it. |
+| **New this week** (`new/`) + **RSS** (`feed.xml`) | Fresh content every 6 hours; RSS readers and aggregators pick it up. |
+| **sitemap.xml + robots.txt** | Lets Google find every page. Submit the sitemap once in Google Search Console. |
+| **IndexNow ping** | Tells Bing, Yandex and others about new pages within minutes of each scan. |
+| **Deep links** (`?star=owner/repo`) | Every page, badge and post opens the galaxy flying straight to that star. |
+| **Bluesky / Mastodon highlight** (optional) | One post per scan (max 4/day) about the best new repo. Add secrets `BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD` and/or `MASTODON_URL` + `MASTODON_TOKEN`. |
+| **Weekly promo kit** (Mondays) | An issue with a ready X thread, Reddit post, LinkedIn post, newsletter section and the owners to tag. About 10 minutes of copy-paste a week. |
+
+Turn on free analytics (GoatCounter) in `config.js` → `analytics.goatcounter` so you can show sponsors real numbers.

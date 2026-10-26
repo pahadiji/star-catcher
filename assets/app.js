@@ -174,7 +174,8 @@
     const repos = (data.repos || []).filter(r => r && r.full_name).sort((a, b) => b.stars - a.stars);
     const pick = repos.slice(0, GAME.maxStarsOnMap || 700);
     const ids = new Set(pick.map(r => String(r.id)));
-    repos.forEach(r => { const id = String(r.id); if (!ids.has(id) && (isNew(r) || S.codex[id])) { pick.push(r); ids.add(id); } });
+    const wanted = deepLink();
+    repos.forEach(r => { const id = String(r.id); if (!ids.has(id) && (isNew(r) || S.codex[id] || r.full_name.toLowerCase() === wanted)) { pick.push(r); ids.add(id); } });
 
     if (repos.length >= 20) {
       const at = p => repos[Math.min(repos.length - 1, Math.floor(repos.length * p))].stars || 0;
@@ -1040,6 +1041,23 @@
   }
 
   // ---------- Boot ----------
+  // Links like ?star=owner/repo (from the repo pages, badges and social posts) open that star.
+  function deepLink() {
+    try { return (new URLSearchParams(location.search).get("star") || "").trim().toLowerCase(); } catch (e) { return ""; }
+  }
+  function openDeepLink() {
+    const want = deepLink();
+    if (!want) return;
+    const s = R.stars.find(x => x.r && x.r.full_name && x.r.full_name.toLowerCase() === want);
+    if (s) later(() => { if (R.mode === "browse") select(s.id); }, S.motion ? 1500 : 50);
+  }
+  function analytics() {
+    const gc = CFG.analytics && CFG.analytics.goatcounter;
+    if (!gc) return;
+    const sc = document.createElement("script");
+    sc.async = true; sc.src = "https://gc.zgo.at/count.js"; sc.setAttribute("data-goatcounter", "https://" + gc + ".goatcounter.com/count");
+    document.head.appendChild(sc);
+  }
   function applyLinks() {
     const L = CFG.links || {};
     if (L.support) { $("support-link").href = L.support; $("support-link").hidden = false; }
@@ -1066,9 +1084,11 @@
     save();
     $("data-note").textContent = (data.sample ? "Sample data until the first scan runs. " : "") + R.stars.filter(s => !s.sponsor).length + " stars charted" + (data.total ? " of " + data.total + " repos" : "") + " · last scan " + ago(data.last_updated);
     renderHud(); renderPanel();
+    openDeepLink();
   }
 
   applyLinks();
+  analytics();
   window.Sound.setEnabled(S.sound);
   if (window.Ads) window.Ads.init();
   renderHud(); renderPanel();

@@ -40,6 +40,11 @@ window.SITE_CONFIG = {
     cta: "Become the sponsored star"
   },
 
+  // ---------- Analytics (free, no cookies) ----------
+  // Sign up at https://www.goatcounter.com, then put your site code here (e.g. "starcatcher").
+  // Sponsors and ad networks will ask for these numbers.
+  analytics: { goatcounter: "" },
+
   // ---------- Links ----------
   links: {
     newsletter: "",           // e.g. your Beehiiv/Substack signup URL; empty hides the box
