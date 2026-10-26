@@ -85,7 +85,7 @@ def page(title, desc, canonical, body, extra_head=""):
 {x}
 </head>
 <body>
-<header class="bar"><a class="brand" href="{base}">✳ Star Catcher</a><nav><a href="{base}c/mcp-servers/">MCP</a><a href="{base}c/skills-plugins/">Skills</a><a href="{base}c/agents-sdk/">Agents</a><a href="{base}new/">New this week</a><a class="go" href="{base}">Open the galaxy</a></nav></header>
+<header class="bar"><a class="brand" href="{base}">✳ Star Catcher</a><nav><a href="{base}c/mcp-servers/">MCP</a><a href="{base}c/skills-plugins/">Skills</a><a href="{base}c/agents-sdk/">Agents</a><a href="{base}new/">New</a><a class="go" href="{base}">Open the galaxy</a></nav></header>
 <main>
 {b}
 </main>
@@ -124,7 +124,7 @@ def main():
     at = lambda p: repos[min(len(repos) - 1, int(len(repos) * p))].get("stars") or 0
     th = {"L": max(10, at(0.02)), "E": max(5, at(0.10)), "R": max(2, at(0.35))}
     now = datetime.now(timezone.utc)
-    week = (now - timedelta(days=7)).isoformat()
+    week = (now - timedelta(days=14)).isoformat()   # "new" = created on GitHub in the last 14 days
     updated = now.strftime("%d %b %Y")
 
     for d in ("r", "c", "new", "badge"):
@@ -194,23 +194,23 @@ def main():
         urls.append((canonical, now.date().isoformat()))
 
     # New this week + RSS
-    fresh = sorted([r for r in repos if (r.get("first_seen") or "") >= week], key=lambda r: r.get("first_seen") or "", reverse=True)
+    fresh = sorted([r for r in repos if (r.get("created_at") or "") >= week], key=lambda r: r.get("created_at") or "", reverse=True)
     canonical = BASE + "new/"
     body = """
 <nav class="crumbs"><a href="{base}">Galaxy</a> › New this week</nav>
-<h1>New Claude repos this week</h1>
-<p class="lede">{n} repos appeared in the last 7 days. New ones are added every 6 hours. <a href="{base}feed.xml">Subscribe via RSS</a>.</p>
+<h1>New Claude repos</h1>
+<p class="lede">{n} repos were created in the last 14 days. New ones are added every 6 hours. <a href="{base}feed.xml">Subscribe via RSS</a>.</p>
 <ul class="list">{items}</ul>
 """.format(base=BASE, n=len(fresh), items="".join(repo_card(x, th, BASE) for x in fresh[:200]) or "<li>No new repos yet this week.</li>")
     os.makedirs(os.path.join(ROOT, "new"), exist_ok=True)
     with open(os.path.join(ROOT, "new", "index.html"), "w") as f:
-        f.write(page("New Claude, Claude Code and MCP repos this week | Star Catcher", "%d new Claude, MCP and agent repos found this week." % len(fresh), canonical, body))
+        f.write(page("New Claude, Claude Code and MCP repos | Star Catcher", "%d Claude, MCP and agent repos created in the last 14 days." % len(fresh), canonical, body))
     urls.append((canonical, now.date().isoformat()))
 
     items = "".join(
         "<item><title>{t}</title><link>{l}</link><guid>{l}</guid><pubDate>{d}</pubDate><description>{s}</description></item>".format(
             t=E("%s by %s (★%s)" % (r["name"], r["owner"], fmt(r.get("stars")))), l=E("%sr/%s/%s/" % (BASE, r["owner"], r["name"])),
-            d=datetime.fromisoformat((r.get("first_seen") or now.isoformat()).replace("Z", "+00:00")).strftime("%a, %d %b %Y %H:%M:%S +0000"),
+            d=datetime.fromisoformat((r.get("created_at") or now.isoformat()).replace("Z", "+00:00")).strftime("%a, %d %b %Y %H:%M:%S +0000"),
             s=E(r.get("description") or ""))
         for r in fresh[:50])
     with open(os.path.join(ROOT, "feed.xml"), "w") as f:

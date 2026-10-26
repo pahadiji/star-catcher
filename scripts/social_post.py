@@ -72,8 +72,8 @@ def main():
             posted = json.load(f)
     except Exception:
         posted = {"ids": []}
-    week = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
-    pool = [r for r in repos if (r.get("first_seen") or "") >= week and str(r["id"]) not in posted["ids"]]
+    week = (datetime.now(timezone.utc) - timedelta(days=14)).isoformat()
+    pool = [r for r in repos if (r.get("created_at") or "") >= week and str(r["id"]) not in posted["ids"]]
     if not pool:
         print("nothing new to post")
         return

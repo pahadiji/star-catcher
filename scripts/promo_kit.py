@@ -34,8 +34,8 @@ def main():
     with open(os.path.join(ROOT, "data", "repos.json")) as f:
         data = json.load(f)
     repos = data.get("repos", [])
-    week = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
-    fresh = sorted([r for r in repos if (r.get("first_seen") or "") >= week], key=lambda r: r.get("stars") or 0, reverse=True)
+    week = (datetime.now(timezone.utc) - timedelta(days=14)).isoformat()
+    fresh = sorted([r for r in repos if (r.get("created_at") or "") >= week], key=lambda r: r.get("stars") or 0, reverse=True)
     top = fresh[:10]
     date = datetime.now(timezone.utc).strftime("%d %b %Y")
     page = lambda r: "%sr/%s/%s/" % (base, r["owner"], r["name"])

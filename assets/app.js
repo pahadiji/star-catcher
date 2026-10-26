@@ -170,7 +170,7 @@
   // ---------- Data → stars ----------
   function build(data) {
     const now = Date.now();
-    const isNew = r => r.first_seen && now - new Date(r.first_seen) < 7 * DAY;
+    const isNew = r => r.created_at && now - new Date(r.created_at) < 14 * DAY; // created on GitHub in the last 14 days
     const repos = (data.repos || []).filter(r => r && r.full_name).sort((a, b) => b.stars - a.stars);
     const pick = repos.slice(0, GAME.maxStarsOnMap || 700);
     const ids = new Set(pick.map(r => String(r.id)));
