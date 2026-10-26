@@ -40,5 +40,10 @@ jobs:
             echo "No changes"
           else
             git commit -m "data: auto-update $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            # Another run may have pushed meanwhile: rebase onto it and retry.
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin main && git push && exit 0
+              sleep $((i * 5))
+            done
+            exit 1
           fi
