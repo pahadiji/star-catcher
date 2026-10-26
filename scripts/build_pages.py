@@ -40,6 +40,8 @@ def site_url():
         return os.environ["SITE_URL"].rstrip("/") + "/"
     repo = os.environ.get("GITHUB_REPOSITORY", "pahadiji/star-catcher")
     owner, name = repo.split("/", 1)
+    if name.lower() == owner.lower() + ".github.io":
+        return "https://%s.github.io/" % owner.lower()
     return "https://%s.github.io/%s/" % (owner.lower(), name)
 
 

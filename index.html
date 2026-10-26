@@ -28,7 +28,7 @@
   </nav>
   <div class="hud">
     <span id="inv" class="hud" style="margin:0"></span>
-    <img class="visitors" src="https://hits.sh/pahadiji.github.io/star-catcher.svg?view=today-total&amp;style=flat-square&amp;label=explorers%20today%20%2F%20total&amp;color=c6ff3d&amp;labelColor=12121f" alt="Visitor counter: explorers today and in total" height="20" loading="lazy">
+    <img class="visitors" id="visitors" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Visitor counter: explorers today and in total" height="20" loading="lazy">
     <span class="chip" id="level-chip">Lv <b id="lvl">1</b> <span class="xpbar"><span id="xpfill"></span></span></span>
     <button class="icon-btn" id="sound-btn" type="button" aria-pressed="false">Sound off</button>
     <button class="icon-btn" id="motion-btn" type="button" aria-pressed="false">Motion on</button>
@@ -96,6 +96,7 @@
   <span>Data from the GitHub API, refreshed every 6 hours. Not affiliated with Anthropic or GitHub. <a href="data/repos.json">JSON</a> · <a id="source-link" href="#">Source</a></span>
 </footer>
 
+<script>(function(){var v=document.getElementById("visitors");if(v)v.src="https://hits.sh/"+(location.host+location.pathname).replace(/index\.html$/,"").replace(/\/$/,"")+".svg?view=today-total&style=flat-square&label=explorers%20today%20%2F%20total&color=c6ff3d&labelColor=12121f";})();</script>
 <script src="config.js"></script>
 <script src="assets/sound.js"></script>
 <script src="assets/ads.js"></script>
