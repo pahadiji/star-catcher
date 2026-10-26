@@ -55,9 +55,12 @@
   const DEV_KEYS = ["cube", "orb", "brace", "cap"];
   const BADGE_AT = 5;
 
-  const rank = n => n >= 20000 ? { k: "Legendary", rings: 2, zone: 12, base: 0.3, xp: 120 }
-    : n >= 5000 ? { k: "Epic", rings: 1, zone: 18, base: 0.45, xp: 80 }
-    : n >= 500 ? { k: "Rare", rings: 0, zone: 26, base: 0.6, xp: 50 }
+  // Rarity follows the real distribution: top 2% Legendary, next 8% Epic, next 25% Rare.
+  // Thresholds are recomputed from the data on load (these are fallbacks).
+  const TH = { L: 20000, E: 5000, R: 500 };
+  const rank = n => n >= TH.L ? { k: "Legendary", rings: 2, zone: 12, base: 0.3, xp: 120 }
+    : n >= TH.E ? { k: "Epic", rings: 1, zone: 18, base: 0.45, xp: 80 }
+    : n >= TH.R ? { k: "Rare", rings: 0, zone: 26, base: 0.6, xp: 50 }
     : { k: "Common", rings: 0, zone: 34, base: 0.8, xp: 30 };
   const stage = n => (n >= 10000 ? 3 : n >= 1000 ? 2 : 1);
   const stageName = n => ["", "Protostar", "Star", "Giant"][stage(n)];
@@ -173,17 +176,21 @@
     const ids = new Set(pick.map(r => String(r.id)));
     repos.forEach(r => { const id = String(r.id); if (!ids.has(id) && (isNew(r) || S.codex[id])) { pick.push(r); ids.add(id); } });
 
+    if (repos.length >= 20) {
+      const at = p => repos[Math.min(repos.length - 1, Math.floor(repos.length * p))].stars || 0;
+      TH.L = Math.max(10, at(0.02)); TH.E = Math.max(5, at(0.10)); TH.R = Math.max(2, at(0.35));
+    }
     const groups = {};
     pick.forEach(r => { const c = CAT_BY[r.category] || CAT_BY.Other; (groups[c.key] = groups[c.key] || []).push(r); });
     const biggest = Math.max(1, ...CATS.map(c => (groups[c.key] || []).length));
-    const ring = 560 + 34 * Math.sqrt(biggest);
+    const ring = 600 + 40 * Math.sqrt(biggest);
     const stars = [];
     CATS.forEach(c => {
       const list = (groups[c.key] || []).sort((a, b) => b.stars - a.stars);
       const ang = -Math.PI / 2 + (c.i * TAU) / CATS.length;
       c.cx = Math.cos(ang) * ring * 1.3; c.cy = Math.sin(ang) * ring;
       c.count = list.length;
-      c.radius = 70 + 30 * Math.sqrt(list.length);
+      c.radius = 80 + 36 * Math.sqrt(list.length);
       const arms = list.length > 40 ? 3 : 2, twist = 2.6 + (c.i % 3) * 0.5, rnd = rng(hash(c.key));
       const mine = list.map((r, i) => {
         let x = c.cx, y = c.cy;
@@ -201,7 +208,7 @@
       });
       // Gentle relaxation so neighbouring stars never overlap.
       for (let it = 0; it < 4; it++) for (let a = 1; a < mine.length; a++) for (let b = 0; b < a; b++) {
-        const A = mine[a], B = mine[b], dx = A.x - B.x, dy = A.y - B.y, d = Math.hypot(dx, dy) || 1, min = (A.size + B.size) * 1.25;
+        const A = mine[a], B = mine[b], dx = A.x - B.x, dy = A.y - B.y, d = Math.hypot(dx, dy) || 1, min = (A.size + B.size) * 1.6;
         if (d < min) { const push = (min - d) / d; A.x += dx * push; A.y += dy * push; }
       }
       mine.forEach(s => stars.push(s));

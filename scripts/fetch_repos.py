@@ -120,7 +120,11 @@ def main():
     if os.path.exists(DATA_FILE):
         try:
             with open(DATA_FILE) as f:
-                for r in json.load(f).get("repos", []):
+                old_data = json.load(f)
+            # Sample/demo data is not a real previous scan: start fresh so the
+            # first real import is not tagged as hundreds of "new" repos.
+            if not old_data.get("sample"):
+                for r in old_data.get("repos", []):
                     existing[r["id"]] = r
         except Exception:
             pass
