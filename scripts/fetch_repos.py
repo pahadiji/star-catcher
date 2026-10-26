@@ -69,6 +69,16 @@ def api(url):
 RELEVANT = ("claude", "anthropic", "mcp", "model context protocol", "model-context-protocol")
 
 
+# Never list these: adult/NSFW content and common spam keywords (keeps the site ad-network safe).
+BLOCKED = ("nsfw", "porn", "hentai", "nude", "nudity", "nudify", "sexual", "sex ", "onlyfans", "xxx", "erotic",
+           "undress", "deepnude", "casino", "gambling", "betting", "keygen", "crack ", "cracked", "warez")
+
+
+def blocked(repo):
+    text = " ".join([repo.get("full_name") or "", repo.get("description") or "", " ".join(repo.get("topics") or [])]).lower() + " "
+    return repo.get("owner") == "sample" or any(k in text for k in BLOCKED)
+
+
 def relevant(repo):
     """Keep only repos that actually mention Claude, Anthropic or MCP.
     GitHub search matches loosely (README text, single words), which lets
@@ -148,7 +158,7 @@ def main():
                     break
                 for r in data["items"]:
                     item = slim(r)
-                    if relevant(item):
+                    if relevant(item) and not blocked(item):
                         found[r["id"]] = item
                 if len(data["items"]) < 100:
                     break
@@ -168,7 +178,7 @@ def main():
                 updated_ids.append(rid)
         existing[rid] = r
 
-    repos = [r for r in existing.values() if relevant(r)]
+    repos = [r for r in existing.values() if relevant(r) and not blocked(r)]
     for r in repos:
         r["category"] = categorize(r)
     repos.sort(key=lambda r: r["stars"], reverse=True)
