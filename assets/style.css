@@ -159,3 +159,7 @@ footer .ad-slot { flex: 1 1 100%; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01s !important; transition: none !important; }
 }
+
+/* Visitor counter badge (hits.sh) */
+.visitors { height: 22px; border-radius: 6px; display: block; }
+@media (max-width: 700px) { .visitors { order: 9; } }
