@@ -1,0 +1,6 @@
+{
+  "name": "star-catcher",
+  "private": true,
+  "scripts": { "test": "node tests/smoke.js" },
+  "devDependencies": { "jsdom": "24.1.3" }
+}

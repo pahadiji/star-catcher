@@ -1,0 +1,76 @@
+name: Debug agent
+
+# The debug agent: when the health check opens a "health" issue, or anyone labels
+# an issue "bug", Claude investigates, fixes the cause and opens a pull request.
+# It never pushes to main; you review and merge the pull request.
+# Needs one repository secret: ANTHROPIC_API_KEY (Claude API key) or
+# CLAUDE_CODE_OAUTH_TOKEN (Claude subscription, from `claude setup-token`).
+# Without either, this workflow skips. Install the Claude GitHub App on the repo too.
+on:
+  issues:
+    types: [opened, labeled, reopened]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue number to work on"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: read
+  id-token: write
+
+concurrency:
+  group: debug-agent
+  cancel-in-progress: false
+
+jobs:
+  debug:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issues' && (contains(github.event.issue.labels.*.name, 'health') || contains(github.event.issue.labels.*.name, 'bug'))) ||
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check for the API key
+        id: key
+        env:
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$KEY$OAUTH" ]; then echo "No Claude credential set; skipping the debug agent."; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.key.outputs.ok == 'true'
+        with:
+          fetch-depth: 0
+      - uses: anthropics/claude-code-action@v1
+        if: steps.key.outputs.ok == 'true'
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Health issues are opened by the health-check workflow, which runs as this bot.
+          allowed_bots: "github-actions[bot]"
+          prompt: |
+            You are the debug agent for Star Catcher, a static GitHub Pages site that shows Claude-related
+            GitHub repos as a galaxy game. Read README.md first.
+
+            Work on issue #${{ github.event.issue.number || inputs.issue }} in ${{ github.repository }}.
+            1. Read the issue and its comments. Reproduce the problem:
+               - data problems: run `python scripts/health_check.py --no-issue` and inspect data/repos.json
+                 and the latest "Update repo data" workflow run logs;
+               - site or game problems: run `npm install && npm test`.
+            2. Find the root cause and make the smallest fix. Do not redesign or refactor unrelated code.
+            3. Run `npm test` and `python -m py_compile scripts/*.py` until they pass.
+            4. Open a pull request that explains the cause and the fix, and comment on the issue with a link.
+            Never push to main, never edit data/repos.json by hand, and never touch secrets or config.js ad settings.
+            If you cannot fix it safely, comment on the issue with what you found and what a human should check.
+          claude_args: |
+            --max-turns 30
+            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(npm *),Bash(python *),Bash(python3 *),Bash(git *),Bash(gh *)"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

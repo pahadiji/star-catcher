@@ -1,0 +1,35 @@
+name: Tests
+
+# Runs on every push and pull request, including the debug agent's fixes.
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["data/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Syntax checks
+        run: |
+          python -m py_compile scripts/*.py
+          for f in config.js assets/*.js; do node --check "$f"; done
+      - name: Data file is valid JSON
+        run: python -c "import json; d=json.load(open('data/repos.json')); assert isinstance(d.get('repos'), list)"
+      - name: Play a full game headlessly
+        run: |
+          npm install --no-audit --no-fund
+          npm test
