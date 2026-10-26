@@ -66,6 +66,21 @@ def api(url):
     return None
 
 
+RELEVANT = ("claude", "anthropic", "mcp", "model context protocol", "model-context-protocol")
+
+
+def relevant(repo):
+    """Keep only repos that actually mention Claude, Anthropic or MCP.
+    GitHub search matches loosely (README text, single words), which lets
+    unrelated giant repos in; this check looks at name, description and topics."""
+    text = " ".join([
+        repo.get("full_name") or repo.get("name") or "",
+        repo.get("description") or "",
+        " ".join(repo.get("topics") or []),
+    ]).lower()
+    return any(k in text for k in RELEVANT)
+
+
 def categorize(repo):
     text = " ".join([
         repo.get("name") or "",
@@ -128,7 +143,9 @@ def main():
                 if not data or not data.get("items"):
                     break
                 for r in data["items"]:
-                    found[r["id"]] = slim(r)
+                    item = slim(r)
+                    if relevant(item):
+                        found[r["id"]] = item
                 if len(data["items"]) < 100:
                     break
         print(f"{q!r}: total unique so far {len(found)}")
@@ -147,7 +164,7 @@ def main():
                 updated_ids.append(rid)
         existing[rid] = r
 
-    repos = list(existing.values())
+    repos = [r for r in existing.values() if relevant(r)]
     for r in repos:
         r["category"] = categorize(r)
     repos.sort(key=lambda r: r["stars"], reverse=True)
