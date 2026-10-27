@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Star Catcher MCP server: let Claude search every Claude and MCP repo</title>
+<meta name="description" content="Install the Star Catcher MCP server so Claude can search 3000 Claude, MCP and agent repos.">
+<link rel="canonical" href="https://pahadiji.github.io/star-catcher/mcp/">
+<meta property="og:title" content="Star Catcher MCP server: let Claude search every Claude and MCP repo">
+<meta property="og:description" content="Install the Star Catcher MCP server so Claude can search 3000 Claude, MCP and agent repos.">
+<meta property="og:url" content="https://pahadiji.github.io/star-catcher/mcp/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#07070F">
+<link rel="alternate" type="application/rss+xml" title="New Claude repos" href="https://pahadiji.github.io/star-catcher/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pahadiji.github.io/star-catcher/assets/page.css">
+
+</head>
+<body>
+<header class="bar"><a class="brand" href="https://pahadiji.github.io/star-catcher/">✳ Star Catcher</a><nav><a href="https://pahadiji.github.io/star-catcher/c/mcp-servers/">MCP</a><a href="https://pahadiji.github.io/star-catcher/c/skills-plugins/">Skills</a><a href="https://pahadiji.github.io/star-catcher/c/agents-sdk/">Agents</a><a href="https://pahadiji.github.io/star-catcher/new/">New</a><a href="https://pahadiji.github.io/star-catcher/trending/">Trending</a><a href="https://pahadiji.github.io/star-catcher/mcp/">MCP server</a><a class="go" href="https://pahadiji.github.io/star-catcher/">Open the galaxy</a></nav></header>
+<main>
+
+<nav class="crumbs"><a href="https://pahadiji.github.io/star-catcher/">Galaxy</a> › MCP server</nav>
+<h1>Ask Claude about every Claude repo</h1>
+<p class="lede">The Star Catcher MCP server lets Claude search all 3000 repos on this site: find a skill or MCP server for a job, see what is trending, read verified picks. It is one small file with no dependencies (Node 18+), and it only reads this site's public data.</p>
+<section><h2>Claude Code</h2><pre><code>curl -fsSL https://pahadiji.github.io/star-catcher/mcp/server.mjs -o ~/.star-catcher-mcp.mjs
+claude mcp add star-catcher -- node ~/.star-catcher-mcp.mjs</code></pre></section>
+<section><h2>Claude Desktop</h2><p>Download <a href="https://pahadiji.github.io/star-catcher/mcp/server.mjs">server.mjs</a>, then add this to <code>claude_desktop_config.json</code>:</p>
+<pre><code>{"mcpServers": {"star-catcher": {"command": "node", "args": ["/path/to/server.mjs"]}}}</code></pre></section>
+<section><h2>Tools</h2><ul class="list">
+<li><b>search_repos</b><p>Find repos by keyword, optionally in one category.</p></li>
+<li><b>trending</b><p>Fastest-growing repos this week.</p></li>
+<li><b>repo_info</b><p>Details for one repo, with its Star Catcher page.</p></li>
+<li><b>verified_picks</b><p>New repos approved by the senior agents.</p></li>
+<li><b>list_topics</b><p>Popular topics and how many repos each has.</p></li>
+</ul></section>
+<p>Try: <i>"Use star-catcher to find an MCP server for Postgres"</i> or <i>"What Claude Code skills are trending this week?"</i></p>
+
+</main>
+<footer>Data from the GitHub API, refreshed every 6 hours. Not affiliated with Anthropic or GitHub. <a href="https://pahadiji.github.io/star-catcher/feed.xml">RSS</a> · <a href="https://pahadiji.github.io/star-catcher/advertise/">Advertise</a></footer>
+</body>
+</html>
