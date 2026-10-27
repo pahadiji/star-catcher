@@ -596,8 +596,11 @@
   let drag = null, pinch = null, moved = false;
   function hitTest(sx, sy) {
     let best = null, bd = Infinity;
+    const now = performance.now();
     for (const s of R.stars) {
-      const [x, y] = toScreen(s.x, s.y), r = Math.max(14, s.size * R.cam.z + 8), d = Math.hypot(x - sx, y - sy);
+      const pop = popScale(s, now);
+      if (pop < 0.6) continue; // not visible yet during the intro
+      const [x, y] = toScreen(s.x, s.y), r = Math.max(10, s.size * R.cam.z * pop + 6), d = Math.hypot(x - sx, y - sy);
       if (d < r && d < bd) { bd = d; best = s; }
     }
     return best;
@@ -612,7 +615,10 @@
       pinch = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), z: R.cam.z };
       drag = null;
     } else if (R.mode === "browse") {
-      drag = { sx: e.clientX, sy: e.clientY, cx: R.cam.x, cy: R.cam.y };
+      const rect = canvas.getBoundingClientRect();
+      // Pick the star under the cursor at press time, before the intro glide can move it away.
+      const h = hitTest(e.clientX - rect.left, e.clientY - rect.top);
+      drag = { sx: e.clientX, sy: e.clientY, cx: R.cam.x, cy: R.cam.y, hit: h ? h.id : null };
     }
   });
   canvas.addEventListener("pointermove", e => {
@@ -644,7 +650,8 @@
     canvas.classList.remove("dragging");
     if (drag && !moved && e.type === "pointerup") {
       const h = hitTest(e.clientX - rect.left, e.clientY - rect.top);
-      if (h) select(h.id);
+      const id = drag.hit || (h ? h.id : null);
+      if (id) select(id);
     }
     drag = null;
   };
@@ -727,11 +734,17 @@
     renderPanel();
   }
 
+  // Timing matters: outside the bright zone the odds drop sharply.
+  function catchChance(s, dev, hit) {
+    const c = rank(s.r.stars).base + (S.seen[s.id] ? 0.15 : 0) + (dev ? DEV[dev].bonus : 0);
+    return hit ? Math.min(0.98, c + 0.25) : Math.min(0.9, c) * 0.4;
+  }
+
   function throwIt() {
     if (R.mode !== "aim" || !R.dev || S.inv[R.dev] <= 0) return;
     const s = R.byId[R.sel], n = s.r.stars, rk = rank(n);
     const hit = Math.abs(R.m - 50) <= rk.zone / 2;
-    const chance = Math.min(0.98, rk.base + (S.seen[s.id] ? 0.15 : 0) + (hit ? 0.25 : 0) + DEV[R.dev].bonus);
+    const chance = catchChance(s, R.dev, hit);
     const ok = Math.random() < chance;
     const shakes = ok ? 3 : 1 + Math.floor(Math.random() * 3);
     const dev = R.dev;
@@ -882,12 +895,12 @@
   }
 
   function aimHTML(s) {
-    const rk = rank(s.r.stars), chance = Math.min(0.98, rk.base + (S.seen[s.id] ? 0.15 : 0) + (R.dev ? DEV[R.dev].bonus : 0));
+    const rk = rank(s.r.stars), inPct = Math.round(catchChance(s, R.dev, true) * 100), outPct = Math.round(catchChance(s, R.dev, false) * 100);
     const picker = R.pickerOpen ? '<div class="devices" role="group" aria-label="Choose a catch device">' + DEV_KEYS.map(k =>
       '<button class="device" type="button" data-act="pick" data-dev="' + k + '" aria-pressed="' + (R.dev === k) + '"' + (S.inv[k] > 0 ? "" : " disabled") + "><b>" + DEV[k].name + "</b><small>" + S.inv[k] + " left · +" + Math.round(DEV[k].bonus * 100) + "%</small></button>").join("") + "</div>" : "";
     const zoneLeft = 50 - rk.zone / 2;
     const thrower = R.dev
-      ? '<button class="throw" id="throw-btn" type="button" data-act="throw" aria-label="Throw ' + DEV[R.dev].name + '"><span class="top-line"><span>Throw</span><span class="zone-state" id="zone-state">Wait…</span></span><span class="track"><span class="zone" style="left:' + zoneLeft + "%;width:" + rk.zone + '%"></span><span class="marker" id="marker"></span></span><span class="muted">Press when the marker is inside the bright zone. Catch rate ' + Math.round(chance * 100) + "%, +25% in the zone.</span></button>"
+      ? '<button class="throw" id="throw-btn" type="button" data-act="throw" aria-label="Throw ' + DEV[R.dev].name + '"><span class="top-line"><span>Throw</span><span class="zone-state" id="zone-state">Wait…</span></span><span class="track"><span class="zone" style="left:' + zoneLeft + "%;width:" + rk.zone + '%"></span><span class="marker" id="marker"></span></span><span class="muted">Press when the marker is inside the bright zone: ' + inPct + "% catch rate. Outside it: " + outPct + "%.</span></button>"
       : '<div class="card" style="padding:12px;border-style:dashed"><p>You are out of catch devices.</p>' + refillHTML() + "</div>";
     return '<div class="card" style="border-color:' + s.cat.color + '"><h2>Catching ' + esc(s.r.name) + "</h2>" +
       '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span>Using <b>' + (R.dev ? DEV[R.dev].name : "nothing") + "</b>" + (R.dev ? " · +" + Math.round(DEV[R.dev].bonus * 100) + "%" : "") + '</span><button class="btn" type="button" data-act="picker" aria-expanded="' + R.pickerOpen + '" style="min-height:40px">' + (R.pickerOpen ? "Done" : "Change") + "</button></div>" +
