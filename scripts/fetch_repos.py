@@ -17,6 +17,8 @@ DATA_FILE = os.path.join(ROOT, "data", "repos.json")
 # first_seen of every repo ever stored, so a repo that drops below the 3000 cap and
 # comes back later is not counted as "new" again (kept apart to keep repos.json small).
 SEEN_FILE = os.path.join(ROOT, "data", "seen.json")
+# One star count per repo per day for the last 8 days: build_pages.py ranks "trending" from it.
+HISTORY_FILE = os.path.join(ROOT, "data", "history.json")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 MAX_REPOS = 3000          # cap on stored repos
 PAGES_PER_QUERY = 3       # 100 results per page
@@ -82,6 +84,10 @@ BLOCKED = ("nsfw", "porn", "hentai", "nude", "nudity", "nudify", "sexual", "sex 
 
 
 def blocked(repo):
+    # Ids below 100000 are the demo dataset (1000-1017) that survived the first real import;
+    # every real Claude-era repo id is far larger. They duplicated real repos with fake stars.
+    if int(repo.get("id") or 0) < 100000:
+        return True
     text = " ".join([repo.get("full_name") or "", repo.get("description") or "", " ".join(repo.get("topics") or [])]).lower() + " "
     return repo.get("owner") == "sample" or any(k in text for k in BLOCKED)
 
@@ -218,6 +224,20 @@ def main():
         seen.setdefault(str(r["id"]), r.get("first_seen"))
     with open(SEEN_FILE, "w") as f:
         json.dump(seen, f, separators=(",", ":"))
+    try:
+        with open(HISTORY_FILE) as f:
+            history = json.load(f)
+    except (OSError, ValueError):
+        history = {}
+    today = now.strftime("%Y-%m-%d")
+    keep = (now - timedelta(days=8)).strftime("%Y-%m-%d")
+    current = {str(r["id"]) for r in repos}
+    history = {k: v for k, v in history.items() if k in current}
+    for r in repos:
+        pts = [p for p in history.get(str(r["id"]), []) if p[0] >= keep and p[0] != today]
+        history[str(r["id"])] = pts + [[today, r["stars"]]]
+    with open(HISTORY_FILE, "w") as f:
+        json.dump(history, f, separators=(",", ":"))
     print(f"Saved {len(repos)} repos | new: {len(new_ids)} | updated: {len(updated_ids)}")
 
 

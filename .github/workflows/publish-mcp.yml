@@ -1,0 +1,48 @@
+name: Publish MCP server
+
+# Publishes mcp/ to npm as star-catcher-mcp (so `npx -y star-catcher-mcp` works) and then
+# to the official MCP Registry. Runs when mcp/package.json's version changes on main, or by hand.
+# Needs one secret: NPM_TOKEN (npmjs.com > Access Tokens > Automation). Skips without it.
+on:
+  push:
+    branches: [main]
+    paths: ["mcp/package.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check for the npm token
+        id: key
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: if [ -z "$NPM_TOKEN" ]; then echo "NPM_TOKEN not set; skipping."; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.key.outputs.ok == 'true'
+      - uses: actions/setup-node@v4
+        if: steps.key.outputs.ok == 'true'
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+      - name: Publish to npm (skips a version that is already published)
+        if: steps.key.outputs.ok == 'true'
+        working-directory: mcp
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          V=$(node -p "require('./package.json').version")
+          if npm view "star-catcher-mcp@$V" version >/dev/null 2>&1; then echo "v$V already on npm"; else npm publish --access public; fi
+      - name: Publish to the MCP Registry
+        if: steps.key.outputs.ok == 'true'
+        continue-on-error: true
+        working-directory: mcp
+        run: |
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+          ./mcp-publisher login github-oidc
+          ./mcp-publisher publish || echo "Registry publish failed; see log (npm package is still live)."
