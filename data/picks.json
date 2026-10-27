@@ -1,0 +1,170 @@
+{
+ "updated": "2026-10-27T06:55:26.329705+00:00",
+ "picks": {
+  "MCP Servers": [
+   {
+    "full_name": "nano-muse/nanoMuse",
+    "owner": "nano-muse",
+    "name": "nanoMuse",
+    "url": "https://github.com/nano-muse/nanoMuse",
+    "description": "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo. On Android, iPhone and iPad, Windows / macOS / Linux and in the browser; you",
+    "stars": 2672,
+    "score": 100,
+    "senior": "MCP senior",
+    "reason": "nanoMuse depends on an MCP SDK; 11 skills with a valid SKILL.md (e.g. nanomuse/skills/builtin/amap/SKILL.md)",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "zhuyansen/new-term-radar",
+    "owner": "zhuyansen",
+    "name": "new-term-radar",
+    "url": "https://github.com/zhuyansen/new-term-radar",
+    "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+    "stars": 1834,
+    "score": 99,
+    "senior": "MCP senior",
+    "reason": "new-term-radar depends on an MCP SDK; 3 skills with a valid SKILL.md (e.g. skills/ai-listening/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "1llu50ry/mcp-gamehacking",
+    "owner": "1llu50ry",
+    "name": "mcp-gamehacking",
+    "url": "https://github.com/1llu50ry/mcp-gamehacking",
+    "description": "MCP (Model Context Protocol) server for game hacking & reverse engineering. A structured knowledge base of 4,100+ skills with full source code archives, specialized agents, and workflow tools -- designed to be plugged into Claude, Cursor, or any MCP-compatible client.",
+    "stars": 383,
+    "score": 95,
+    "senior": "MCP senior",
+    "reason": "mcp-gamehacking depends on an MCP SDK; 4230 skills with a valid SKILL.md (e.g. skills/ags-0xiuks-ceserver-ios/SKILL.md)",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "HeyPuter/builder",
+    "owner": "HeyPuter",
+    "name": "builder",
+    "url": "https://github.com/HeyPuter/builder",
+    "description": "\ud83d\udce6\u2728 AI Builder For Creating Sites and Apps! An open-source alternative to Lovable, Replit, v0, and similar platforms.",
+    "stars": 304,
+    "score": 94,
+    "senior": "MCP senior",
+    "reason": "builder depends on an MCP SDK",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "awv-informatik/smlibpy",
+    "owner": "awv-informatik",
+    "name": "smlibpy",
+    "url": "https://github.com/awv-informatik/smlibpy",
+    "description": "",
+    "stars": 205,
+    "score": 93,
+    "senior": "MCP senior",
+    "reason": "smlibpy depends on an MCP SDK; 2 skills with a valid SKILL.md (e.g. plugins/smlibpy/skills/smlibpy/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "ThinkFlowLab/system1-agents",
+    "owner": "ThinkFlowLab",
+    "name": "system1-agents",
+    "url": "https://github.com/ThinkFlowLab/system1-agents",
+    "description": "System 1 decision models (Jev, Laya, Cua-S1) as brain for agents: Browser use, computer use, games and robotics",
+    "stars": 177,
+    "score": 93,
+    "senior": "MCP senior",
+    "reason": "system1-agents depends on an MCP SDK; 5 skills with a valid SKILL.md (e.g. .agents/skills/add-agent-recipe/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   }
+  ],
+  "Skills & Plugins": [
+   {
+    "full_name": "rehan-remade/universal-modder",
+    "owner": "rehan-remade",
+    "name": "universal-modder",
+    "url": "https://github.com/rehan-remade/universal-modder",
+    "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
+    "stars": 9033,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 36 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "wuyoscar/AISafetyHot",
+    "owner": "wuyoscar",
+    "name": "AISafetyHot",
+    "url": "https://github.com/wuyoscar/AISafetyHot",
+    "description": "Safety News & Research Monitor. https://aisafetyhot.com",
+    "stars": 1928,
+    "score": 99,
+    "senior": "Skills & plugins senior",
+    "reason": "AISafetyHot ships a valid SKILL.md or plugin manifest; 4 skills with a valid SKILL.md (e.g. skills/aisafety-brief/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "owner": "google",
+    "name": "elephant-goldfish-model",
+    "url": "https://github.com/google/elephant-goldfish-model",
+    "description": "An open-source method and skill set created at Google for spec-driven development with LLMs",
+    "stars": 1909,
+    "score": 99,
+    "senior": "Skills & plugins senior",
+    "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm_bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "timoncool/YuE2-Studio",
+    "owner": "timoncool",
+    "name": "YuE2-Studio",
+    "url": "https://github.com/timoncool/YuE2-Studio",
+    "description": "Local AI song generator with an editable score \u2014 YuE2 on your GPU: full songs with vocals, sheet music, covers, exact replay. Native Windows app, no Python, installer with auto-update.",
+    "stars": 1394,
+    "score": 98,
+    "senior": "Skills & plugins senior",
+    "reason": "YuE2-Studio ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. docs/mcp-skill.md)",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "alexgreensh/anidoodle",
+    "owner": "alexgreensh",
+    "name": "anidoodle",
+    "url": "https://github.com/alexgreensh/anidoodle",
+    "description": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
+    "stars": 1126,
+    "score": 98,
+    "senior": "Skills & plugins senior",
+    "reason": "anidoodle ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugins/anidoodle/skills/anidoodle/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "DUNHKpcc/Claude-Guardian",
+    "owner": "DUNHKpcc",
+    "name": "Claude-Guardian",
+    "url": "https://github.com/DUNHKpcc/Claude-Guardian",
+    "description": "Claude Guardian is an all-in-one Claude account safety and risk prevention skill.Claude\u9632\u5c01\u5b9e\u6218 It intelligently assesses your device, account history, network environment, and payment options, then provides personalized guidance for local, VPS, or virtual machine setups. ",
+    "stars": 1075,
+    "score": 98,
+    "senior": "Skills & plugins senior",
+    "reason": "Claude-Guardian ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/claude-guardian/SKILL.md)",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   }
+  ],
+  "Agents & SDK": [
+   {
+    "full_name": "PBJ-2/clauderipple",
+    "owner": "PBJ-2",
+    "name": "clauderipple",
+    "url": "https://github.com/PBJ-2/clauderipple",
+    "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
+    "stars": 76,
+    "score": 91,
+    "senior": "Agents senior",
+    "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   }
+  ],
+  "Dev Tools & CLI": [],
+  "Prompts & Guides": [],
+  "Apps & UIs": []
+ }
+}
