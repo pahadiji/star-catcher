@@ -73,7 +73,7 @@
   const S = Object.assign({
     codex: {}, seen: {}, inv: Object.assign({ cube: 10, orb: 3, brace: 1, cap: 0 }, GAME.startDevices || {}),
     xp: 0, thrown: 0, catches: 0, badges: {}, trainer: "Explorer", sound: false, motion: !reducedMotion,
-    lastData: null, lastRefill: 0
+    lastData: null, lastRefill: 0, topics: {}
   }, saved || {});
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* private mode */ } };
 
@@ -167,12 +167,46 @@
   const toScreen = (x, y) => [(x - R.cam.x) * R.cam.z + R.W / 2, (y - R.cam.y) * R.cam.z + R.H / 2];
   const toWorld = (sx, sy) => [(sx - R.W / 2) / R.cam.z + R.cam.x, (sy - R.H / 2) / R.cam.z + R.cam.y];
 
+  // ---------- Expanding universe ----------
+  // The map starts with the biggest repos and charts more of them every day, so the
+  // universe visibly grows; topics shared by enough stars become named constellations.
+  function universeCap(total) {
+    const base = GAME.maxStarsOnMap || 700, born = Date.parse(GAME.universeBorn || "");
+    const days = isNaN(born) ? 0 : Math.max(0, (Date.now() - born) / DAY);
+    return Math.min(total, Math.max(base, Math.min(GAME.maxStarsCeiling || base, Math.round(base + days * (GAME.growPerDay || 0)))));
+  }
+  const GENERIC_TOPICS = new Set(["claude", "claude-code", "claude-ai", "anthropic", "anthropic-claude", "ai", "llm", "llms", "mcp", "mcp-server",
+    "mcp-servers", "model-context-protocol", "ai-agent", "ai-agents", "agent", "agents", "agentic-ai", "openai", "chatgpt", "gpt", "codex",
+    "cursor", "gemini", "python", "typescript", "javascript", "nodejs", "rust", "go", "golang", "open-source", "claude-skills", "skills",
+    "agent-skills", "claude-code-plugin", "plugin", "plugins", "artificial-intelligence", "machine-learning", "generative-ai", "ai-tools",
+    "ai-coding", "ai-coding-assistant", "coding-agent", "coding-agents", "developer-tools", "dev-tools", "devtools", "cli", "vibe-coding",
+    "claude-code-skills", "agent-skill", "skill", "productivity", "automation", "tools"]);
+  function findConstellations(stars) {
+    const min = GAME.topicMin || 6, out = [];
+    CATS.forEach(c => {
+      const by = {};
+      stars.forEach(s => { if (s.cat === c) (s.r.topics || []).forEach(t => { if (!GENERIC_TOPICS.has(t)) (by[t] = by[t] || []).push(s); }); });
+      const used = new Set();
+      Object.keys(by).filter(t => by[t].length >= min).sort((a, b) => by[b].length - by[a].length).forEach(t => {
+        // Keep constellations distinct: skip a topic whose brightest stars another one already links.
+        const top = by[t].slice().sort((a, b) => (b.r.stars || 0) - (a.r.stars || 0)).slice(0, 6);
+        if (out.filter(k => k.cat === c).length >= 4 || top.filter(s => used.has(s)).length > top.length / 3) return;
+        top.forEach(s => used.add(s));
+        const x = top.reduce((v, s) => v + s.x, 0) / top.length, y = top.reduce((v, s) => v + s.y, 0) / top.length;
+        // Label sits on a ring just outside the region, fanned out so names never pile up on the bright core.
+        const n = out.filter(k => k.cat === c).length, a = -Math.PI / 2 + (n - 1.5) * 0.62, lr = c.radius + 46;
+        out.push({ key: c.key + "/" + t, topic: t, cat: c, count: by[t].length, stars: top, x: x, y: y, lx: c.cx + Math.cos(a) * lr * 1.15, ly: c.cy + Math.sin(a) * lr });
+      });
+    });
+    return out;
+  }
+
   // ---------- Data → stars ----------
   function build(data) {
     const now = Date.now();
     const isNew = r => r.created_at && now - new Date(r.created_at) < 14 * DAY; // created on GitHub in the last 14 days
     const repos = (data.repos || []).filter(r => r && r.full_name).sort((a, b) => b.stars - a.stars);
-    const pick = repos.slice(0, GAME.maxStarsOnMap || 700);
+    const pick = repos.slice(0, universeCap(repos.length));
     const ids = new Set(pick.map(r => String(r.id)));
     const wanted = deepLink();
     repos.forEach(r => { const id = String(r.id); if (!ids.has(id) && (isNew(r) || S.codex[id] || r.full_name.toLowerCase() === wanted)) { pick.push(r); ids.add(id); } });
@@ -218,6 +252,7 @@
     const maxD = Math.max(...stars.map(s => Math.hypot(s.x, s.y))) || 1;
     stars.forEach(s => { s.delay = (Math.hypot(s.x, s.y) / maxD) * 1100 + (hash(s.id) % 200); });
     R.stars = stars;
+    R.consts = findConstellations(stars);
     R.byId = {};
     stars.forEach(s => { R.byId[s.id] = s; });
     // Intro: start far out, then swoop in while stars pop into place.
@@ -396,6 +431,23 @@
       ctx.font = "500 12px 'Space Grotesk', sans-serif"; ctx.fillStyle = "#A09CC0"; ctx.fillText(c.count + " stars", x, y + 17);
     });
     ctx.globalAlpha = 1;
+
+    // Topic constellations: appear as you zoom in, linking the brightest stars that share a topic.
+    const topicAlpha = clamp((z - 0.17) * 6, 0, 1) * clamp(2.6 - z, 0, 1);
+    if (topicAlpha > 0.02 && R.consts) {
+      ctx.lineWidth = 1; ctx.font = "600 12px 'Space Grotesk', sans-serif";
+      R.consts.forEach(k => {
+        ctx.globalAlpha = topicAlpha * 0.55; ctx.strokeStyle = k.cat.alt; ctx.beginPath();
+        k.stars.forEach((s, i) => { const [x, y] = toScreen(s.x, s.y); if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); });
+        ctx.stroke();
+        const [cx, cy] = toScreen(k.x, k.y), [lx, ly] = toScreen(k.lx, k.ly);
+        ctx.setLineDash([3, 5]); ctx.globalAlpha = topicAlpha * 0.4; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(lx, ly + 8); ctx.stroke(); ctx.setLineDash([]);
+        const label = "✦ " + k.topic + " · " + k.count;
+        ctx.globalAlpha = topicAlpha; ctx.lineWidth = 4; ctx.strokeStyle = "#07070F"; ctx.strokeText(label, lx, ly);
+        ctx.fillStyle = mix(k.cat.alt, "#FFFFFF", 0.35); ctx.fillText(label, lx, ly); ctx.lineWidth = 1;
+      });
+      ctx.globalAlpha = 1;
+    }
 
     const hideId = (R.mode === "shake" || R.mode === "caught" || (R.anim && R.anim.kind === "absorb")) ? R.sel : null;
     const labels = [];
@@ -1094,8 +1146,13 @@
     }
     if (data.last_updated) S.lastData = data.last_updated;
     if (!S.lastRefill) S.lastRefill = Date.now();
+    // New constellations since the last visit (not on the very first visit).
+    const firstVisit = !Object.keys(S.topics || {}).length;
+    const born = (R.consts || []).filter(k => !S.topics[k.key]);
+    born.forEach(k => { S.topics[k.key] = 1; });
+    if (!firstVisit && born.length) setTimeout(() => toast("The universe expanded: new constellation" + (born.length > 1 ? "s " : " ") + born.slice(0, 3).map(k => "✦ " + k.topic).join(", ") + "."), 2600);
     save();
-    $("data-note").textContent = (data.sample ? "Sample data until the first scan runs. " : "") + R.stars.filter(s => !s.sponsor).length + " stars charted" + (data.total ? " of " + data.total + " repos" : "") + " · last scan " + ago(data.last_updated);
+    $("data-note").textContent = (data.sample ? "Sample data until the first scan runs. " : "") + R.stars.filter(s => !s.sponsor).length + " stars charted" + (data.total ? " of " + data.total + " repos" : "") + " · " + (R.consts || []).length + " constellations · the universe grows every day · last scan " + ago(data.last_updated);
     renderHud(); renderPanel();
     openDeepLink();
   }
