@@ -156,12 +156,13 @@ def main():
         except Exception:
             old = {}
     since = (now - timedelta(days=21)).strftime("%Y-%m-%d")
+    born = (now - timedelta(days=60)).strftime("%Y-%m-%d")   # scouts look for new work, not famous old repos
     report = []
     for scout, queries in SCOUTS.items():
         seen, picked = set(), []
         for q in queries:
             url = "https://api.github.com/search/repositories?" + urllib.parse.urlencode(
-                {"q": "%s stars:>=3 fork:false archived:false pushed:>=%s" % (q, since), "sort": "updated", "order": "desc", "per_page": 30})
+                {"q": "%s stars:>=3 fork:false archived:false pushed:>=%s created:>=%s" % (q, since, born), "sort": "updated", "order": "desc", "per_page": 30})
             for r in (api(url) or {}).get("items", []):
                 key = r["full_name"].lower()
                 text = " ".join([r["full_name"], r.get("description") or "", " ".join(r.get("topics") or [])]).lower() + " "
