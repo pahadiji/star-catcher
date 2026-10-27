@@ -61,7 +61,7 @@ jobs:
         run: |
           git config user.name "star-catcher-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/scouted.json data/picks.json r c new advertise badge sitemap.xml robots.txt feed.xml
+          git add data/scouted.json data/picks.json data/trending.json data/topics.json r c t new trending advertise mcp/index.html badge sitemap.xml robots.txt feed.xml
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "talent: scouts and senior agents $(date -u +'%Y-%m-%d %H:%M UTC')"
           for i in 1 2 3; do

@@ -7,6 +7,10 @@ Turns data/repos.json into pages search engines can index and people can share:
   c/<category>/              "Best <category> for Claude" top lists
   new/                       repos discovered this week
   advertise/                 sponsor page with live audience numbers (links to the sponsor request form)
+  t/<topic>/                 "Best <topic> repos for Claude" pages for every topic shared by enough repos
+  trending/                  fastest-growing repos this week (from data/history.json)
+  badge/<owner>/<repo>/trending.svg  "#N trending in <region>" badge (falls back to the rank badge)
+  mcp/                       install page for the Star Catcher MCP server (mcp/server.mjs)
   badge/<owner>/<repo>.svg   a README badge repo owners can add (backlinks)
   sitemap.xml, robots.txt, feed.xml (RSS of new repos)
 
@@ -88,7 +92,7 @@ def page(title, desc, canonical, body, extra_head=""):
 {x}
 </head>
 <body>
-<header class="bar"><a class="brand" href="{base}">✳ Star Catcher</a><nav><a href="{base}c/mcp-servers/">MCP</a><a href="{base}c/skills-plugins/">Skills</a><a href="{base}c/agents-sdk/">Agents</a><a href="{base}new/">New</a><a class="go" href="{base}">Open the galaxy</a></nav></header>
+<header class="bar"><a class="brand" href="{base}">✳ Star Catcher</a><nav><a href="{base}c/mcp-servers/">MCP</a><a href="{base}c/skills-plugins/">Skills</a><a href="{base}c/agents-sdk/">Agents</a><a href="{base}new/">New</a><a href="{base}trending/">Trending</a><a href="{base}mcp/">MCP server</a><a class="go" href="{base}">Open the galaxy</a></nav></header>
 <main>
 {b}
 </main>
@@ -118,8 +122,45 @@ def picks_html(items, tracked):
             % (E(items[0]["senior"]), "".join(li)))
 
 
-def badge_svg(r, th):
-    label, value = "star catcher", "%s · %s" % (rank(r.get("stars") or 0, th), CAT.get(r.get("category"), CATS[-1])[2])
+TOPIC_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,49}$")
+TOPIC_MIN = 8       # repos needed before a topic gets its own page
+TOPIC_MAX = 300     # topic pages built (most popular first)
+TREND_TOP = 50      # repos per region that can carry a "#N trending" badge
+
+
+def gains(repos, history, now):
+    """Stars gained over the last ~7 days per repo. Until a week of history exists,
+    young repos are estimated from their stars per day since creation."""
+    out = {}
+    for r in repos:
+        pts = history.get(str(r["id"])) or []
+        if len(pts) >= 2:
+            days = max(1, (datetime.fromisoformat(pts[-1][0]) - datetime.fromisoformat(pts[0][0])).days)
+            out[r["full_name"]] = round((pts[-1][1] - pts[0][1]) * 7 / days)
+        else:
+            try:
+                age = (now - datetime.fromisoformat((r.get("created_at") or "").replace("Z", "+00:00"))).days
+            except ValueError:
+                age = 9999
+            out[r["full_name"]] = round((r.get("stars") or 0) * 7 / max(age, 7)) if age <= 60 else 0
+    return out
+
+
+def cat_topics(items, topics):
+    count = {}
+    for r in items:
+        for t in r.get("topics") or []:
+            if t in topics:
+                count[t] = count.get(t, 0) + 1
+    top = sorted(count, key=lambda t: -count[t])[:16]
+    if not top:
+        return ""
+    return '<section><h2>Popular topics</h2><ul class="pills">%s</ul></section>\n' % "".join(
+        '<li><a href="%st/%s/">%s · %d</a></li>' % (BASE, t, E(t), count[t]) for t in top)
+
+
+def badge_svg(r, th, value=None):
+    label, value = "star catcher", value or "%s · %s" % (rank(r.get("stars") or 0, th), CAT.get(r.get("category"), CATS[-1])[2])
     lw, vw = 82, 10 + 7 * len(value)
     color = CAT.get(r.get("category"), CATS[-1])[3]
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="20" role="img" aria-label="{l}: {v}">'
@@ -133,7 +174,8 @@ def main():
     BASE = site_url()
     with open(DATA) as f:
         data = json.load(f)
-    repos = [r for r in data.get("repos", []) if SAFE.match(str(r.get("owner", ""))) and SAFE.match(str(r.get("name", "")))]
+    repos = [r for r in data.get("repos", []) if SAFE.match(str(r.get("owner", ""))) and SAFE.match(str(r.get("name", "")))
+             and int(r.get("id") or 0) >= 100000]   # skip leftover demo records (ids 1000-1017)
     repos.sort(key=lambda r: r.get("stars") or 0, reverse=True)
     if not repos:
         print("no repos; nothing to build")
@@ -152,7 +194,30 @@ def main():
     week = (now - timedelta(days=14)).isoformat()   # "new" = created on GitHub in the last 14 days
     updated = now.strftime("%d %b %Y")
 
-    for d in ("r", "c", "new", "badge"):
+    # Trending: stars gained this week, ranked inside each region.
+    try:
+        with open(os.path.join(ROOT, "data", "history.json")) as f:
+            history = json.load(f)
+    except (OSError, ValueError):
+        history = {}
+    gain = gains(repos, history, now)
+    trend = {}
+    for key in CAT:
+        ranked = sorted([r for r in repos if (r.get("category") if r.get("category") in CAT else "Other") == key and gain.get(r["full_name"], 0) > 0],
+                        key=lambda r: gain[r["full_name"]], reverse=True)[:TREND_TOP]
+        for i, r in enumerate(ranked, 1):
+            trend[r["full_name"]] = (i, CAT[key][2])
+
+    # Topics with enough repos get their own page.
+    topic_count = {}
+    for r in repos:
+        for t in set(r.get("topics") or []):
+            if TOPIC_RE.match(t):
+                topic_count[t] = topic_count.get(t, 0) + 1
+    topics = dict(sorted([(t, c) for t, c in topic_count.items() if c >= TOPIC_MIN], key=lambda x: -x[1])[:TOPIC_MAX])
+    topic_link = lambda t: ('<li><a href="%st/%s/">%s</a></li>' % (BASE, t, E(t))) if t in topics else "<li>%s</li>" % E(t)
+
+    for d in ("r", "c", "t", "new", "trending", "badge"):
         shutil.rmtree(os.path.join(ROOT, d), ignore_errors=True)
 
     by_cat = {}
@@ -184,11 +249,13 @@ def main():
   <pre class="install"><code>git clone {url}.git</code></pre>
 </article>
 <section><h2>More in {label}</h2><ul class="list">{related}</ul><p><a href="{base}c/{slug}/">See the full {label} list</a></p></section>
-<section class="owner"><h2>Is this your repo?</h2><p>Add this badge to your README so visitors can find it in the galaxy:</p><img src="{base}badge/{o}/{n}.svg" alt="Star Catcher badge"><pre><code>{badge}</code></pre></section>
+<section class="owner"><h2>Is this your repo?</h2><p>Add this badge to your README so visitors can find it in the galaxy:</p><img src="{base}badge/{o}/{n}.svg" alt="Star Catcher badge"><pre><code>{badge}</code></pre>
+<p>Or the trending badge. It shows your weekly rank while you are in the top {top} of {label}, and your usual badge otherwise:</p><img src="{base}badge/{o}/{n}/trending.svg" alt="Star Catcher trending badge"><pre><code>{tbadge}</code></pre></section>
 """.format(base=BASE, slug=cat[1], label=E(cat[2]), n=E(n), o=E(o), color=cat[3], desc=E(desc), rk=rk, stg=stage(r.get("stars") or 0),
-           topics="".join("<li>%s</li>" % E(t) for t in (r.get("topics") or [])[:5]), stars=fmt(r.get("stars")), forks=fmt(r.get("forks")),
+           topics="".join(topic_link(t) for t in (r.get("topics") or [])[:5]), stars=fmt(r.get("stars")), forks=fmt(r.get("forks")),
            lang=E(r.get("language") or "—"), push=E((r.get("pushed_at") or "")[:10]), url=E(r.get("url") or "#"),
-           related="".join(repo_card(x, th, BASE) for x in related), badge=E(badge_md),
+           related="".join(repo_card(x, th, BASE) for x in related), badge=E(badge_md), top=TREND_TOP,
+           tbadge=E("[![Star Catcher trending](%sbadge/%s/%s/trending.svg)](%s)" % (BASE, o, n, canonical)),
            ver=('<li title="%s">✓ Verified by the %s</li>' % (E(verified[r["full_name"].lower()]["reason"]), E(verified[r["full_name"].lower()]["senior"]))) if r["full_name"].lower() in verified else "")
         out = os.path.join(ROOT, "r", o, n)
         os.makedirs(out, exist_ok=True)
@@ -197,6 +264,10 @@ def main():
         os.makedirs(os.path.join(ROOT, "badge", o), exist_ok=True)
         with open(os.path.join(ROOT, "badge", o, n + ".svg"), "w") as f:
             f.write(badge_svg(r, th))
+        os.makedirs(os.path.join(ROOT, "badge", o, n), exist_ok=True)
+        tr = trend.get(r["full_name"])
+        with open(os.path.join(ROOT, "badge", o, n, "trending.svg"), "w") as f:
+            f.write(badge_svg(r, th, ("#%d trending · %s" % tr) if tr else None))
         urls.append((canonical, (r.get("pushed_at") or now.isoformat())[:10]))
 
     # Category pages
@@ -211,8 +282,8 @@ def main():
 <h1 style="color:{color}">Best {key} for Claude</h1>
 <p class="lede">{blurb} {count} repos, ranked by GitHub stars and refreshed every 6 hours. Last update: {updated}.</p>
 <p><a class="btn go" href="{base}">Explore {label} in the galaxy</a></p>
-{picks}<ol class="list ranked">{items}</ol>
-""".format(base=BASE, label=E(label), color=color, key=E(key), blurb=E(blurb), count=len(items), updated=updated,
+{picks}{ctopics}<ol class="list ranked">{items}</ol>
+""".format(ctopics=cat_topics(items, topics),base=BASE, label=E(label), color=color, key=E(key), blurb=E(blurb), count=len(items), updated=updated,
            items="".join(repo_card(x, th, BASE) for x in items[:150]), picks=picks_html(picks.get(key, []), tracked))
         os.makedirs(os.path.join(ROOT, "c", slug), exist_ok=True)
         with open(os.path.join(ROOT, "c", slug, "index.html"), "w") as f:
@@ -232,6 +303,70 @@ def main():
     with open(os.path.join(ROOT, "new", "index.html"), "w") as f:
         f.write(page("New Claude, Claude Code and MCP repos | Star Catcher", "%d Claude, MCP and agent repos created in the last 14 days." % len(fresh), canonical, body))
     urls.append((canonical, now.date().isoformat()))
+
+    # Topic pages
+    for t, cnt in topics.items():
+        items = [r for r in repos if t in (r.get("topics") or [])]
+        nice = t.replace("-", " ")
+        canonical = "%st/%s/" % (BASE, t)
+        related = sorted({x for r in items for x in (r.get("topics") or []) if x in topics and x != t},
+                         key=lambda x: -sum(1 for r in items if x in (r.get("topics") or [])))[:12]
+        body = """
+<nav class="crumbs"><a href="{base}">Galaxy</a> › Topics › {t}</nav>
+<h1>Best {nice} repos for Claude</h1>
+<p class="lede">{n} Claude, Claude Code, MCP and agent repos tagged <b>{t}</b> on GitHub, ranked by stars and refreshed every 6 hours. Last update: {updated}.</p>
+{rel}<ol class="list ranked">{items}</ol>
+""".format(base=BASE, t=E(t), nice=E(nice), n=cnt, updated=updated,
+           rel=('<section><h2>Related topics</h2><ul class="pills">%s</ul></section>' % "".join(topic_link(x) for x in related)) if related else "",
+           items="".join(repo_card(x, th, BASE) for x in items[:150]))
+        os.makedirs(os.path.join(ROOT, "t", t), exist_ok=True)
+        with open(os.path.join(ROOT, "t", t, "index.html"), "w") as f:
+            f.write(page("Best %s repos for Claude (%d, updated %s) | Star Catcher" % (nice, cnt, updated),
+                         "%d %s repos for Claude, Claude Code and MCP, ranked by GitHub stars and updated every 6 hours." % (cnt, nice), canonical, body))
+        urls.append((canonical, now.date().isoformat()))
+
+    # Trending this week
+    hot = sorted([r for r in repos if gain.get(r["full_name"], 0) > 0], key=lambda r: gain[r["full_name"]], reverse=True)[:100]
+    canonical = BASE + "trending/"
+    body = """
+<nav class="crumbs"><a href="{base}">Galaxy</a> › Trending</nav>
+<h1>Trending Claude repos this week</h1>
+<p class="lede">The Claude, Claude Code, MCP and agent repos that gained the most GitHub stars in the last 7 days. Updated every 6 hours. Repo owners: show your rank with the trending badge on your repo's page.</p>
+<ol class="list ranked">{items}</ol>
+""".format(base=BASE, items="".join(repo_card(x, th, BASE).replace("<small>", "<small>+%s★ this week · " % fmt(gain[x["full_name"]]), 1) for x in hot)
+           or "<li>Not enough data yet; check back tomorrow.</li>")
+    os.makedirs(os.path.join(ROOT, "trending"), exist_ok=True)
+    with open(os.path.join(ROOT, "trending", "index.html"), "w") as f:
+        f.write(page("Trending Claude, Claude Code and MCP repos this week | Star Catcher", "The Claude and MCP repos gaining the most GitHub stars this week.", canonical, body))
+    urls.append((canonical, now.date().isoformat()))
+
+    # MCP server install page (the server itself is mcp/server.mjs, served as a static file)
+    canonical = BASE + "mcp/"
+    body = """
+<nav class="crumbs"><a href="{base}">Galaxy</a> › MCP server</nav>
+<h1>Ask Claude about every Claude repo</h1>
+<p class="lede">The Star Catcher MCP server lets Claude search all {n} repos on this site: find a skill or MCP server for a job, see what is trending, read verified picks. It is one small file with no dependencies (Node 18+), and it only reads this site's public data.</p>
+<section><h2>Claude Code</h2><pre><code>curl -fsSL {base}mcp/server.mjs -o ~/.star-catcher-mcp.mjs
+claude mcp add star-catcher -- node ~/.star-catcher-mcp.mjs</code></pre></section>
+<section><h2>Claude Desktop</h2><p>Download <a href="{base}mcp/server.mjs">server.mjs</a>, then add this to <code>claude_desktop_config.json</code>:</p>
+<pre><code>{{"mcpServers": {{"star-catcher": {{"command": "node", "args": ["/path/to/server.mjs"]}}}}}}</code></pre></section>
+<section><h2>Tools</h2><ul class="list">
+<li><b>search_repos</b><p>Find repos by keyword, optionally in one category.</p></li>
+<li><b>trending</b><p>Fastest-growing repos this week.</p></li>
+<li><b>repo_info</b><p>Details for one repo, with its Star Catcher page.</p></li>
+<li><b>verified_picks</b><p>New repos approved by the senior agents.</p></li>
+<li><b>list_topics</b><p>Popular topics and how many repos each has.</p></li>
+</ul></section>
+<p>Try: <i>"Use star-catcher to find an MCP server for Postgres"</i> or <i>"What Claude Code skills are trending this week?"</i></p>
+""".format(base=BASE, n=len(repos))
+    os.makedirs(os.path.join(ROOT, "mcp"), exist_ok=True)
+    with open(os.path.join(ROOT, "mcp", "index.html"), "w") as f:
+        f.write(page("Star Catcher MCP server: let Claude search every Claude and MCP repo", "Install the Star Catcher MCP server so Claude can search %d Claude, MCP and agent repos." % len(repos), canonical, body))
+    urls.append((canonical, now.date().isoformat()))
+    with open(os.path.join(ROOT, "data", "trending.json"), "w") as f:
+        json.dump([{"full_name": r["full_name"], "gain": gain[r["full_name"]], "category": r.get("category")} for r in hot], f, separators=(",", ":"))
+    with open(os.path.join(ROOT, "data", "topics.json"), "w") as f:
+        json.dump(topics, f, separators=(",", ":"))
 
     # Advertise page: live numbers sponsors ask for, and one way to get in touch (a GitHub issue form).
     repo_slug = os.environ.get("GITHUB_REPOSITORY", "pahadiji/star-catcher")

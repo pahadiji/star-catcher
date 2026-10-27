@@ -1,0 +1,14 @@
+{
+  "name": "star-catcher-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that lets Claude search every Claude, Claude Code, MCP server, skill and agent repo on GitHub (data from Star Catcher).",
+  "type": "module",
+  "bin": { "star-catcher-mcp": "server.mjs" },
+  "files": ["server.mjs", "README.md"],
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "model-context-protocol", "claude", "claude-code", "mcp-server", "skills"],
+  "license": "UNLICENSED",
+  "repository": { "type": "git", "url": "git+https://github.com/pahadiji/star-catcher.git", "directory": "mcp" },
+  "homepage": "https://pahadiji.github.io/star-catcher/mcp/",
+  "mcpName": "io.github.pahadiji/star-catcher"
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.pahadiji/star-catcher",
+  "description": "Search every Claude, Claude Code, MCP server, skill and agent repo on GitHub.",
+  "repository": { "url": "https://github.com/pahadiji/star-catcher", "source": "github", "subfolder": "mcp" },
+  "version": "1.0.0",
+  "packages": [{ "registryType": "npm", "identifier": "star-catcher-mcp", "version": "1.0.0", "transport": { "type": "stdio" } }]
+}
