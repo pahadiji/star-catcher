@@ -1,0 +1,29 @@
+name: Growth leads
+
+# Every morning: collects Hacker News / Reddit threads from the last 48 hours where
+# people ask about Claude Code tools, MCP servers, skills or agent frameworks, matches
+# each to a Star Catcher page, lists fast-growing repos whose owners may reshare, and
+# opens one "Growth leads — <date>" issue. Read-only on other sites: it never posts.
+on:
+  schedule:
+    - cron: "11 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  leads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect today's leads
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/growth_leads.py

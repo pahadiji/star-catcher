@@ -6,6 +6,7 @@ Static site on GitHub Pages. No build step, no server, no framework.
 - `data/repos.json`: written only by `scripts/fetch_repos.py` via the "Update repo data" workflow. Never edit it by hand.
 - `scripts/health_check.py`: 12-hour health check; `--no-issue` prints the report without touching issues.
 - `scripts/supervisor.py`: daily status board.
+- `scripts/growth_leads.py`: daily growth-leads issue (read-only on HN/Reddit); `--no-issue` prints it.
 - Tests: `npm install && npm test` (plays a full game headlessly) and `python -m py_compile scripts/*.py`.
 
 Rules for changes:
