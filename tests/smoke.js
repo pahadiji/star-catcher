@@ -28,6 +28,8 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   check("no boot errors", errors.length === 0);
   if (errors.length) console.log(errors);
   check("data note shows stars", /stars charted/.test($("data-note").textContent));
+  check("universe has topic constellations", /[1-9]\d* constellations/.test($("data-note").textContent));
+  console.log("  " + $("data-note").textContent);
   check("idle panel rendered", /Every repo is a star/.test($("panel").textContent));
   // search and select
   const s = $("search"); s.value = "claude-code"; s.dispatchEvent(new w.Event("input"));

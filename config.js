@@ -56,7 +56,11 @@ window.SITE_CONFIG = {
   // ---------- Game tuning ----------
   game: {
     startDevices: { cube: 10, orb: 3, brace: 1, cap: 0 },
-    maxStarsOnMap: 700,       // biggest repos + every new one
+    maxStarsOnMap: 700,       // biggest repos + every new one (starting size of the universe)
+    universeBorn: "2026-10-26", // the universe grows from this day...
+    growPerDay: 40,           // ...by this many extra stars a day...
+    maxStarsCeiling: 2000,    // ...up to this many (keeps the canvas fast on phones)
+    topicMin: 6,              // a topic shared by this many stars in one region becomes a named constellation
     freeRefillHours: 6        // free +3 cubes every N hours when no rewarded ad is available
   }
 };
