@@ -15,6 +15,7 @@ Flags: --dry-run prints decisions without writing.
 """
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone
 
@@ -28,10 +29,22 @@ def has(c, *kinds):
     return any(k in c.get("kinds", []) for k in kinds)
 
 
+# Seniors never vouch for these, even when the repo is listed: cheats, cracking, evasion and abuse tooling
+# (keeps "Verified" trustworthy and the site safe for sponsors and ad networks).
+NOT_VERIFIABLE = ("hack", "cheat", "crack", "exploit", "bypass", "jailbreak", "aimbot", "keylogger", "stealer", "phishing",
+                  "spam", "bot farm", "account farm", "undetect", "evade", "evasion", "ddos", "malware", "ransom",
+                  "anti-ban", "antiban", "avoid ban", "防封", "封号")
+MAX_SKILLS = 300   # thousands of generated SKILL.md files look like a skill farm, not a curated pack
+
+
 def basics(c):
     ch = c.get("checks", {})
-    return ch.get("readme") and ch.get("licence") and ch.get("has_files") and not any(
-        v is False for k, v in ch.items() if k.endswith("_manifest"))
+    text = " ".join([c.get("full_name", ""), c.get("description", ""), " ".join(c.get("topics", []))]).lower()
+    many = [int(n) for n in re.findall(r"^(\d+) skills? ", " ".join(c.get("notes", [])))]
+    return (ch.get("readme") and ch.get("licence") and ch.get("has_files")
+            and not any(v is False for k, v in ch.items() if k.endswith("_manifest"))
+            and not any(w in text for w in NOT_VERIFIABLE)
+            and not (many and many[0] > MAX_SKILLS))
 
 
 # category -> (senior name, rule, minimum score, what the rule means)
