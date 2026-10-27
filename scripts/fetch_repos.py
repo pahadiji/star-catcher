@@ -14,6 +14,9 @@ from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(ROOT, "data", "repos.json")
+# first_seen of every repo ever stored, so a repo that drops below the 3000 cap and
+# comes back later is not counted as "new" again (kept apart to keep repos.json small).
+SEEN_FILE = os.path.join(ROOT, "data", "seen.json")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 MAX_REPOS = 3000          # cap on stored repos
 PAGES_PER_QUERY = 3       # 100 results per page
@@ -168,9 +171,22 @@ def main():
                     break
         print(f"{q!r}: total unique so far {len(found)}")
 
+    try:
+        with open(SEEN_FILE) as f:
+            seen = json.load(f)
+    except (OSError, ValueError):
+        seen = {}
+    for rid, r in existing.items():
+        seen.setdefault(str(rid), r.get("first_seen"))
+
     new_ids, updated_ids = [], []
     for rid, r in found.items():
         old = existing.get(rid)
+        if old is None and seen.get(str(rid)):
+            # Seen in an earlier scan, pruned by the cap, found again: not new.
+            r["first_seen"] = seen[str(rid)]
+            existing[rid] = r
+            continue
         if old is None:
             # On the very first import every repo would look "new"; use its creation
             # date instead so only repos found by later scans get the NEW tag.
@@ -198,6 +214,10 @@ def main():
     os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
     with open(DATA_FILE, "w") as f:
         json.dump(out, f, separators=(",", ":"))
+    for r in repos:
+        seen.setdefault(str(r["id"]), r.get("first_seen"))
+    with open(SEEN_FILE, "w") as f:
+        json.dump(seen, f, separators=(",", ":"))
     print(f"Saved {len(repos)} repos | new: {len(new_ids)} | updated: {len(updated_ids)}")
 
 
