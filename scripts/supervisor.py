@@ -27,6 +27,8 @@ AGENTS = {
     "health.yml": ("Health check (every 12h)", 14),
     "test.yml": ("Tests (on every push)", None),
     "debug-agent.yml": ("Debug agent (on health/bug issues)", None),
+    "growth-leads.yml": ("Growth leads (daily)", 26),
+    "promo.yml": ("Weekly promo kit (Mondays)", 8 * 24),
 }
 
 

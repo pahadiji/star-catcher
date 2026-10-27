@@ -40,6 +40,7 @@ Everything runs inside GitHub, so nothing depends on your computer being on.
 | **Health check** (`health.yml`) | Every 12 hours | Checks the data is fresh and real, the site and its data load, and the updater's last run passed. Opens a `health` issue on failure and closes it when things recover. | Free |
 | **Debug agent** (`debug-agent.yml`) | When a `health` or `bug` issue opens, or someone comments `@claude` | Claude reproduces the problem, makes the smallest fix, runs the tests and opens a pull request for you to merge. It never pushes to `main`. | Claude API or subscription usage |
 | **Supervisor** (`supervisor.yml`) | Daily | Checks every other agent is running and succeeding, flags stalled or repeatedly failing ones and stuck health issues, and keeps one pinned **Status board** issue up to date. | Free |
+| **Growth leads** (`growth-leads.yml`) | Daily | Collects Hacker News and Reddit threads from the last 48 hours where people ask about Claude tools, MCP servers, skills or agent frameworks, matches each to the best Star Catcher page, lists fast-growing repos whose owners may reshare, and opens one `Growth leads — <date>` issue. Read-only on other sites: it never posts. | Free |
 | **Tests** (`test.yml`) | Every push and pull request | Syntax checks plus a headless game: search, inspect, catch, escape, codex, explorer card. | Free |
 
 ### Turning on the debug agent
@@ -69,7 +70,7 @@ The site is built so ads never interrupt a throw. Turn each source on in `config
 
 | Source | Where it shows | What you need | Notes |
 |---|---|---|---|
-| **Sponsored star** | A golden "Sponsored" star in the centre of the galaxy, plus a sponsor card in the side panel | Nothing — sell it directly | Highest earner for a niche dev site. Pitch AI dev-tool companies once you have traffic numbers. Clearly labelled, links use `rel="sponsored"`. |
+| **Sponsored star** | A golden "Sponsored" star in the centre of the galaxy, plus a sponsor card in the side panel | Nothing — sell it directly. The `advertise/` page shows live numbers, and requests arrive through the "Sponsor / advertise" issue form | Highest earner for a niche dev site. Pitch AI dev-tool companies once you have traffic numbers. Clearly labelled, links use `rel="sponsored"`. |
 | **Rewarded ads** (Google H5 Games Ads) | "Watch a short ad for +3 Commit Cubes" when a player runs low | AdSense account approved for H5 Games Ads | Opt-in only. The game shows the offer only when Google says an ad is available. |
 | **Interstitials** (H5 Games Ads, `next`) | After closing a catch card, every 3rd catch (`interstitialEvery`) | Same as above | Google's rules forbid full-screen ads during continuous gameplay or right after another full-screen ad; this placement is a natural break. |
 | **Display ad** | One unit in the sidebar, one in the footer | AdSense, **Carbon Ads** or **EthicalAds** | Carbon and EthicalAds pay better for developer audiences. EthicalAds asks for about 50,000 pageviews/month. |

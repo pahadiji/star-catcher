@@ -33,6 +33,10 @@ QUERIES = [
     "claude agent sdk in:name,description",
     "claude subagents in:name,description",
     "claude plugin in:name,description",
+    "topic:mcp-server claude",
+    "topic:claude-skills",
+    "topic:agent-skills",
+    "topic:claude-code-plugin",
 ]
 
 CATEGORIES = [

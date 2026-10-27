@@ -35,7 +35,7 @@ window.SITE_CONFIG = {
   // Set to null to hide. Shown as a golden star in the centre of the galaxy.
   sponsor: {
     name: "Your tool here",
-    url: "mailto:you@example.com?subject=Sponsor%20Star%20Catcher",
+    url: "https://github.com/pahadiji/star-catcher/issues/new?template=sponsor.yml",
     description: "Put your AI developer tool in the centre of the galaxy. Every explorer sees it.",
     cta: "Become the sponsored star"
   },
@@ -50,7 +50,7 @@ window.SITE_CONFIG = {
     newsletter: "",           // e.g. your Beehiiv/Substack signup URL; empty hides the box
     support: "",              // Buy Me a Coffee / GitHub Sponsors URL; empty hides the button
     sponsorEmail: "you@example.com",
-    source: "https://github.com/YOURNAME/star-catcher"
+    source: "https://github.com/pahadiji/star-catcher"
   },
 
   // ---------- Game tuning ----------

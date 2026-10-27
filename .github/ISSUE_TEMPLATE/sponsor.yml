@@ -1,0 +1,43 @@
+name: Sponsor / advertise
+description: Ask about the sponsored star or a mention in the weekly roundup.
+title: "Sponsor request: "
+labels: ["sponsor"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in sponsoring Star Catcher. Placements are clearly labelled as sponsored and never change a repo's ranking.
+        This issue is public. Do not put private details here; leave a way to reach you and we will follow up privately.
+  - type: input
+    id: product
+    attributes:
+      label: Product name and URL
+      placeholder: "Acme MCP Gateway — https://acme.dev"
+    validations:
+      required: true
+  - type: dropdown
+    id: placement
+    attributes:
+      label: Placement
+      options:
+        - Sponsored star (centre of the galaxy + sponsor card)
+        - Mention in the weekly new-repos roundup
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: dates
+    attributes:
+      label: Preferred start date and length
+      placeholder: "From 1 Dec, 4 weeks"
+  - type: input
+    id: contact
+    attributes:
+      label: How should we reach you?
+      description: A public handle (X, LinkedIn, GitHub) or a contact page. Avoid posting a private email here.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else

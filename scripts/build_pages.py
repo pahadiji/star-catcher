@@ -6,6 +6,7 @@ Turns data/repos.json into pages search engines can index and people can share:
   r/<owner>/<repo>/          one page per repo (title, description, stats, related repos, badge)
   c/<category>/              "Best <category> for Claude" top lists
   new/                       repos discovered this week
+  advertise/                 sponsor page with live audience numbers (links to the sponsor request form)
   badge/<owner>/<repo>.svg   a README badge repo owners can add (backlinks)
   sitemap.xml, robots.txt, feed.xml (RSS of new repos)
 
@@ -91,7 +92,7 @@ def page(title, desc, canonical, body, extra_head=""):
 <main>
 {b}
 </main>
-<footer>Data from the GitHub API, refreshed every 6 hours. Not affiliated with Anthropic or GitHub. <a href="{base}feed.xml">RSS</a></footer>
+<footer>Data from the GitHub API, refreshed every 6 hours. Not affiliated with Anthropic or GitHub. <a href="{base}feed.xml">RSS</a> · <a href="{base}advertise/">Advertise</a></footer>
 </body>
 </html>
 """.format(t=E(title), d=E(desc), c=E(canonical), b=body, x=extra_head, base=BASE)
@@ -207,6 +208,31 @@ def main():
     os.makedirs(os.path.join(ROOT, "new"), exist_ok=True)
     with open(os.path.join(ROOT, "new", "index.html"), "w") as f:
         f.write(page("New Claude, Claude Code and MCP repos | Star Catcher", "%d Claude, MCP and agent repos created in the last 14 days." % len(fresh), canonical, body))
+    urls.append((canonical, now.date().isoformat()))
+
+    # Advertise page: live numbers sponsors ask for, and one way to get in touch (a GitHub issue form).
+    repo_slug = os.environ.get("GITHUB_REPOSITORY", "pahadiji/star-catcher")
+    form = "https://github.com/%s/issues/new?template=sponsor.yml" % repo_slug
+    total_stars = sum(r.get("stars") or 0 for r in repos)
+    cat_rows = "".join("<li><a href=\"{b}c/{s}/\"><b>{k}</b></a> <span>{n} repos</span></li>".format(b=BASE, s=c[1], k=E(c[0]), n=len(by_cat.get(c[0], [])))
+                       for c in CATS if by_cat.get(c[0]))
+    body = """
+<nav class="crumbs"><a href="{base}">Galaxy</a> › Advertise</nav>
+<h1>Put your AI developer tool in front of Claude builders</h1>
+<p class="lede">Star Catcher maps every Claude, Claude Code, MCP, skill and agent repo on GitHub. The people who browse it are developers choosing tools for Claude right now.</p>
+<dl class="stats"><div><dt>Repos tracked</dt><dd>{total}</dd></div><div><dt>Combined GitHub stars</dt><dd>★ {stars}</dd></div><div><dt>New in 14 days</dt><dd>{fresh}</dd></div><div><dt>Refresh</dt><dd>every 6 hours</dd></div></dl>
+<section><h2>Placements</h2><ul class="list">
+<li><b>Sponsored star</b><p>A golden star in the centre of the galaxy plus a sponsor card in the side panel. One sponsor at a time, clearly labelled, links use rel="sponsored".</p></li>
+<li><b>Weekly new-repos roundup</b><p>A labelled mention in the weekly roundup of new Claude repos that goes out on social media.</p></li>
+</ul></section>
+<section><h2>Audience by category</h2><ul class="list">{cats}</ul></section>
+<p><a class="btn go" href="{form}" rel="noopener">Request a placement</a></p>
+<p><small>Requests are handled through a short form on GitHub. We only accept tools that are useful to developers, and we never sell a ranking.</small></p>
+""".format(base=BASE, total=len(repos), stars=("%.1fM" % (total_stars / 1e6)) if total_stars >= 1e6 else fmt(total_stars), fresh=len(fresh), cats=cat_rows, form=E(form))
+    canonical = BASE + "advertise/"
+    os.makedirs(os.path.join(ROOT, "advertise"), exist_ok=True)
+    with open(os.path.join(ROOT, "advertise", "index.html"), "w") as f:
+        f.write(page("Advertise on Star Catcher: reach developers building with Claude", "Sponsor placements on Star Catcher, the map of %d Claude, MCP and agent repos." % len(repos), canonical, body))
     urls.append((canonical, now.date().isoformat()))
 
     items = "".join(
