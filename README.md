@@ -32,6 +32,27 @@ CLAUDE.md                      rules the debug agent follows
 
 ## Automation and agents
 
+### The agent team
+
+```
+                              Overseer (Claude, twice a day) ── Supervisor (status board, daily)
+                                             │
+     ┌───────────────────────┬───────────────┼─────────────────────┬──────────────────────────┐
+  Data team               Talent team                       Growth team                   Quality team
+  Data updater (6h)       Skills scout ─┐                    Growth leads (daily, HN/Reddit) Tests (every push)
+  Page builder (6h)       Plugins scout ├─ demo ─▶ Seniors:  Growth scout (Claude, daily:   Health check (12h)
+                          Repos scout  ─┘   MCP · Skills &     drafts replies, Monday       Debug agent (on issues)
+                                            plugins · Agents ·  sponsor prospects)           Traffic agent (daily:
+                                            Dev tools ·        Promo kit (Mondays)            visitors, mentions,
+                                            Guides · Apps      Posting: Bluesky/Mastodon      badges, diagnosis)
+                                                               (each scan), dev.to (weekly)
+```
+
+- **Scouts** (`scripts/scouts.py`, `talent.yml`, daily) search GitHub for new skills, plugins and repos and demo each one by static inspection: the file list, the manifest that proves what it is (`SKILL.md` frontmatter, `.claude-plugin/plugin.json`, an MCP or Claude Agent SDK dependency), README, licence, activity and stars. They never run third-party code.
+- **Senior agents** (`scripts/seniors.py`), one per category, approve up to 6 **Verified picks** each with written reasons and re-review them daily. Picks appear at the top of each category page and as a "✓ Verified" pill on repo pages.
+- **Traffic agent** (`scripts/traffic_report.py`, `traffic.yml`, daily) keeps a **Growth report** issue: visitors, referrers, mentions on HN/Reddit, README badges, page checks, 14-day history and why the site is or isn't being found.
+- **Posting agents** publish only where automated, clearly labelled posting is allowed and only with your keys: Bluesky / Mastodon (`BLUESKY_HANDLE` + `BLUESKY_APP_PASSWORD`, or `MASTODON_URL` + `MASTODON_TOKEN`) and a weekly dev.to roundup (`DEVTO_API_KEY`). Replies on Reddit, Hacker News and X stay human: the growth scout drafts them, you post them.
+
 Everything runs inside GitHub, so nothing depends on your computer being on.
 
 | Agent | When | What it does | Cost |
