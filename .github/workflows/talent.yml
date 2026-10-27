@@ -1,0 +1,71 @@
+name: Talent scouts and senior agents
+
+# Daily: three scouts (skills, plugins, repos) find new Claude work on GitHub and
+# demo it by static inspection (manifest, README, licence, activity; no code is
+# run). One senior agent per category approves "Verified picks", which the site
+# shows on category and repo pages. On pull requests that change these scripts,
+# a small dry run checks them without writing anything.
+on:
+  schedule:
+    - cron: "37 5 * * *"
+  workflow_dispatch:
+  pull_request:
+    paths: ["scripts/scouts.py", "scripts/seniors.py", ".github/workflows/talent.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  dry-run:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scouts (3 repos each, no writes)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCOUT_LIMIT: "3"
+        run: python scripts/scouts.py --dry-run
+      - name: Seniors (no writes)
+        run: python scripts/seniors.py --dry-run
+
+  scout-and-review:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    concurrency:
+      group: update-data
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scouts demo new skills, plugins and repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/scouts.py
+      - name: Senior agents review their categories
+        run: python scripts/seniors.py
+      - name: Rebuild pages with the verified picks
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/build_pages.py
+      - name: Commit
+        run: |
+          git config user.name "star-catcher-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/scouted.json data/picks.json r c new advertise badge sitemap.xml robots.txt feed.xml
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "talent: scouts and senior agents $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1

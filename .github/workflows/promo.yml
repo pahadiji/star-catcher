@@ -25,3 +25,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: python scripts/promo_kit.py
+      - name: Publish the weekly roundup on dev.to (if DEVTO_API_KEY is set)
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/devto_post.py || true

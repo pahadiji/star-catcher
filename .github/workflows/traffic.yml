@@ -1,0 +1,28 @@
+name: Traffic report
+
+# Daily: the traffic & testing agent checks whether people are finding the site
+# (visitor counter, GitHub referrers, HN/Reddit mentions, README badges, page checks)
+# and keeps one "Growth report" issue up to date with history and a diagnosis.
+on:
+  schedule:
+    - cron: "23 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Measure and report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/traffic_report.py

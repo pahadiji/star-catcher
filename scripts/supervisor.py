@@ -29,6 +29,8 @@ AGENTS = {
     "debug-agent.yml": ("Debug agent (on health/bug issues)", None),
     "growth-leads.yml": ("Growth leads (daily)", 26),
     "promo.yml": ("Weekly promo kit (Mondays)", 8 * 24),
+    "talent.yml": ("Scouts + senior agents (daily)", 26),
+    "traffic.yml": ("Traffic report (daily)", 26),
 }
 
 

@@ -104,6 +104,20 @@ def repo_card(r, th, prefix):
         s=fmt(r.get("stars")), rk=rank(r.get("stars") or 0, th), lang=E(r.get("language") or "—"))
 
 
+def picks_html(items, tracked):
+    """'Verified picks' block: new repos the scouts demoed and this category's senior agent approved."""
+    if not items:
+        return ""
+    li = []
+    for p in items:
+        href = "%sr/%s/%s/" % (BASE, p["owner"], p["name"]) if p["full_name"].lower() in tracked else p["url"]
+        li.append('<li><a href="{h}"><b>{n}</b> <span>by {o}</span></a><p>{d}</p><small>✓ {why}</small></li>'.format(
+            h=E(href), n=E(p["name"]), o=E(p["owner"]), d=E((p.get("description") or "")[:160]), why=E(p["reason"][:180])))
+    return ('<section><h2>✓ Verified picks</h2><p class="lede">New repos our scouts tried and the %s approved. '
+            'Checked daily: the manifest is valid, the README is real, it has a licence and it is active.</p><ul class="list">%s</ul></section>\n'
+            % (E(items[0]["senior"]), "".join(li)))
+
+
 def badge_svg(r, th):
     label, value = "star catcher", "%s · %s" % (rank(r.get("stars") or 0, th), CAT.get(r.get("category"), CATS[-1])[2])
     lw, vw = 82, 10 + 7 * len(value)
@@ -124,6 +138,14 @@ def main():
     if not repos:
         print("no repos; nothing to build")
         return
+    # Verified picks from the senior agents (scripts/seniors.py), if they have run.
+    try:
+        with open(os.path.join(ROOT, "data", "picks.json")) as f:
+            picks = json.load(f).get("picks", {})
+    except (OSError, ValueError):
+        picks = {}
+    verified = {p["full_name"].lower(): p for items in picks.values() for p in items}
+    tracked = {r["full_name"].lower() for r in repos}
     at = lambda p: repos[min(len(repos) - 1, int(len(repos) * p))].get("stars") or 0
     th = {"L": max(10, at(0.02)), "E": max(5, at(0.10)), "R": max(2, at(0.35))}
     now = datetime.now(timezone.utc)
@@ -156,7 +178,7 @@ def main():
 <article class="repo" style="--c:{color}">
   <div class="head"><span class="orb" aria-hidden="true"></span><div><h1>{n}</h1><p class="by">by {o}</p></div></div>
   <p class="desc">{desc}</p>
-  <ul class="pills"><li class="type">{label}</li><li>{rk}</li><li>{stg}</li>{topics}</ul>
+  <ul class="pills"><li class="type">{label}</li>{ver}<li>{rk}</li><li>{stg}</li>{topics}</ul>
   <dl class="stats"><div><dt>Stars</dt><dd>★ {stars}</dd></div><div><dt>Forks</dt><dd>{forks}</dd></div><div><dt>Language</dt><dd>{lang}</dd></div><div><dt>Last push</dt><dd>{push}</dd></div></dl>
   <div class="actions"><a class="btn go" href="{base}?star={o}/{n}">Find it in the galaxy</a><a class="btn" href="{url}" rel="noopener">Open on GitHub</a></div>
   <pre class="install"><code>git clone {url}.git</code></pre>
@@ -166,7 +188,8 @@ def main():
 """.format(base=BASE, slug=cat[1], label=E(cat[2]), n=E(n), o=E(o), color=cat[3], desc=E(desc), rk=rk, stg=stage(r.get("stars") or 0),
            topics="".join("<li>%s</li>" % E(t) for t in (r.get("topics") or [])[:5]), stars=fmt(r.get("stars")), forks=fmt(r.get("forks")),
            lang=E(r.get("language") or "—"), push=E((r.get("pushed_at") or "")[:10]), url=E(r.get("url") or "#"),
-           related="".join(repo_card(x, th, BASE) for x in related), badge=E(badge_md))
+           related="".join(repo_card(x, th, BASE) for x in related), badge=E(badge_md),
+           ver=('<li title="%s">✓ Verified by the %s</li>' % (E(verified[r["full_name"].lower()]["reason"]), E(verified[r["full_name"].lower()]["senior"]))) if r["full_name"].lower() in verified else "")
         out = os.path.join(ROOT, "r", o, n)
         os.makedirs(out, exist_ok=True)
         with open(os.path.join(out, "index.html"), "w") as f:
@@ -188,9 +211,9 @@ def main():
 <h1 style="color:{color}">Best {key} for Claude</h1>
 <p class="lede">{blurb} {count} repos, ranked by GitHub stars and refreshed every 6 hours. Last update: {updated}.</p>
 <p><a class="btn go" href="{base}">Explore {label} in the galaxy</a></p>
-<ol class="list ranked">{items}</ol>
+{picks}<ol class="list ranked">{items}</ol>
 """.format(base=BASE, label=E(label), color=color, key=E(key), blurb=E(blurb), count=len(items), updated=updated,
-           items="".join(repo_card(x, th, BASE) for x in items[:150]))
+           items="".join(repo_card(x, th, BASE) for x in items[:150]), picks=picks_html(picks.get(key, []), tracked))
         os.makedirs(os.path.join(ROOT, "c", slug), exist_ok=True)
         with open(os.path.join(ROOT, "c", slug, "index.html"), "w") as f:
             f.write(page(title, "%s %d repos ranked by stars, updated every 6 hours." % (blurb, len(items)), canonical, body))
