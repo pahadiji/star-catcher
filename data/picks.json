@@ -1,14 +1,26 @@
 {
- "updated": "2026-10-27T09:29:28.729159+00:00",
+ "updated": "2026-10-28T06:17:17.358250+00:00",
  "picks": {
   "MCP Servers": [
+   {
+    "full_name": "kajisho5/ffmpeg-skill",
+    "owner": "kajisho5",
+    "name": "ffmpeg-skill",
+    "url": "https://github.com/kajisho5/ffmpeg-skill",
+    "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+    "stars": 3124,
+    "score": 100,
+    "senior": "MCP senior",
+    "reason": "ffmpeg-skill depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/build-artifacts/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-28T06:17:17.358250+00:00"
+   },
    {
     "full_name": "nano-muse/nanoMuse",
     "owner": "nano-muse",
     "name": "nanoMuse",
     "url": "https://github.com/nano-muse/nanoMuse",
     "description": "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo. On Android, iPhone and iPad, Windows / macOS / Linux and in the browser; you",
-    "stars": 2685,
+    "stars": 2753,
     "score": 100,
     "senior": "MCP senior",
     "reason": "nanoMuse depends on an MCP SDK; 11 skills with a valid SKILL.md (e.g. nanomuse/skills/builtin/amap/SKILL.md)",
@@ -25,6 +37,18 @@
     "senior": "MCP senior",
     "reason": "new-term-radar depends on an MCP SDK; 3 skills with a valid SKILL.md (e.g. skills/ai-listening/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "INSANE0777/Awwwards-mcp",
+    "owner": "INSANE0777",
+    "name": "Awwwards-mcp",
+    "url": "https://github.com/INSANE0777/Awwwards-mcp",
+    "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
+    "stars": 362,
+    "score": 95,
+    "senior": "MCP senior",
+    "reason": "Awwwards-mcp depends on an MCP SDK; 7 skills with a valid SKILL.md (e.g. skills/awwwards-doctor/SKILL.md)",
+    "approved_at": "2026-10-28T06:17:17.358250+00:00"
    },
    {
     "full_name": "HeyPuter/builder",
@@ -49,30 +73,6 @@
     "senior": "MCP senior",
     "reason": "smlibpy depends on an MCP SDK; 2 skills with a valid SKILL.md (e.g. plugins/smlibpy/skills/smlibpy/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
-    "full_name": "ThinkFlowLab/system1-agents",
-    "owner": "ThinkFlowLab",
-    "name": "system1-agents",
-    "url": "https://github.com/ThinkFlowLab/system1-agents",
-    "description": "System 1 decision models (Jev, Laya, Cua-S1) as brain for agents: Browser use, computer use, games and robotics",
-    "stars": 177,
-    "score": 93,
-    "senior": "MCP senior",
-    "reason": "system1-agents depends on an MCP SDK; 5 skills with a valid SKILL.md (e.g. .agents/skills/add-agent-recipe/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
-    "full_name": "Avinash-jetwani/jevmem",
-    "owner": "Avinash-jetwani",
-    "name": "jevmem",
-    "url": "https://github.com/Avinash-jetwani/jevmem",
-    "description": "jevmem saves the decisions, rules and failed approaches from your Claude Code chats to JEVMEM.md in your repo, and brings the relevant ones back next session.",
-    "stars": 133,
-    "score": 92,
-    "senior": "MCP senior",
-    "reason": "jevmem depends on an MCP SDK; valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T09:29:28.729159+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,10 +82,10 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9033,
+    "stars": 9099,
     "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 36 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
+    "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
@@ -105,11 +105,11 @@
     "owner": "google",
     "name": "elephant-goldfish-model",
     "url": "https://github.com/google/elephant-goldfish-model",
-    "description": "An open-source method and skill set created at Google for spec-driven development with LLMs",
-    "stars": 2041,
-    "score": 99,
+    "description": "Open-source skills for designing and reviewing software with AI agents",
+    "stars": 3617,
+    "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm_bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
@@ -118,7 +118,7 @@
     "name": "AISafetyHot",
     "url": "https://github.com/wuyoscar/AISafetyHot",
     "description": "Safety News & Research Monitor. https://aisafetyhot.com",
-    "stars": 1929,
+    "stars": 1948,
     "score": 99,
     "senior": "Skills & plugins senior",
     "reason": "AISafetyHot ships a valid SKILL.md or plugin manifest; 4 skills with a valid SKILL.md (e.g. skills/aisafety-brief/SKILL.md); valid .claude-plugin/marketplace.json",
