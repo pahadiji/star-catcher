@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T06:17:17.358250+00:00",
+ "updated": "2026-10-29T06:18:15.914700+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -8,7 +8,7 @@
     "name": "ffmpeg-skill",
     "url": "https://github.com/kajisho5/ffmpeg-skill",
     "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-    "stars": 3124,
+    "stars": 3624,
     "score": 100,
     "senior": "MCP senior",
     "reason": "ffmpeg-skill depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/build-artifacts/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -39,6 +39,18 @@
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
+    "full_name": "dominikmartn/harp",
+    "owner": "dominikmartn",
+    "name": "harp",
+    "url": "https://github.com/dominikmartn/harp",
+    "description": "Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.",
+    "stars": 685,
+    "score": 97,
+    "senior": "MCP senior",
+    "reason": "harp depends on an MCP SDK; 53 skills with a valid SKILL.md (e.g. .agents/skills/add-feature-flag/SKILL.md)",
+    "approved_at": "2026-10-29T06:18:15.914700+00:00"
+   },
+   {
     "full_name": "INSANE0777/Awwwards-mcp",
     "owner": "INSANE0777",
     "name": "Awwwards-mcp",
@@ -61,28 +73,28 @@
     "senior": "MCP senior",
     "reason": "builder depends on an MCP SDK",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
-    "full_name": "awv-informatik/smlibpy",
-    "owner": "awv-informatik",
-    "name": "smlibpy",
-    "url": "https://github.com/awv-informatik/smlibpy",
-    "description": "",
-    "stars": 205,
-    "score": 93,
-    "senior": "MCP senior",
-    "reason": "smlibpy depends on an MCP SDK; 2 skills with a valid SKILL.md (e.g. plugins/smlibpy/skills/smlibpy/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    }
   ],
   "Skills & Plugins": [
+   {
+    "full_name": "lemomo-ai/lemo-opuscar",
+    "owner": "lemomo-ai",
+    "name": "lemo-opuscar",
+    "url": "https://github.com/lemomo-ai/lemo-opuscar",
+    "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a66 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
+    "stars": 9174,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-29T06:18:15.914700+00:00"
+   },
    {
     "full_name": "rehan-remade/universal-modder",
     "owner": "rehan-remade",
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9099,
+    "stars": 9167,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -106,11 +118,23 @@
     "name": "elephant-goldfish-model",
     "url": "https://github.com/google/elephant-goldfish-model",
     "description": "Open-source skills for designing and reviewing software with AI agents",
-    "stars": 3617,
+    "stars": 5030,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "oil-oil/oil-ui",
+    "owner": "oil-oil",
+    "name": "oil-ui",
+    "url": "https://github.com/oil-oil/oil-ui",
+    "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. \u7ed9 AI Agent \u7528\u7684 UI \u8bbe\u8ba1 Skill\u3002",
+    "stars": 2475,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "oil-ui ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. SKILL.md)",
+    "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
     "full_name": "wuyoscar/AISafetyHot",
@@ -123,30 +147,6 @@
     "senior": "Skills & plugins senior",
     "reason": "AISafetyHot ships a valid SKILL.md or plugin manifest; 4 skills with a valid SKILL.md (e.g. skills/aisafety-brief/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
-    "full_name": "timoncool/YuE2-Studio",
-    "owner": "timoncool",
-    "name": "YuE2-Studio",
-    "url": "https://github.com/timoncool/YuE2-Studio",
-    "description": "Local AI song generator with an editable score \u2014 YuE2 on your GPU: full songs with vocals, sheet music, covers, exact replay. Native Windows app, no Python, installer with auto-update.",
-    "stars": 1394,
-    "score": 98,
-    "senior": "Skills & plugins senior",
-    "reason": "YuE2-Studio ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. docs/mcp-skill.md)",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
-    "full_name": "alexgreensh/anidoodle",
-    "owner": "alexgreensh",
-    "name": "anidoodle",
-    "url": "https://github.com/alexgreensh/anidoodle",
-    "description": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
-    "stars": 1126,
-    "score": 98,
-    "senior": "Skills & plugins senior",
-    "reason": "anidoodle ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugins/anidoodle/skills/anidoodle/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    }
   ],
   "Agents & SDK": [
@@ -156,11 +156,23 @@
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 77,
+    "stars": 79,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "RobbsLuo/Coding2API",
+    "owner": "RobbsLuo",
+    "name": "Coding2API",
+    "url": "https://github.com/RobbsLuo/Coding2API",
+    "description": "\u628a CodeBuddy\uff08\u56fd\u5185\u7ad9 + \u56fd\u9645\u7248\uff09\u3001TRAE SOLO\u3001OpenCode Zen\u3001Kilo Gateway\u3001Qoder\u3001CodeArts\u3001OfficeAce \u516b\u4e2a\u4e0a\u6e38\u6e20\u9053\u5c01\u88c5\u4e3a OpenAI / Responses / Anthropic \u517c\u5bb9 API\uff1a\u516c\u5171\u51ed\u8bc1\u6c60\u3001\u5065\u5eb7\u5ea6\u8c03\u5ea6\u4e0e\u4f1a\u8bdd\u7c98\u6027\u3001\u6a21\u578b\u5217\u8868\u6309\u6e20\u9053\u51ed\u8bc1\u52a0\u8f7d\u3001\u989d\u5ea6\u63a2\u6d4b\u4e0e\u6bcf\u65e5\u7b7e\u5230\u3001\u6210\u957f\u4e2d\u5fc3\u81ea\u52a8\u5316\u3001\u6309\u4eba\u7528\u91cf\u7edf\u8ba1\u3002\u9006\u5411\u63a5\u53e3\uff0c\u4ec5\u4f9b\u5b66\u4e60\u7814\u7a76\u3002",
+    "stars": 29,
+    "score": 88,
+    "senior": "Agents senior",
+    "reason": "Coding2API is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
     "full_name": "kayraucklnc/beluga",
@@ -168,7 +180,7 @@
     "name": "beluga",
     "url": "https://github.com/kayraucklnc/beluga",
     "description": "Beluga: every project and the Claude working in each, with your friends and their Claudes. A native Mac app and a lightweight terminal app; peer to peer, end-to-end encrypted.",
-    "stars": 25,
+    "stars": 27,
     "score": 88,
     "senior": "Agents senior",
     "reason": "beluga is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
