@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T06:18:15.914700+00:00",
+ "updated": "2026-10-30T06:18:39.239585+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -8,7 +8,7 @@
     "name": "ffmpeg-skill",
     "url": "https://github.com/kajisho5/ffmpeg-skill",
     "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-    "stars": 3624,
+    "stars": 3984,
     "score": 100,
     "senior": "MCP senior",
     "reason": "ffmpeg-skill depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/build-artifacts/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -77,6 +77,30 @@
   ],
   "Skills & Plugins": [
    {
+    "full_name": "yetone/magpie",
+    "owner": "yetone",
+    "name": "magpie",
+    "url": "https://github.com/yetone/magpie",
+    "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+    "stars": 25678,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
+    "approved_at": "2026-10-30T06:18:39.239585+00:00"
+   },
+   {
+    "full_name": "rehan-remade/universal-modder",
+    "owner": "rehan-remade",
+    "name": "universal-modder",
+    "url": "https://github.com/rehan-remade/universal-modder",
+    "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
+    "stars": 9207,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
     "full_name": "lemomo-ai/lemo-opuscar",
     "owner": "lemomo-ai",
     "name": "lemo-opuscar",
@@ -87,18 +111,6 @@
     "senior": "Skills & plugins senior",
     "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
-    "full_name": "rehan-remade/universal-modder",
-    "owner": "rehan-remade",
-    "name": "universal-modder",
-    "url": "https://github.com/rehan-remade/universal-modder",
-    "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9167,
-    "score": 100,
-    "senior": "Skills & plugins senior",
-    "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
     "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
@@ -118,7 +130,7 @@
     "name": "elephant-goldfish-model",
     "url": "https://github.com/google/elephant-goldfish-model",
     "description": "Open-source skills for designing and reviewing software with AI agents",
-    "stars": 5030,
+    "stars": 6154,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -135,32 +147,44 @@
     "senior": "Skills & plugins senior",
     "reason": "oil-ui ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. SKILL.md)",
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
-    "full_name": "wuyoscar/AISafetyHot",
-    "owner": "wuyoscar",
-    "name": "AISafetyHot",
-    "url": "https://github.com/wuyoscar/AISafetyHot",
-    "description": "Safety News & Research Monitor. https://aisafetyhot.com",
-    "stars": 1948,
-    "score": 99,
-    "senior": "Skills & plugins senior",
-    "reason": "AISafetyHot ships a valid SKILL.md or plugin manifest; 4 skills with a valid SKILL.md (e.g. skills/aisafety-brief/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    }
   ],
   "Agents & SDK": [
+   {
+    "full_name": "SLEEPYBQ/MemoSync",
+    "owner": "SLEEPYBQ",
+    "name": "MemoSync",
+    "url": "https://github.com/SLEEPYBQ/MemoSync",
+    "description": "Co-manage your coding agent's memory: review what it keeps, choose what it uses, audit how it used it",
+    "stars": 100,
+    "score": 92,
+    "senior": "Agents senior",
+    "reason": "MemoSync is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-10-30T06:18:39.239585+00:00"
+   },
    {
     "full_name": "PBJ-2/clauderipple",
     "owner": "PBJ-2",
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 79,
+    "stars": 80,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "ypyik0669/claude-web",
+    "owner": "ypyik0669",
+    "name": "claude-web",
+    "url": "https://github.com/ypyik0669/claude-web",
+    "description": "A GUI workbench for Claude Code and other CLI agents \u00b7 Claude Code \u7684\u53ef\u89c6\u5316\u5de5\u4f5c\u53f0\uff08\u7f51\u9875 + \u684c\u9762\uff09\uff0c\u4e5f\u80fd\u9a71\u52a8 Codex / Gemini CLI / Qwen / OpenCode \u7b49 CLI agent",
+    "stars": 57,
+    "score": 90,
+    "senior": "Agents senior",
+    "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-10-30T06:18:39.239585+00:00"
    },
    {
     "full_name": "RobbsLuo/Coding2API",
