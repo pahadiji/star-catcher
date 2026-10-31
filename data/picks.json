@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T06:18:39.239585+00:00",
+ "updated": "2026-10-31T06:14:20.518473+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -8,7 +8,7 @@
     "name": "ffmpeg-skill",
     "url": "https://github.com/kajisho5/ffmpeg-skill",
     "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-    "stars": 3984,
+    "stars": 4129,
     "score": 100,
     "senior": "MCP senior",
     "reason": "ffmpeg-skill depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/build-artifacts/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -56,7 +56,7 @@
     "name": "Awwwards-mcp",
     "url": "https://github.com/INSANE0777/Awwwards-mcp",
     "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-    "stars": 362,
+    "stars": 378,
     "score": 95,
     "senior": "MCP senior",
     "reason": "Awwwards-mcp depends on an MCP SDK; 7 skills with a valid SKILL.md (e.g. skills/awwwards-doctor/SKILL.md)",
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 25678,
+    "stars": 26461,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -94,7 +94,7 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9207,
+    "stars": 9249,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -168,7 +168,7 @@
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 80,
+    "stars": 82,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
@@ -187,6 +187,18 @@
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
    },
    {
+    "full_name": "kayraucklnc/beluga",
+    "owner": "kayraucklnc",
+    "name": "beluga",
+    "url": "https://github.com/kayraucklnc/beluga",
+    "description": "Beluga: An AI native IDE Mac app peer to peer connections everything designed around AI development",
+    "stars": 37,
+    "score": 89,
+    "senior": "Agents senior",
+    "reason": "beluga is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-10-27T09:29:28.729159+00:00"
+   },
+   {
     "full_name": "RobbsLuo/Coding2API",
     "owner": "RobbsLuo",
     "name": "Coding2API",
@@ -197,18 +209,6 @@
     "senior": "Agents senior",
     "reason": "Coding2API is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
-    "full_name": "kayraucklnc/beluga",
-    "owner": "kayraucklnc",
-    "name": "beluga",
-    "url": "https://github.com/kayraucklnc/beluga",
-    "description": "Beluga: every project and the Claude working in each, with your friends and their Claudes. A native Mac app and a lightweight terminal app; peer to peer, end-to-end encrypted.",
-    "stars": 27,
-    "score": 88,
-    "senior": "Agents senior",
-    "reason": "beluga is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-10-27T09:29:28.729159+00:00"
    },
    {
     "full_name": "lumenastrum/kotatsu-public",
