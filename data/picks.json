@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T06:14:20.518473+00:00",
+ "updated": "2026-11-01T06:19:25.088016+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -8,7 +8,7 @@
     "name": "ffmpeg-skill",
     "url": "https://github.com/kajisho5/ffmpeg-skill",
     "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-    "stars": 4129,
+    "stars": 4205,
     "score": 100,
     "senior": "MCP senior",
     "reason": "ffmpeg-skill depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/build-artifacts/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -39,6 +39,18 @@
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
+    "full_name": "qybaihe/bla",
+    "owner": "qybaihe",
+    "name": "bla",
+    "url": "https://github.com/qybaihe/bla",
+    "description": "\ud83d\udee1\ufe0f BLA (Blind LLM Agents) \u2014 Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+    "stars": 1744,
+    "score": 99,
+    "senior": "MCP senior",
+    "reason": "bla depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. .agents/skills/blind-llm-agents/SKILL.md)",
+    "approved_at": "2026-11-01T06:19:25.088016+00:00"
+   },
+   {
     "full_name": "dominikmartn/harp",
     "owner": "dominikmartn",
     "name": "harp",
@@ -56,23 +68,11 @@
     "name": "Awwwards-mcp",
     "url": "https://github.com/INSANE0777/Awwwards-mcp",
     "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-    "stars": 378,
+    "stars": 381,
     "score": 95,
     "senior": "MCP senior",
     "reason": "Awwwards-mcp depends on an MCP SDK; 7 skills with a valid SKILL.md (e.g. skills/awwwards-doctor/SKILL.md)",
     "approved_at": "2026-10-28T06:17:17.358250+00:00"
-   },
-   {
-    "full_name": "HeyPuter/builder",
-    "owner": "HeyPuter",
-    "name": "builder",
-    "url": "https://github.com/HeyPuter/builder",
-    "description": "\ud83d\udce6\u2728 AI Builder For Creating Sites and Apps! An open-source alternative to Lovable, Replit, v0, and similar platforms.",
-    "stars": 304,
-    "score": 94,
-    "senior": "MCP senior",
-    "reason": "builder depends on an MCP SDK",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 26461,
+    "stars": 27132,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -185,18 +185,6 @@
     "senior": "Agents senior",
     "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
-   },
-   {
-    "full_name": "kayraucklnc/beluga",
-    "owner": "kayraucklnc",
-    "name": "beluga",
-    "url": "https://github.com/kayraucklnc/beluga",
-    "description": "Beluga: An AI native IDE Mac app peer to peer connections everything designed around AI development",
-    "stars": 37,
-    "score": 89,
-    "senior": "Agents senior",
-    "reason": "beluga is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-10-27T09:29:28.729159+00:00"
    },
    {
     "full_name": "RobbsLuo/Coding2API",
