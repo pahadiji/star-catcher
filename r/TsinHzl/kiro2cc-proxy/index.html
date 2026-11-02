@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kiro2cc-proxy by TsinHzl — Dev Tool for Claude | Star Catcher</title>
-<meta name="description" content="Kiro 代理到 Claude Code 与 Codex，支持 Claude Opus 5.5/5/4.8/4.7/4.6、Sonnet 5.5/5/4.6、Haiku 5.5、GPT-5.6、Kimi K3，兼容 Kiro Cache，并支持 SSE 流式输出。Kiro proxy for Claude C">
+<meta name="description" content="Kiro 代理到 Claude Code 与 Codex，支持 Claude Opus 5.5/5/4.8/4.7/4.6、Sonnet 5.5/5/4.6、Haiku 5.5、GPT-5.6、Kimi K3，支持前缀缓存，并支持 SSE 流式输出。Kiro proxy for Claude Code and">
 <link rel="canonical" href="https://pahadiji.github.io/star-catcher/r/TsinHzl/kiro2cc-proxy/">
 <meta property="og:title" content="kiro2cc-proxy by TsinHzl — Dev Tool for Claude | Star Catcher">
-<meta property="og:description" content="Kiro 代理到 Claude Code 与 Codex，支持 Claude Opus 5.5/5/4.8/4.7/4.6、Sonnet 5.5/5/4.6、Haiku 5.5、GPT-5.6、Kimi K3，兼容 Kiro Cache，并支持 SSE 流式输出。Kiro proxy for Claude C">
+<meta property="og:description" content="Kiro 代理到 Claude Code 与 Codex，支持 Claude Opus 5.5/5/4.8/4.7/4.6、Sonnet 5.5/5/4.6、Haiku 5.5、GPT-5.6、Kimi K3，支持前缀缓存，并支持 SSE 流式输出。Kiro proxy for Claude Code and">
 <meta property="og:url" content="https://pahadiji.github.io/star-catcher/r/TsinHzl/kiro2cc-proxy/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pahadiji.github.io/star-catcher/assets/page.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "kiro2cc-proxy", "author": {"@type": "Person", "name": "TsinHzl"}, "codeRepository": "https://github.com/TsinHzl/kiro2cc-proxy", "description": "Kiro \u4ee3\u7406\u5230 Claude Code \u4e0e Codex\uff0c\u652f\u6301 Claude Opus 5.5/5/4.8/4.7/4.6\u3001Sonnet 5.5/5/4.6\u3001Haiku 5.5\u3001GPT-5.6\u3001Kimi K3\uff0c\u517c\u5bb9 Kiro Cache\uff0c\u5e76\u652f\u6301 SSE \u6d41\u5f0f\u8f93\u51fa\u3002Kiro proxy for Claude Code and Codex. Supports Claude Opus 5.5/5/4.8/4.7/4.6, Sonnet 5.5/5/4.6, Haiku5.5,GPT-5.6, Kimi K3, Kiro Cache, and SSE streaming.", "programmingLanguage": "Rust", "license": "MIT", "keywords": ""}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "kiro2cc-proxy", "author": {"@type": "Person", "name": "TsinHzl"}, "codeRepository": "https://github.com/TsinHzl/kiro2cc-proxy", "description": "Kiro \u4ee3\u7406\u5230 Claude Code \u4e0e Codex\uff0c\u652f\u6301 Claude Opus 5.5/5/4.8/4.7/4.6\u3001Sonnet 5.5/5/4.6\u3001Haiku 5.5\u3001GPT-5.6\u3001Kimi K3\uff0c\u652f\u6301\u524d\u7f00\u7f13\u5b58\uff0c\u5e76\u652f\u6301 SSE \u6d41\u5f0f\u8f93\u51fa\u3002Kiro proxy for Claude Code and Codex. Supports Claude Opus 5.5/5/4.8/4.7/4.6, Sonnet 5.5/5/4.6, Haiku5.5,GPT-5.6, Kimi K3, Supports Prefix Cache, and SSE streaming.", "programmingLanguage": "Rust", "license": "MIT", "keywords": ""}</script>
 </head>
 <body>
 <header class="bar"><a class="brand" href="https://pahadiji.github.io/star-catcher/">✳ Star Catcher</a><nav><a href="https://pahadiji.github.io/star-catcher/c/mcp-servers/">MCP</a><a href="https://pahadiji.github.io/star-catcher/c/skills-plugins/">Skills</a><a href="https://pahadiji.github.io/star-catcher/c/agents-sdk/">Agents</a><a href="https://pahadiji.github.io/star-catcher/new/">New</a><a href="https://pahadiji.github.io/star-catcher/trending/">Trending</a><a href="https://pahadiji.github.io/star-catcher/mcp/">MCP server</a><a class="go" href="https://pahadiji.github.io/star-catcher/">Open the galaxy</a></nav></header>
@@ -25,9 +25,9 @@
 <nav class="crumbs"><a href="https://pahadiji.github.io/star-catcher/">Galaxy</a> › <a href="https://pahadiji.github.io/star-catcher/c/dev-tools-cli/">Tools System</a> › kiro2cc-proxy</nav>
 <article class="repo" style="--c:#3DE0C0">
   <div class="head"><span class="orb" aria-hidden="true"></span><div><h1>kiro2cc-proxy</h1><p class="by">by TsinHzl</p></div></div>
-  <p class="desc">Kiro 代理到 Claude Code 与 Codex，支持 Claude Opus 5.5/5/4.8/4.7/4.6、Sonnet 5.5/5/4.6、Haiku 5.5、GPT-5.6、Kimi K3，兼容 Kiro Cache，并支持 SSE 流式输出。Kiro proxy for Claude Code and Codex. Supports Claude Opus 5.5/5/4.8/4.7/4.6, Sonnet 5.5/5/4.6, Haiku5.5,GPT-5.6, Kimi K3, Kiro Cache, and SSE streaming.</p>
+  <p class="desc">Kiro 代理到 Claude Code 与 Codex，支持 Claude Opus 5.5/5/4.8/4.7/4.6、Sonnet 5.5/5/4.6、Haiku 5.5、GPT-5.6、Kimi K3，支持前缀缓存，并支持 SSE 流式输出。Kiro proxy for Claude Code and Codex. Supports Claude Opus 5.5/5/4.8/4.7/4.6, Sonnet 5.5/5/4.6, Haiku5.5,GPT-5.6, Kimi K3, Supports Prefix Cache, and SSE streaming.</p>
   <ul class="pills"><li class="type">Tools System</li><li>Common</li><li>Protostar</li></ul>
-  <dl class="stats"><div><dt>Stars</dt><dd>★ 262</dd></div><div><dt>Forks</dt><dd>55</dd></div><div><dt>Language</dt><dd>Rust</dd></div><div><dt>Last push</dt><dd>2026-10-26</dd></div></dl>
+  <dl class="stats"><div><dt>Stars</dt><dd>★ 332</dd></div><div><dt>Forks</dt><dd>59</dd></div><div><dt>Language</dt><dd>Rust</dd></div><div><dt>Last push</dt><dd>2026-11-02</dd></div></dl>
   <div class="actions"><a class="btn go" href="https://pahadiji.github.io/star-catcher/?star=TsinHzl/kiro2cc-proxy">Find it in the galaxy</a><a class="btn" href="https://github.com/TsinHzl/kiro2cc-proxy" rel="noopener">Open on GitHub</a></div>
   <pre class="install"><code>git clone https://github.com/TsinHzl/kiro2cc-proxy.git</code></pre>
 </article>
