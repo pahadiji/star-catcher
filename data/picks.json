@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T06:19:25.088016+00:00",
+ "updated": "2026-11-02T06:34:42.630726+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -68,7 +68,7 @@
     "name": "Awwwards-mcp",
     "url": "https://github.com/INSANE0777/Awwwards-mcp",
     "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-    "stars": 381,
+    "stars": 384,
     "score": 95,
     "senior": "MCP senior",
     "reason": "Awwwards-mcp depends on an MCP SDK; 7 skills with a valid SKILL.md (e.g. skills/awwwards-doctor/SKILL.md)",
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 27132,
+    "stars": 27908,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -94,7 +94,7 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9249,
+    "stars": 9324,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -168,7 +168,7 @@
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 82,
+    "stars": 84,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
