@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T06:34:42.630726+00:00",
+ "updated": "2026-11-03T06:31:22.568983+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -32,7 +32,7 @@
     "name": "new-term-radar",
     "url": "https://github.com/zhuyansen/new-term-radar",
     "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
-    "stars": 1842,
+    "stars": 2053,
     "score": 99,
     "senior": "MCP senior",
     "reason": "new-term-radar depends on an MCP SDK; 3 skills with a valid SKILL.md (e.g. skills/ai-listening/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -63,16 +63,16 @@
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
-    "full_name": "INSANE0777/Awwwards-mcp",
-    "owner": "INSANE0777",
-    "name": "Awwwards-mcp",
-    "url": "https://github.com/INSANE0777/Awwwards-mcp",
-    "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-    "stars": 384,
+    "full_name": "721AndrewWang/VibeCrew",
+    "owner": "721AndrewWang",
+    "name": "VibeCrew",
+    "url": "https://github.com/721AndrewWang/VibeCrew",
+    "description": "Your AI crew for web development",
+    "stars": 452,
     "score": 95,
     "senior": "MCP senior",
-    "reason": "Awwwards-mcp depends on an MCP SDK; 7 skills with a valid SKILL.md (e.g. skills/awwwards-doctor/SKILL.md)",
-    "approved_at": "2026-10-28T06:17:17.358250+00:00"
+    "reason": "VibeCrew depends on an MCP SDK; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-11-03T06:31:22.568983+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,11 +82,23 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 27908,
+    "stars": 28683,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
+   },
+   {
+    "full_name": "google/elephant-goldfish-model",
+    "owner": "google",
+    "name": "elephant-goldfish-model",
+    "url": "https://github.com/google/elephant-goldfish-model",
+    "description": "Open-source skills for designing and reviewing software with AI agents",
+    "stars": 10782,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
     "full_name": "rehan-remade/universal-modder",
@@ -94,7 +106,7 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9324,
+    "stars": 9353,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -123,18 +135,6 @@
     "senior": "Skills & plugins senior",
     "reason": "open-seo-mcp-skills ships a valid SKILL.md or plugin manifest; 8 skills with a valid SKILL.md (e.g. skills/ai-visibility/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T09:29:28.729159+00:00"
-   },
-   {
-    "full_name": "google/elephant-goldfish-model",
-    "owner": "google",
-    "name": "elephant-goldfish-model",
-    "url": "https://github.com/google/elephant-goldfish-model",
-    "description": "Open-source skills for designing and reviewing software with AI agents",
-    "stars": 6154,
-    "score": 100,
-    "senior": "Skills & plugins senior",
-    "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
     "full_name": "oil-oil/oil-ui",
