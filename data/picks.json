@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T06:31:22.568983+00:00",
+ "updated": "2026-11-04T06:34:29.300158+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 28683,
+    "stars": 29289,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -106,7 +106,7 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9353,
+    "stars": 9395,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -142,7 +142,7 @@
     "name": "oil-ui",
     "url": "https://github.com/oil-oil/oil-ui",
     "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. \u7ed9 AI Agent \u7528\u7684 UI \u8bbe\u8ba1 Skill\u3002",
-    "stars": 2475,
+    "stars": 2709,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "oil-ui ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. SKILL.md)",
@@ -168,7 +168,7 @@
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 84,
+    "stars": 85,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
