@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T06:34:29.300158+00:00",
+ "updated": "2026-11-05T06:35:12.070195+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -168,7 +168,7 @@
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 85,
+    "stars": 88,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
@@ -180,7 +180,7 @@
     "name": "claude-web",
     "url": "https://github.com/ypyik0669/claude-web",
     "description": "A GUI workbench for Claude Code and other CLI agents \u00b7 Claude Code \u7684\u53ef\u89c6\u5316\u5de5\u4f5c\u53f0\uff08\u7f51\u9875 + \u684c\u9762\uff09\uff0c\u4e5f\u80fd\u9a71\u52a8 Codex / Gemini CLI / Qwen / OpenCode \u7b49 CLI agent",
-    "stars": 57,
+    "stars": 61,
     "score": 90,
     "senior": "Agents senior",
     "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
