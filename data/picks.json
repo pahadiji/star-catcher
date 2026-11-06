@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T06:35:12.070195+00:00",
+ "updated": "2026-11-06T06:34:59.890882+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -63,16 +63,16 @@
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
-    "full_name": "721AndrewWang/VibeCrew",
-    "owner": "721AndrewWang",
-    "name": "VibeCrew",
-    "url": "https://github.com/721AndrewWang/VibeCrew",
-    "description": "Your AI crew for web development",
-    "stars": 452,
-    "score": 95,
+    "full_name": "Cygnux-Labs/Tracekit",
+    "owner": "Cygnux-Labs",
+    "name": "Tracekit",
+    "url": "https://github.com/Cygnux-Labs/Tracekit",
+    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
+    "stars": 481,
+    "score": 96,
     "senior": "MCP senior",
-    "reason": "VibeCrew depends on an MCP SDK; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-11-03T06:31:22.568983+00:00"
+    "reason": "Tracekit depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-06T06:34:59.890882+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 29289,
+    "stars": 30730,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
