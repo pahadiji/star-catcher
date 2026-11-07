@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T06:34:59.890882+00:00",
+ "updated": "2026-11-07T06:24:21.779917+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -68,7 +68,7 @@
     "name": "Tracekit",
     "url": "https://github.com/Cygnux-Labs/Tracekit",
     "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-    "stars": 481,
+    "stars": 492,
     "score": 96,
     "senior": "MCP senior",
     "reason": "Tracekit depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 30730,
+    "stars": 31409,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -93,12 +93,24 @@
     "owner": "google",
     "name": "elephant-goldfish-model",
     "url": "https://github.com/google/elephant-goldfish-model",
-    "description": "Open-source skills for designing and reviewing software with AI agents",
-    "stars": 10782,
+    "description": "Open-source plugin for designing and reviewing software with agents",
+    "stars": 13188,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "lemomo-ai/lemo-opuscar",
+    "owner": "lemomo-ai",
+    "name": "lemo-opuscar",
+    "url": "https://github.com/lemomo-ai/lemo-opuscar",
+    "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a66 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
+    "stars": 13115,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
     "full_name": "rehan-remade/universal-modder",
@@ -113,18 +125,6 @@
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
-    "full_name": "lemomo-ai/lemo-opuscar",
-    "owner": "lemomo-ai",
-    "name": "lemo-opuscar",
-    "url": "https://github.com/lemomo-ai/lemo-opuscar",
-    "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a66 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
-    "stars": 9174,
-    "score": 100,
-    "senior": "Skills & plugins senior",
-    "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
     "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
     "owner": "Ryze-AI-Adgent",
     "name": "open-seo-mcp-skills",
@@ -137,16 +137,16 @@
     "approved_at": "2026-10-27T09:29:28.729159+00:00"
    },
    {
-    "full_name": "oil-oil/oil-ui",
-    "owner": "oil-oil",
-    "name": "oil-ui",
-    "url": "https://github.com/oil-oil/oil-ui",
-    "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. \u7ed9 AI Agent \u7528\u7684 UI \u8bbe\u8ba1 Skill\u3002",
-    "stars": 2709,
+    "full_name": "JuneYaooo/rea-video",
+    "owner": "JuneYaooo",
+    "name": "rea-video",
+    "url": "https://github.com/JuneYaooo/rea-video",
+    "description": "Reverse-engineer any video, shot by shot: tells whether each shot was filmed, AI-generated or coded, how the captions, cuts and audio were made, and how to remake it. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u955c\u62c6\u51fa\u5236\u4f5c\u65b9\u5f0f\u5e76\u7ed9\u51fa\u590d\u523b\u65b9\u6848\u3002",
+    "stars": 3249,
     "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "oil-ui ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. SKILL.md)",
-    "approved_at": "2026-10-29T06:18:15.914700+00:00"
+    "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-07T06:24:21.779917+00:00"
    }
   ],
   "Agents & SDK": [
