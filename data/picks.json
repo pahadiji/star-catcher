@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T06:25:33.175595+00:00",
+ "updated": "2026-11-09T06:38:27.154982+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -39,16 +39,16 @@
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
-    "full_name": "qybaihe/bla",
-    "owner": "qybaihe",
-    "name": "bla",
-    "url": "https://github.com/qybaihe/bla",
-    "description": "\ud83d\udee1\ufe0f BLA (Blind LLM Agents) \u2014 Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
-    "stars": 1744,
-    "score": 99,
+    "full_name": "DIYgod/pinky",
+    "owner": "DIYgod",
+    "name": "pinky",
+    "url": "https://github.com/DIYgod/pinky",
+    "description": "Let AI agents use your phone, with you in the loop.",
+    "stars": 1068,
+    "score": 98,
     "senior": "MCP senior",
-    "reason": "bla depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. .agents/skills/blind-llm-agents/SKILL.md)",
-    "approved_at": "2026-11-01T06:19:25.088016+00:00"
+    "reason": "pinky depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. docs/SKILL.md)",
+    "approved_at": "2026-11-09T06:38:27.154982+00:00"
    },
    {
     "full_name": "dominikmartn/harp",
@@ -63,16 +63,16 @@
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
-    "full_name": "Cygnux-Labs/Tracekit",
-    "owner": "Cygnux-Labs",
-    "name": "Tracekit",
-    "url": "https://github.com/Cygnux-Labs/Tracekit",
-    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-    "stars": 571,
+    "full_name": "kydlikebtc/awesome-jev",
+    "owner": "kydlikebtc",
+    "name": "awesome-jev",
+    "url": "https://github.com/kydlikebtc/awesome-jev",
+    "description": "Launch what you built on Jev, TypeSafe AI's System One decision model: a weekly board where makers launch and people vote, over an index of public Jev examples by decision pattern, with source citations, dated link checks and call-site text checks; runtime and performance are not independently teste",
+    "stars": 602,
     "score": 96,
     "senior": "MCP senior",
-    "reason": "Tracekit depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-06T06:34:59.890882+00:00"
+    "reason": "awesome-jev depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. skills/awesome-jev/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-09T06:38:27.154982+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 31937,
+    "stars": 32619,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -94,7 +94,7 @@
     "name": "elephant-goldfish-model",
     "url": "https://github.com/google/elephant-goldfish-model",
     "description": "Open-source plugin for designing and reviewing software with agents",
-    "stars": 14147,
+    "stars": 15508,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -151,6 +151,18 @@
   ],
   "Agents & SDK": [
    {
+    "full_name": "cryer/star-cli",
+    "owner": "cryer",
+    "name": "star-cli",
+    "url": "https://github.com/cryer/star-cli",
+    "description": "An AI agent command-line interface \u2014 multi-model LLM access, streaming terminal UI, tool calling, permission control, and session persistence.",
+    "stars": 110,
+    "score": 92,
+    "senior": "Agents senior",
+    "reason": "star-cli is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-11-09T06:38:27.154982+00:00"
+   },
+   {
     "full_name": "SLEEPYBQ/MemoSync",
     "owner": "SLEEPYBQ",
     "name": "MemoSync",
@@ -168,7 +180,7 @@
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 88,
+    "stars": 92,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
@@ -197,18 +209,6 @@
     "senior": "Agents senior",
     "reason": "Coding2API is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
-    "full_name": "lumenastrum/kotatsu-public",
-    "owner": "lumenastrum",
-    "name": "kotatsu-public",
-    "url": "https://github.com/lumenastrum/kotatsu-public",
-    "description": "Kotatsu \u2014 a desktop-first SillyTavern fork with a built-in Claude subscription bridge. Public release mirror; install with one file, update from inside the app.",
-    "stars": 20,
-    "score": 87,
-    "senior": "Agents senior",
-    "reason": "kotatsu-public is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-10-27T09:29:28.729159+00:00"
    }
   ],
   "Dev Tools & CLI": [],
