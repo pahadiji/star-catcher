@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T06:38:27.154982+00:00",
+ "updated": "2026-11-10T06:30:29.004276+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -44,11 +44,23 @@
     "name": "pinky",
     "url": "https://github.com/DIYgod/pinky",
     "description": "Let AI agents use your phone, with you in the loop.",
-    "stars": 1068,
-    "score": 98,
+    "stars": 1525,
+    "score": 99,
     "senior": "MCP senior",
     "reason": "pinky depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. docs/SKILL.md)",
     "approved_at": "2026-11-09T06:38:27.154982+00:00"
+   },
+   {
+    "full_name": "genex-games/genex-desktop",
+    "owner": "genex-games",
+    "name": "genex-desktop",
+    "url": "https://github.com/genex-games/genex-desktop",
+    "description": "Desktop app for game dev with AI: make games in Unreal Engine, Unity, Godot or the browser. The agent sets up the engine, builds your game and play-tests it by itself.",
+    "stars": 825,
+    "score": 97,
+    "senior": "MCP senior",
+    "reason": "genex-desktop depends on an MCP SDK; 55 skills with a valid SKILL.md (e.g. .agents/skills/add-event-type/SKILL.md)",
+    "approved_at": "2026-11-10T06:30:29.004276+00:00"
    },
    {
     "full_name": "dominikmartn/harp",
@@ -56,23 +68,11 @@
     "name": "harp",
     "url": "https://github.com/dominikmartn/harp",
     "description": "Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.",
-    "stars": 685,
+    "stars": 713,
     "score": 97,
     "senior": "MCP senior",
     "reason": "harp depends on an MCP SDK; 53 skills with a valid SKILL.md (e.g. .agents/skills/add-feature-flag/SKILL.md)",
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
-    "full_name": "kydlikebtc/awesome-jev",
-    "owner": "kydlikebtc",
-    "name": "awesome-jev",
-    "url": "https://github.com/kydlikebtc/awesome-jev",
-    "description": "Launch what you built on Jev, TypeSafe AI's System One decision model: a weekly board where makers launch and people vote, over an index of public Jev examples by decision pattern, with source citations, dated link checks and call-site text checks; runtime and performance are not independently teste",
-    "stars": 602,
-    "score": 96,
-    "senior": "MCP senior",
-    "reason": "awesome-jev depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. skills/awesome-jev/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-09T06:38:27.154982+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 32619,
+    "stars": 33383,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -94,7 +94,7 @@
     "name": "elephant-goldfish-model",
     "url": "https://github.com/google/elephant-goldfish-model",
     "description": "Open-source plugin for designing and reviewing software with agents",
-    "stars": 15508,
+    "stars": 16656,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -125,31 +125,43 @@
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
-    "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
-    "owner": "Ryze-AI-Adgent",
-    "name": "open-seo-mcp-skills",
-    "url": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills",
-    "description": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data. claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
-    "stars": 7519,
+    "full_name": "alchaincyf/huashu-art-motion",
+    "owner": "alchaincyf",
+    "name": "huashu-art-motion",
+    "url": "https://github.com/alchaincyf/huashu-art-motion",
+    "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
+    "stars": 6637,
     "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "open-seo-mcp-skills ships a valid SKILL.md or plugin manifest; 8 skills with a valid SKILL.md (e.g. skills/ai-visibility/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T09:29:28.729159+00:00"
+    "reason": "huashu-art-motion ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. SKILL.md)",
+    "approved_at": "2026-11-10T06:30:29.004276+00:00"
    },
    {
-    "full_name": "JuneYaooo/rea-video",
-    "owner": "JuneYaooo",
-    "name": "rea-video",
-    "url": "https://github.com/JuneYaooo/rea-video",
-    "description": "Reverse-engineer any video, shot by shot: tells whether each shot was filmed, AI-generated or coded, how the captions, cuts and audio were made, and how to remake it. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u955c\u62c6\u51fa\u5236\u4f5c\u65b9\u5f0f\u5e76\u7ed9\u51fa\u590d\u523b\u65b9\u6848\u3002",
-    "stars": 3249,
+    "full_name": "haydenschmitty/floorplan",
+    "owner": "haydenschmitty",
+    "name": "floorplan",
+    "url": "https://github.com/haydenschmitty/floorplan",
+    "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+    "stars": 3383,
     "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-07T06:24:21.779917+00:00"
+    "reason": "floorplan ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/floorplan/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-10T06:30:29.004276+00:00"
    }
   ],
   "Agents & SDK": [
+   {
+    "full_name": "Nwflower/dsh-claude-style",
+    "owner": "Nwflower",
+    "name": "dsh-claude-style",
+    "url": "https://github.com/Nwflower/dsh-claude-style",
+    "description": "Claude Code Desktop theme for DeepSeek Harness\uff5c \u4e3a DeepSeek Harness \u590d\u523b Claude Code Desktop \u98ce\u683c\u4e0e\u4ea4\u4e92\u4f53\u9a8c\u7684\u4e3b\u9898\u63d2\u4ef6",
+    "stars": 545,
+    "score": 96,
+    "senior": "Agents senior",
+    "reason": "dsh-claude-style is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-11-10T06:30:29.004276+00:00"
+   },
    {
     "full_name": "cryer/star-cli",
     "owner": "cryer",
@@ -180,7 +192,7 @@
     "name": "clauderipple",
     "url": "https://github.com/PBJ-2/clauderipple",
     "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 92,
+    "stars": 97,
     "score": 91,
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
