@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T06:30:29.004276+00:00",
+ "updated": "2026-11-11T06:32:43.780007+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -13,18 +13,6 @@
     "senior": "MCP senior",
     "reason": "ffmpeg-skill depends on an MCP SDK; 14 skills with a valid SKILL.md (e.g. .claude/skills/build-artifacts/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-10-28T06:17:17.358250+00:00"
-   },
-   {
-    "full_name": "nano-muse/nanoMuse",
-    "owner": "nano-muse",
-    "name": "nanoMuse",
-    "url": "https://github.com/nano-muse/nanoMuse",
-    "description": "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo. On Android, iPhone and iPad, Windows / macOS / Linux and in the browser; you",
-    "stars": 2753,
-    "score": 100,
-    "senior": "MCP senior",
-    "reason": "nanoMuse depends on an MCP SDK; 11 skills with a valid SKILL.md (e.g. nanomuse/skills/builtin/amap/SKILL.md)",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
     "full_name": "zhuyansen/new-term-radar",
@@ -73,6 +61,18 @@
     "senior": "MCP senior",
     "reason": "harp depends on an MCP SDK; 53 skills with a valid SKILL.md (e.g. .agents/skills/add-feature-flag/SKILL.md)",
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
+   },
+   {
+    "full_name": "Cygnux-Labs/Tracekit",
+    "owner": "Cygnux-Labs",
+    "name": "Tracekit",
+    "url": "https://github.com/Cygnux-Labs/Tracekit",
+    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
+    "stars": 605,
+    "score": 96,
+    "senior": "MCP senior",
+    "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-11T06:32:43.780007+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 33383,
+    "stars": 34133,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -94,7 +94,7 @@
     "name": "elephant-goldfish-model",
     "url": "https://github.com/google/elephant-goldfish-model",
     "description": "Open-source plugin for designing and reviewing software with agents",
-    "stars": 16656,
+    "stars": 17274,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -137,16 +137,16 @@
     "approved_at": "2026-11-10T06:30:29.004276+00:00"
    },
    {
-    "full_name": "haydenschmitty/floorplan",
-    "owner": "haydenschmitty",
-    "name": "floorplan",
-    "url": "https://github.com/haydenschmitty/floorplan",
-    "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
-    "stars": 3383,
+    "full_name": "JuneYaooo/rea-video",
+    "owner": "JuneYaooo",
+    "name": "rea-video",
+    "url": "https://github.com/JuneYaooo/rea-video",
+    "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\u3002",
+    "stars": 6611,
     "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "floorplan ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/floorplan/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-10T06:30:29.004276+00:00"
+    "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-11T06:32:43.780007+00:00"
    }
   ],
   "Agents & SDK": [
@@ -175,6 +175,18 @@
     "approved_at": "2026-11-09T06:38:27.154982+00:00"
    },
    {
+    "full_name": "PBJ-2/clauderipple",
+    "owner": "PBJ-2",
+    "name": "clauderipple",
+    "url": "https://github.com/PBJ-2/clauderipple",
+    "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
+    "stars": 104,
+    "score": 92,
+    "senior": "Agents senior",
+    "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
     "full_name": "SLEEPYBQ/MemoSync",
     "owner": "SLEEPYBQ",
     "name": "MemoSync",
@@ -187,18 +199,6 @@
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
    },
    {
-    "full_name": "PBJ-2/clauderipple",
-    "owner": "PBJ-2",
-    "name": "clauderipple",
-    "url": "https://github.com/PBJ-2/clauderipple",
-    "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 97,
-    "score": 91,
-    "senior": "Agents senior",
-    "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
     "full_name": "ypyik0669/claude-web",
     "owner": "ypyik0669",
     "name": "claude-web",
@@ -209,18 +209,6 @@
     "senior": "Agents senior",
     "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
-   },
-   {
-    "full_name": "RobbsLuo/Coding2API",
-    "owner": "RobbsLuo",
-    "name": "Coding2API",
-    "url": "https://github.com/RobbsLuo/Coding2API",
-    "description": "\u628a CodeBuddy\uff08\u56fd\u5185\u7ad9 + \u56fd\u9645\u7248\uff09\u3001TRAE SOLO\u3001OpenCode Zen\u3001Kilo Gateway\u3001Qoder\u3001CodeArts\u3001OfficeAce \u516b\u4e2a\u4e0a\u6e38\u6e20\u9053\u5c01\u88c5\u4e3a OpenAI / Responses / Anthropic \u517c\u5bb9 API\uff1a\u516c\u5171\u51ed\u8bc1\u6c60\u3001\u5065\u5eb7\u5ea6\u8c03\u5ea6\u4e0e\u4f1a\u8bdd\u7c98\u6027\u3001\u6a21\u578b\u5217\u8868\u6309\u6e20\u9053\u51ed\u8bc1\u52a0\u8f7d\u3001\u989d\u5ea6\u63a2\u6d4b\u4e0e\u6bcf\u65e5\u7b7e\u5230\u3001\u6210\u957f\u4e2d\u5fc3\u81ea\u52a8\u5316\u3001\u6309\u4eba\u7528\u91cf\u7edf\u8ba1\u3002\u9006\u5411\u63a5\u53e3\uff0c\u4ec5\u4f9b\u5b66\u4e60\u7814\u7a76\u3002",
-    "stars": 29,
-    "score": 88,
-    "senior": "Agents senior",
-    "reason": "Coding2API is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-10-29T06:18:15.914700+00:00"
    }
   ],
   "Dev Tools & CLI": [],
