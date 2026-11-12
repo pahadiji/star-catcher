@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>llama-modchip by synchopate — Agent for Claude | Star Catcher</title>
-<meta name="description" content="🐋 Run 284B DeepSeek-V4-Flash (&lt;59GiB RAM, 44.4 tok/s pp, 9.1-14.7 tok/s) &amp; 30B MoEs (25-111 tok/s) on a pure 64GB CPU at 256K ctx (0 GPUs). SwiGLU-H2, Stoc">
+<meta name="description" content="Run 284B DeepSeek-V4-Flash (&lt;59GiB RAM: 41.1 cold pp, 9.1 N=1 tg, up to 25.3 spec tok/s) &amp; 30B MoEs (22.4 N=1 / 111.6 spec tok/s) on 64GB CPU (0 GPUs).">
 <link rel="canonical" href="https://pahadiji.github.io/star-catcher/r/synchopate/llama-modchip/">
 <meta property="og:title" content="llama-modchip by synchopate — Agent for Claude | Star Catcher">
-<meta property="og:description" content="🐋 Run 284B DeepSeek-V4-Flash (&lt;59GiB RAM, 44.4 tok/s pp, 9.1-14.7 tok/s) &amp; 30B MoEs (25-111 tok/s) on a pure 64GB CPU at 256K ctx (0 GPUs). SwiGLU-H2, Stoc">
+<meta property="og:description" content="Run 284B DeepSeek-V4-Flash (&lt;59GiB RAM: 41.1 cold pp, 9.1 N=1 tg, up to 25.3 spec tok/s) &amp; 30B MoEs (22.4 N=1 / 111.6 spec tok/s) on 64GB CPU (0 GPUs).">
 <meta property="og:url" content="https://pahadiji.github.io/star-catcher/r/synchopate/llama-modchip/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pahadiji.github.io/star-catcher/assets/page.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "llama-modchip", "author": {"@type": "Person", "name": "synchopate"}, "codeRepository": "https://github.com/synchopate/llama-modchip", "description": "\ud83d\udc0b Run 284B DeepSeek-V4-Flash (<59GiB RAM, 44.4 tok/s pp, 9.1-14.7 tok/s) & 30B MoEs (25-111 tok/s) on a pure 64GB CPU at 256K ctx (0 GPUs). SwiGLU-H2, Stockfish-PVS L3 & 13ms Claude Code restore.", "programmingLanguage": "Python", "license": "Apache-2.0", "keywords": "ai-agents, apple-silicon, avx512, claude-code, cpu-inference, deepseek, deepseek-v4, gguf"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "llama-modchip", "author": {"@type": "Person", "name": "synchopate"}, "codeRepository": "https://github.com/synchopate/llama-modchip", "description": "Run 284B DeepSeek-V4-Flash (<59GiB RAM: 41.1 cold pp, 9.1 N=1 tg, up to 25.3 spec tok/s) & 30B MoEs (22.4 N=1 / 111.6 spec tok/s) on 64GB CPU (0 GPUs).", "programmingLanguage": "Python", "license": "Apache-2.0", "keywords": "ai-agents, apple-silicon, avx512, claude-code, cpu-inference, deepseek, deepseek-v4, gguf"}</script>
 </head>
 <body>
 <header class="bar"><a class="brand" href="https://pahadiji.github.io/star-catcher/">✳ Star Catcher</a><nav><a href="https://pahadiji.github.io/star-catcher/c/mcp-servers/">MCP</a><a href="https://pahadiji.github.io/star-catcher/c/skills-plugins/">Skills</a><a href="https://pahadiji.github.io/star-catcher/c/agents-sdk/">Agents</a><a href="https://pahadiji.github.io/star-catcher/new/">New</a><a href="https://pahadiji.github.io/star-catcher/trending/">Trending</a><a href="https://pahadiji.github.io/star-catcher/mcp/">MCP server</a><a class="go" href="https://pahadiji.github.io/star-catcher/">Open the galaxy</a></nav></header>
@@ -25,9 +25,9 @@
 <nav class="crumbs"><a href="https://pahadiji.github.io/star-catcher/">Galaxy</a> › <a href="https://pahadiji.github.io/star-catcher/c/agents-sdk/">Agent Cluster</a> › llama-modchip</nav>
 <article class="repo" style="--c:#A77BFF">
   <div class="head"><span class="orb" aria-hidden="true"></span><div><h1>llama-modchip</h1><p class="by">by synchopate</p></div></div>
-  <p class="desc">🐋 Run 284B DeepSeek-V4-Flash (&lt;59GiB RAM, 44.4 tok/s pp, 9.1-14.7 tok/s) &amp; 30B MoEs (25-111 tok/s) on a pure 64GB CPU at 256K ctx (0 GPUs). SwiGLU-H2, Stockfish-PVS L3 &amp; 13ms Claude Code restore.</p>
+  <p class="desc">Run 284B DeepSeek-V4-Flash (&lt;59GiB RAM: 41.1 cold pp, 9.1 N=1 tg, up to 25.3 spec tok/s) &amp; 30B MoEs (22.4 N=1 / 111.6 spec tok/s) on 64GB CPU (0 GPUs).</p>
   <ul class="pills"><li class="type">Agent Cluster</li><li>Common</li><li>Protostar</li><li><a href="https://pahadiji.github.io/star-catcher/t/ai-agents/">ai-agents</a></li><li><a href="https://pahadiji.github.io/star-catcher/t/apple-silicon/">apple-silicon</a></li><li>avx512</li><li><a href="https://pahadiji.github.io/star-catcher/t/claude-code/">claude-code</a></li><li>cpu-inference</li></ul>
-  <dl class="stats"><div><dt>Stars</dt><dd>★ 930</dd></div><div><dt>Forks</dt><dd>72</dd></div><div><dt>Language</dt><dd>Python</dd></div><div><dt>Last push</dt><dd>2026-11-11</dd></div></dl>
+  <dl class="stats"><div><dt>Stars</dt><dd>★ 941</dd></div><div><dt>Forks</dt><dd>73</dd></div><div><dt>Language</dt><dd>Python</dd></div><div><dt>Last push</dt><dd>2026-11-12</dd></div></dl>
   <div class="actions"><a class="btn go" href="https://pahadiji.github.io/star-catcher/?star=synchopate/llama-modchip">Find it in the galaxy</a><a class="btn" href="https://github.com/synchopate/llama-modchip" rel="noopener">Open on GitHub</a></div>
   <pre class="install"><code>git clone https://github.com/synchopate/llama-modchip.git</code></pre>
 </article>
