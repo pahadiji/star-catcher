@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T06:36:28.704827+00:00",
+ "updated": "2026-11-13T06:34:42.073462+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -32,7 +32,7 @@
     "name": "pinky",
     "url": "https://github.com/DIYgod/pinky",
     "description": "Let AI agents use your phone, with you in the loop.",
-    "stars": 1905,
+    "stars": 2033,
     "score": 99,
     "senior": "MCP senior",
     "reason": "pinky depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. docs/SKILL.md)",
@@ -68,8 +68,8 @@
     "name": "Tracekit",
     "url": "https://github.com/Cygnux-Labs/Tracekit",
     "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-    "stars": 647,
-    "score": 96,
+    "stars": 690,
+    "score": 97,
     "senior": "MCP senior",
     "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-11-11T06:32:43.780007+00:00"
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 34982,
+    "stars": 35659,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -156,7 +156,7 @@
     "name": "dsh-claude-style",
     "url": "https://github.com/Nwflower/dsh-claude-style",
     "description": "Claude Code Desktop theme for DeepSeek Harness\uff5c \u4e3a DeepSeek Harness \u590d\u523b Claude Code Desktop \u98ce\u683c\u4e0e\u4ea4\u4e92\u4f53\u9a8c\u7684\u4e3b\u9898\u63d2\u4ef6",
-    "stars": 545,
+    "stars": 585,
     "score": 96,
     "senior": "Agents senior",
     "reason": "dsh-claude-style is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
@@ -185,18 +185,6 @@
     "senior": "Agents senior",
     "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
-    "full_name": "SLEEPYBQ/MemoSync",
-    "owner": "SLEEPYBQ",
-    "name": "MemoSync",
-    "url": "https://github.com/SLEEPYBQ/MemoSync",
-    "description": "Co-manage your coding agent's memory: review what it keeps, choose what it uses, audit how it used it",
-    "stars": 100,
-    "score": 92,
-    "senior": "Agents senior",
-    "reason": "MemoSync is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-10-30T06:18:39.239585+00:00"
    },
    {
     "full_name": "ypyik0669/claude-web",
