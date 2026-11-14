@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T06:34:42.073462+00:00",
+ "updated": "2026-11-14T06:26:43.314380+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -51,6 +51,18 @@
     "approved_at": "2026-11-10T06:30:29.004276+00:00"
    },
    {
+    "full_name": "Cygnux-Labs/Tracekit",
+    "owner": "Cygnux-Labs",
+    "name": "Tracekit",
+    "url": "https://github.com/Cygnux-Labs/Tracekit",
+    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
+    "stars": 726,
+    "score": 97,
+    "senior": "MCP senior",
+    "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-11T06:32:43.780007+00:00"
+   },
+   {
     "full_name": "dominikmartn/harp",
     "owner": "dominikmartn",
     "name": "harp",
@@ -61,18 +73,6 @@
     "senior": "MCP senior",
     "reason": "harp depends on an MCP SDK; 53 skills with a valid SKILL.md (e.g. .agents/skills/add-feature-flag/SKILL.md)",
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
-    "full_name": "Cygnux-Labs/Tracekit",
-    "owner": "Cygnux-Labs",
-    "name": "Tracekit",
-    "url": "https://github.com/Cygnux-Labs/Tracekit",
-    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-    "stars": 690,
-    "score": 97,
-    "senior": "MCP senior",
-    "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-11T06:32:43.780007+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 35659,
+    "stars": 36236,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
