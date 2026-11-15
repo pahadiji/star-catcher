@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T06:26:43.314380+00:00",
+ "updated": "2026-11-15T06:28:11.112700+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -51,6 +51,18 @@
     "approved_at": "2026-11-10T06:30:29.004276+00:00"
    },
    {
+    "full_name": "INSANE0777/Awwwards-mcp",
+    "owner": "INSANE0777",
+    "name": "Awwwards-mcp",
+    "url": "https://github.com/INSANE0777/Awwwards-mcp",
+    "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
+    "stars": 761,
+    "score": 97,
+    "senior": "MCP senior",
+    "reason": "Awwwards-mcp depends on an MCP SDK",
+    "approved_at": "2026-11-15T06:28:11.112700+00:00"
+   },
+   {
     "full_name": "Cygnux-Labs/Tracekit",
     "owner": "Cygnux-Labs",
     "name": "Tracekit",
@@ -61,18 +73,6 @@
     "senior": "MCP senior",
     "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-11-11T06:32:43.780007+00:00"
-   },
-   {
-    "full_name": "dominikmartn/harp",
-    "owner": "dominikmartn",
-    "name": "harp",
-    "url": "https://github.com/dominikmartn/harp",
-    "description": "Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.",
-    "stars": 713,
-    "score": 97,
-    "senior": "MCP senior",
-    "reason": "harp depends on an MCP SDK; 53 skills with a valid SKILL.md (e.g. .agents/skills/add-feature-flag/SKILL.md)",
-    "approved_at": "2026-10-29T06:18:15.914700+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 36236,
+    "stars": 36639,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -118,7 +118,7 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9510,
+    "stars": 9700,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
