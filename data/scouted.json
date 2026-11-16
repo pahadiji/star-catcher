@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T06:25:46.357621+00:00",
+ "updated": "2026-11-16T07:08:45.143095+00:00",
  "demoed_this_run": 75,
  "candidates": [
   {
@@ -21,7 +21,7 @@
    ],
    "license": null,
    "created_at": "2026-10-22T20:09:30Z",
-   "pushed_at": "2026-11-15T01:22:33Z",
+   "pushed_at": "2026-11-16T00:28:05Z",
    "scout": "repos",
    "kinds": [],
    "checks": {
@@ -34,7 +34,7 @@
    "score": 40,
    "category": "Agents & SDK",
    "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "hellogumbo/awesome-jev",
@@ -53,8 +53,8 @@
    ],
    "license": "CC0-1.0",
    "created_at": "2026-09-17T15:30:09Z",
-   "pushed_at": "2026-11-15T05:26:55Z",
-   "scout": "plugins",
+   "pushed_at": "2026-11-16T05:28:01Z",
+   "scout": "repos",
    "kinds": [],
    "checks": {
     "readme": true,
@@ -66,7 +66,7 @@
    "score": 54,
    "category": "Prompts & Guides",
    "first_scouted": "2026-10-31T06:12:28.025310+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "modelplan/modelplan",
@@ -87,7 +87,7 @@
    ],
    "license": "MIT",
    "created_at": "2026-10-12T09:08:34Z",
-   "pushed_at": "2026-11-15T06:23:33Z",
+   "pushed_at": "2026-11-16T07:05:32Z",
    "scout": "plugins",
    "kinds": [
     "plugin",
@@ -108,7 +108,7 @@
    "score": 89,
    "category": "Skills & Plugins",
    "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "yetone/magpie",
@@ -116,7 +116,7 @@
    "name": "magpie",
    "url": "https://github.com/yetone/magpie",
    "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-   "stars": 36639,
+   "stars": 37244,
    "topics": [
     "claude-code",
     "codex",
@@ -127,7 +127,7 @@
    ],
    "license": "MIT",
    "created_at": "2026-09-23T16:22:35Z",
-   "pushed_at": "2026-11-15T06:26:39Z",
+   "pushed_at": "2026-11-16T07:09:26Z",
    "scout": "repos",
    "kinds": [
     "skill"
@@ -145,7 +145,7 @@
    "score": 100,
    "category": "Agents & SDK",
    "first_scouted": "2026-10-27T09:27:22.852203+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "UpstageAI/korean-tax-calc-mcp",
@@ -166,7 +166,7 @@
    ],
    "license": "MIT",
    "created_at": "2026-10-07T05:55:40Z",
-   "pushed_at": "2026-11-15T05:55:11Z",
+   "pushed_at": "2026-11-16T04:20:39Z",
    "scout": "repos",
    "kinds": [
     "mcp"
@@ -183,7 +183,7 @@
    "score": 91,
    "category": "MCP Servers",
    "first_scouted": "2026-10-28T06:14:12.390479+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "yibie/awesome-jev",
@@ -191,7 +191,7 @@
    "name": "awesome-jev",
    "url": "https://github.com/yibie/awesome-jev",
    "description": "A curated list of public projects, integrations, and discussions built on Jev \u2014 TypeSafe AI's System One model for typed decisions.",
-   "stars": 2591,
+   "stars": 2594,
    "topics": [
     "awesome",
     "awesome-list",
@@ -200,8 +200,8 @@
    ],
    "license": null,
    "created_at": "2026-09-17T14:23:21Z",
-   "pushed_at": "2026-11-15T05:40:33Z",
-   "scout": "skills",
+   "pushed_at": "2026-11-16T05:40:40Z",
+   "scout": "plugins",
    "kinds": [
     "skill"
    ],
@@ -218,7 +218,7 @@
    "score": 90,
    "category": "Prompts & Guides",
    "first_scouted": "2026-11-08T06:23:09.309724+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "reacher-z/Awesome-REA",
@@ -226,7 +226,7 @@
    "name": "Awesome-REA",
    "url": "https://github.com/reacher-z/Awesome-REA",
    "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
-   "stars": 2849,
+   "stars": 2943,
    "topics": [
     "agent-skills",
     "ai-agents",
@@ -239,8 +239,8 @@
    ],
    "license": "MIT",
    "created_at": "2026-10-16T00:42:04Z",
-   "pushed_at": "2026-11-15T05:00:28Z",
-   "scout": "plugins",
+   "pushed_at": "2026-11-16T05:08:11Z",
+   "scout": "skills",
    "kinds": [],
    "checks": {
     "readme": true,
@@ -252,7 +252,7 @@
    "score": 60,
    "category": "MCP Servers",
    "first_scouted": "2026-10-27T09:27:22.852203+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "HamSanders/soundbox",
@@ -260,7 +260,7 @@
    "name": "soundbox",
    "url": "https://github.com/HamSanders/soundbox",
    "description": "Free, open-source, local alternative to ElevenLabs and Suno. AI sound effects, music with lyrics, text-to-speech and voice cloning on your own GPU (Stable Audio, ACE-Step and more). No account, no credits, offline. Windows/macOS app, HTTP API and a 21-tool MCP server for Claude Code and Cursor.",
-   "stars": 208,
+   "stars": 213,
    "topics": [
     "ai-music",
     "ai-sound-effects",
@@ -273,7 +273,7 @@
    ],
    "license": "NOASSERTION",
    "created_at": "2026-10-13T20:54:04Z",
-   "pushed_at": "2026-11-15T06:12:58Z",
+   "pushed_at": "2026-11-15T20:01:04Z",
    "scout": "repos",
    "kinds": [
     "mcp",
@@ -293,7 +293,7 @@
    "score": 93,
    "category": "MCP Servers",
    "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "WenyuChiou/agent-board",
@@ -314,7 +314,7 @@
    ],
    "license": "MIT",
    "created_at": "2026-10-16T19:59:16Z",
-   "pushed_at": "2026-11-15T06:18:23Z",
+   "pushed_at": "2026-11-16T07:07:21Z",
    "scout": "plugins",
    "kinds": [
     "plugin"
@@ -332,28 +332,28 @@
    "score": 90,
    "category": "Agents & SDK",
    "first_scouted": "2026-10-28T06:14:12.390479+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "ouxxyy/ouba-classmate",
    "owner": "ouxxyy",
    "name": "ouba-classmate",
    "url": "https://github.com/ouxxyy/ouba-classmate",
-   "description": "\u4e00\u884c\u5b89\u88c5\u7684\u4e2d\u6587\u6c42\u804c Agent Skills \u5957\u4ef6\uff08\u5c97\u4f4d\u641c\u7d22/\u7b80\u5386\u5339\u914d/\u9762\u8bd5\u966a\u7ec3/\u67e5\u516c\u53f8\uff09+\u300a\u4e2d\u6587 AI \u6c42\u804c Skill \u516c\u5f00\u6a2a\u8bc4\u300b\u6570\u636e\u3002Claude Code\u00b7Codex\u00b7MCP",
+   "description": "\u4e00\u884c\u5b89\u88c5\u7684\u4e2d\u6587\u6c42\u804c Agent Skills \u5957\u4ef6\uff0c\u8986\u76d6\u8df3\u69fd\u6da8\u85aa\u5168\u6d41\u7a0b\uff08\u5c97\u4f4d\u641c\u7d22/\u7b80\u5386\u5339\u914d/\u9762\u8bd5\u966a\u7ec3/\u67e5\u516c\u53f8\uff09+\u300a\u4e2d\u6587 AI \u6c42\u804c Skill \u516c\u5f00\u6a2a\u8bc4\u300b\u6570\u636e\u3002Claude Code\u00b7Codex\u00b7MCP",
    "stars": 71,
    "topics": [
     "agent-skills",
     "ai-video",
     "benchmark",
+    "career-development",
+    "career-tools",
     "chinese",
     "claude-code",
-    "claude-code-plugin",
-    "claude-skills",
-    "codex"
+    "claude-code-plugin"
    ],
    "license": "MIT",
    "created_at": "2026-09-28T07:39:42Z",
-   "pushed_at": "2026-11-15T02:03:41Z",
+   "pushed_at": "2026-11-16T02:20:11Z",
    "scout": "plugins",
    "kinds": [
     "plugin",
@@ -374,7 +374,7 @@
    "score": 91,
    "category": "MCP Servers",
    "first_scouted": "2026-11-06T06:32:40.722758+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "flisk-sh/flisk",
@@ -382,7 +382,7 @@
    "name": "flisk",
    "url": "https://github.com/flisk-sh/flisk",
    "description": "The local runtime your AI coding agent can start, check and fix. One command runs your multi-service app from a Compose file or plain commands, and an MCP server gives Claude Code, Cursor and Codex its health, logs and controls. MIT, no account.",
-   "stars": 47,
+   "stars": 49,
    "topics": [
     "ai-agents",
     "claude-code",
@@ -395,7 +395,7 @@
    ],
    "license": "MIT",
    "created_at": "2026-09-19T11:44:49Z",
-   "pushed_at": "2026-11-15T01:57:13Z",
+   "pushed_at": "2026-11-16T01:33:41Z",
    "scout": "repos",
    "kinds": [
     "plugin",
@@ -416,7 +416,7 @@
    "score": 90,
    "category": "MCP Servers",
    "first_scouted": "2026-11-10T06:28:23.384099+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "Cygnux-Labs/Tracekit",
@@ -424,7 +424,7 @@
    "name": "Tracekit",
    "url": "https://github.com/Cygnux-Labs/Tracekit",
    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-   "stars": 726,
+   "stars": 727,
    "topics": [
     "agent-security",
     "ai-agents",
@@ -437,8 +437,8 @@
    ],
    "license": "MIT",
    "created_at": "2026-09-26T11:33:11Z",
-   "pushed_at": "2026-11-15T05:31:17Z",
-   "scout": "plugins",
+   "pushed_at": "2026-11-16T06:36:27Z",
+   "scout": "repos",
    "kinds": [
     "agent",
     "mcp",
@@ -462,7 +462,2336 @@
    "score": 97,
    "category": "MCP Servers",
    "first_scouted": "2026-10-27T09:27:22.852203+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "nwverse/persona",
+   "owner": "nwverse",
+   "name": "persona",
+   "url": "https://github.com/nwverse/persona",
+   "description": "",
+   "stars": 344,
+   "topics": [
+    "agent",
+    "personal-agent",
+    "super-agent"
+   ],
+   "license": "MIT",
+   "created_at": "2026-11-06T15:25:24Z",
+   "pushed_at": "2026-11-16T07:08:56Z",
+   "scout": "repos",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. server/internal/assistantskills/builtin/persona-office/SKILL.md)"
+   ],
+   "score": 95,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-11T06:30:02.613932+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "delexw/motion-graphics-agent",
+   "owner": "delexw",
+   "name": "motion-graphics-agent",
+   "url": "https://github.com/delexw/motion-graphics-agent",
+   "description": "Turn ideas into motion graphics and animated videos with Claude, Codex or DeepSeek. \u7528 Claude\u3001Codex \u6216 DeepSeek\uff0c\u5c06\u521b\u610f\u53d8\u6210\u52a8\u6001\u56fe\u5f62\u548c\u52a8\u753b\u89c6\u9891\u3002",
+   "stars": 92,
+   "topics": [
+    "ai-agent",
+    "ai-video",
+    "claude",
+    "codex",
+    "creative-coding",
+    "deepseek",
+    "gsap",
+    "hyperframes"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-15T20:25:36Z",
+   "pushed_at": "2026-11-16T00:10:49Z",
+   "scout": "repos",
+   "kinds": [
+    "agent",
+    "mcp"
+   ],
+   "checks": {
+    "skill_manifest": false,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description",
+    "depends on an MCP SDK",
+    "uses the Anthropic / Claude Agent SDK"
+   ],
+   "score": 76,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-08T06:23:09.309724+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "adsorgcn/WorkBuddy",
+   "owner": "adsorgcn",
+   "name": "WorkBuddy",
+   "url": "https://github.com/adsorgcn/WorkBuddy",
+   "description": "iLang \u4e13\u5bb6\u4e0e\u6280\u80fd\u7684 GitHub \u5b89\u88c5\u6e90\uff0c\u6d77\u5916\u7248 WorkBuddy \u53ef\u76f4\u63a5\u88c5\uff1a\u516c\u4f17\u53f7\u7206\u6587\u7ed3\u6784\u4e13\u5bb6 v2.0\uff08\u7d20\u6750\u8fdb\u7a3f\u5b50\u51fa\uff0c12 \u9879\u81ea\u67e5\uff0c\u5185\u7f6e\u53bb AI \u5473\uff09\u00b7 iLang experts & skills for WorkBuddy, installable from GitHub",
+   "stars": 130,
+   "topics": [
+    "agent-skills",
+    "ai-writing",
+    "chinese",
+    "claude-code-plugin",
+    "codebuddy",
+    "content-creation",
+    "deai",
+    "gongzhonghao"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-08T14:41:42Z",
+   "pushed_at": "2026-11-16T02:18:47Z",
+   "scout": "plugins",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "7 skills with a valid SKILL.md (e.g. experts/ilang-wechat-awesome/skills/remote-dispatch/SKILL.md)"
+   ],
+   "score": 92,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-29T06:16:10.213568+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "shinyobjectz/raea",
+   "owner": "shinyobjectz",
+   "name": "raea",
+   "url": "https://github.com/shinyobjectz/raea",
+   "description": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows.",
+   "stars": 2591,
+   "topics": [
+    "3d",
+    "agent-skills",
+    "ai-agents",
+    "ai-video",
+    "bevy",
+    "claude-code",
+    "game-engine",
+    "gpu"
+   ],
+   "license": "NOASSERTION",
+   "created_at": "2026-10-18T18:08:48Z",
+   "pushed_at": "2026-11-16T05:06:50Z",
+   "scout": "skills",
+   "kinds": [
+    "plugin"
+   ],
+   "checks": {
+    "skill_manifest": false,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 85,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Parcha-ai/agentrun",
+   "owner": "Parcha-ai",
+   "name": "agentrun",
+   "url": "https://github.com/Parcha-ai/agentrun",
+   "description": "AgentRun is an open-source platform that supercharges your agents. It adds self-improvement, durable execution and a control plane on top of your favorite agent harness. Your agents become smarter, more fault tolerant and use fewer tokens with every run.",
+   "stars": 1152,
+   "topics": [],
+   "license": "Apache-2.0",
+   "created_at": "2026-09-23T00:27:34Z",
+   "pushed_at": "2026-11-16T07:01:52Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "15 skills with a valid SKILL.md (e.g. .agents/skills/code-review-knowledge/SKILL.md)"
+   ],
+   "score": 98,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "bayshores/godspeed",
+   "owner": "bayshores",
+   "name": "godspeed",
+   "url": "https://github.com/bayshores/godspeed",
+   "description": "Free, open-source AI tutor for your classes. Claude Code, Codex or any MCP app teaches you step by step, tracks what you know in a knowledge graph, and preps you for exams. No API keys. Mac, Windows, Linux.",
+   "stars": 18,
+   "topics": [
+    "ai-education",
+    "ai-tutor",
+    "claude-code",
+    "claude-code-plugin",
+    "codex",
+    "desktop-app",
+    "edtech",
+    "education"
+   ],
+   "license": "AGPL-3.0",
+   "created_at": "2026-10-27T00:24:01Z",
+   "pushed_at": "2026-11-16T06:53:17Z",
+   "scout": "plugins",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. integrations/skills/godspeed/SKILL.md)"
+   ],
+   "score": 87,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "sno-ai/sno-station",
+   "owner": "sno-ai",
+   "name": "sno-station",
+   "url": "https://github.com/sno-ai/sno-station",
+   "description": "When Claude Code hits its usage limit, Codex picks the task up from the same memory. Sno Station puts Codex, Claude Code, Cursor, Hermes Agent and OpenClaw on one squad: they hand work to each other and review each other's code. Open source, runs on your computer.",
+   "stars": 1020,
+   "topics": [
+    "agent-memory",
+    "agent-orchestration",
+    "agentic-coding",
+    "ai-code-review",
+    "ai-coding-agent",
+    "ai-memory",
+    "claude-code",
+    "claude-code-skills"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-09-19T06:55:24Z",
+   "pushed_at": "2026-11-16T05:21:25Z",
+   "scout": "skills",
+   "kinds": [
+    "agent",
+    "mcp",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "11 skills with a valid SKILL.md (e.g. apps/mem-claude/skills/sno-mem-claude/SKILL.md)",
+    "depends on an MCP SDK",
+    "uses the Anthropic / Claude Agent SDK"
+   ],
+   "score": 98,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "wh000wh000/awesome-jev-live",
+   "owner": "wh000wh000",
+   "name": "awesome-jev-live",
+   "url": "https://github.com/wh000wh000/awesome-jev-live",
+   "description": "Awesome Jev \u2014 evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languages, rebuilt every 2 hours.",
+   "stars": 379,
+   "topics": [
+    "ai-agents",
+    "artificial-intelligence",
+    "awesome",
+    "awesome-jev",
+    "awesome-list",
+    "calibration",
+    "curated-list",
+    "decision-making"
+   ],
+   "license": "NOASSERTION",
+   "created_at": "2026-09-18T13:37:03Z",
+   "pushed_at": "2026-11-16T06:29:00Z",
+   "scout": "plugins",
+   "kinds": [],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [],
+   "score": 55,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "sno-ai/sno-station-skills",
+   "owner": "sno-ai",
+   "name": "sno-station-skills",
+   "url": "https://github.com/sno-ai/sno-station-skills",
+   "description": "Sno Station Skills: 39 tested skills that turn Claude Code and Codex into one working team. Review by a different agent, automatic handoff when an agent hits its usage limit, a one-page morning brief, work orders with proof, and a nightly loop that learns from your own sessions. Open source, install",
+   "stars": 865,
+   "topics": [
+    "agent-skills",
+    "agentic-coding",
+    "ai-code-review",
+    "ai-coding-agent",
+    "ai-coding-assistant",
+    "claude-code",
+    "claude-code-plugin",
+    "claude-code-skills"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-10-01T04:18:51Z",
+   "pushed_at": "2026-11-16T05:22:38Z",
+   "scout": "skills",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "52 skills with a valid SKILL.md (e.g. plugins/sno-station-standalone/skills/agentic-walkthrough/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 97,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Vancci-sloth/Sloth",
+   "owner": "Vancci-sloth",
+   "name": "Sloth",
+   "url": "https://github.com/Vancci-sloth/Sloth",
+   "description": "Videos verticales con agentes de Claude, a la vista y paso a paso. C\u00f3digo abierto para uso libre, sin reventa.",
+   "stars": 48,
+   "topics": [
+    "ai-agents",
+    "claude",
+    "desktop-app",
+    "electron",
+    "instagram-reels",
+    "remotion",
+    "spanish",
+    "tiktok"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-26T16:15:06Z",
+   "pushed_at": "2026-11-16T06:09:31Z",
+   "scout": "repos",
+   "kinds": [
+    "agent",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "10 skills with a valid SKILL.md (e.g. skills/crear-estilo/SKILL.md)",
+    "uses the Anthropic / Claude Agent SDK"
+   ],
+   "score": 90,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-03T06:28:23.500263+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Derrors/iphone-control",
+   "owner": "Derrors",
+   "name": "iphone-control",
+   "url": "https://github.com/Derrors/iphone-control",
+   "description": "Control a real USB-connected iPhone from Linux (no Mac, no paid developer account) and expose it to AI agents as MCP tools",
+   "stars": 42,
+   "topics": [
+    "ai-agent",
+    "automation",
+    "claude",
+    "claude-code",
+    "docker",
+    "ios",
+    "iphone",
+    "linux"
+   ],
+   "license": "MIT",
+   "created_at": "2026-11-01T15:37:29Z",
+   "pushed_at": "2026-11-16T04:02:40Z",
+   "scout": "repos",
+   "kinds": [
+    "mcp"
+   ],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "depends on an MCP SDK"
+   ],
+   "score": 89,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "agentes-chat/agentes-chat",
+   "owner": "agentes-chat",
+   "name": "agentes-chat",
+   "url": "https://github.com/agentes-chat/agentes-chat",
+   "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGP",
+   "stars": 1564,
+   "topics": [
+    "agentic-ai",
+    "ai-agents",
+    "browser-automation",
+    "chat",
+    "claude",
+    "claude-code",
+    "codex",
+    "collaboration"
+   ],
+   "license": "AGPL-3.0",
+   "created_at": "2026-11-09T00:50:28Z",
+   "pushed_at": "2026-11-16T06:51:05Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "6 skills with a valid SKILL.md (e.g. .claude/skills/ui-polish/SKILL.md)"
+   ],
+   "score": 99,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-12T06:33:53.194242+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "alexsergivan/kwant",
+   "owner": "alexsergivan",
+   "name": "kwant",
+   "url": "https://github.com/alexsergivan/kwant",
+   "description": "Your own team of AI bots in one self-hosted binary: spaces, every account you have, handoffs, approvals and routines. Open-source, self-hosted alternative to Grok Bot, Claude Duet and OpenAI dots. Rust + React.",
+   "stars": 634,
+   "topics": [
+    "ai-agents",
+    "ai-assistant",
+    "ai-bot",
+    "automation",
+    "bot",
+    "bots-team",
+    "chatbot",
+    "claude-duet"
+   ],
+   "license": "AGPL-3.0",
+   "created_at": "2026-10-22T18:41:24Z",
+   "pushed_at": "2026-11-16T07:04:53Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. tests/fixtures/import/SKILL.md)"
+   ],
+   "score": 96,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "ClickHouse/loom",
+   "owner": "ClickHouse",
+   "name": "loom",
+   "url": "https://github.com/ClickHouse/loom",
+   "description": "Shared long-term memory, document search and a code index for AI agents, linked to your code. Memories point at the files and symbols they're about and surface when an agent edits them. MCP server, Claude Code and Codex plugins, SDKs. Self-hosted on ClickHouse.",
+   "stars": 121,
+   "topics": [
+    "agent-memory",
+    "ai-agents",
+    "ai-memory",
+    "claude-code",
+    "claude-code-plugin",
+    "clickhouse",
+    "code-intelligence",
+    "code-search"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-10-08T12:50:03Z",
+   "pushed_at": "2026-11-16T07:10:05Z",
+   "scout": "repos",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "29 skills with a valid SKILL.md (e.g. .claude/skills/loom-address-review/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 92,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "tokensafe-dev/tokensafe",
+   "owner": "tokensafe-dev",
+   "name": "tokensafe",
+   "url": "https://github.com/tokensafe-dev/tokensafe",
+   "description": "Make AI coding agents 3x faster without burning team quotas. Exact code context. Fewer tokens. Safer changes.",
+   "stars": 44,
+   "topics": [
+    "ai-agents",
+    "ai-tools",
+    "antigravity",
+    "claude",
+    "claude-code",
+    "claude-desktop",
+    "codex",
+    "context-window"
+   ],
+   "license": "MIT",
+   "created_at": "2026-11-08T00:30:49Z",
+   "pushed_at": "2026-11-16T02:16:59Z",
+   "scout": "repos",
+   "kinds": [
+    "mcp"
+   ],
+   "checks": {
+    "skill_manifest": false,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description",
+    "depends on an MCP SDK"
+   ],
+   "score": 74,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "beluga-labs/beluga",
+   "owner": "beluga-labs",
+   "name": "beluga",
+   "url": "https://github.com/beluga-labs/beluga",
+   "description": "Beluga: AI native IDE designed around AI first development",
+   "stars": 563,
+   "topics": [
+    "ai-agents",
+    "claude",
+    "claude-code",
+    "git-worktree",
+    "macos",
+    "peer-to-peer",
+    "tauri",
+    "tui"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-16T13:27:30Z",
+   "pushed_at": "2026-11-16T00:39:17Z",
+   "scout": "repos",
+   "kinds": [
+    "agent",
+    "mcp"
+   ],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "depends on an MCP SDK",
+    "uses the Anthropic / Claude Agent SDK"
+   ],
+   "score": 96,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-11T06:30:02.613932+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "amurgola/LumaBrowser",
+   "owner": "amurgola",
+   "name": "LumaBrowser",
+   "url": "https://github.com/amurgola/LumaBrowser",
+   "description": "Local AI desktop app: a Chromium browser with a GPU-aware llama.cpp runtime, OpenAI-compatible API, AI chat and agents, Stable Diffusion image/video, TTS and music, plus an MCP server so Claude Code, Codex and Cline can drive your browser. Windows, macOS, Linux.",
+   "stars": 151,
+   "topics": [
+    "ai-agents",
+    "ai-browser",
+    "browser-automation",
+    "chatgpt-alternative",
+    "desktop-app",
+    "electron",
+    "gguf",
+    "llama-cpp"
+   ],
+   "license": "NOASSERTION",
+   "created_at": "2026-10-09T15:01:21Z",
+   "pushed_at": "2026-11-16T02:17:12Z",
+   "scout": "repos",
+   "kinds": [
+    "mcp"
+   ],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "depends on an MCP SDK"
+   ],
+   "score": 93,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-29T06:16:10.213568+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "tbee6061-ctrl/studio-live-window-capture",
+   "owner": "tbee6061-ctrl",
+   "name": "studio-live-window-capture",
+   "url": "https://github.com/tbee6061-ctrl/studio-live-window-capture",
+   "description": "Roblox Studio macOS Window Capture Fix 2026: Real Screenshot Tool Instead of Magenta Playtest Glitch",
+   "stars": 71,
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "claude-code-plugin",
+    "developer-tools",
+    "llm-tools",
+    "macos",
+    "mcp",
+    "model-context-protocol"
+   ],
+   "license": null,
+   "created_at": "2026-09-22T21:00:35Z",
+   "pushed_at": "2026-11-16T03:51:20Z",
+   "scout": "plugins",
+   "kinds": [],
+   "checks": {
+    "readme": true,
+    "licence": false,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [],
+   "score": 41,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-27T09:27:22.852203+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "wuyoscar/AISafetyHot",
+   "owner": "wuyoscar",
+   "name": "AISafetyHot",
+   "url": "https://github.com/wuyoscar/AISafetyHot",
+   "description": "AI Safety HOT: daily AI safety news, papers and incidents in one place \u2014 jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+   "stars": 2127,
+   "topics": [
+    "ai-alignment",
+    "ai-governance",
+    "ai-safety",
+    "arxiv-papers",
+    "daily-papers",
+    "jailbreak",
+    "llm-security",
+    "mcp-server"
+   ],
+   "license": "NOASSERTION",
+   "created_at": "2026-10-01T11:33:59Z",
+   "pushed_at": "2026-11-16T07:06:23Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "4 skills with a valid SKILL.md (e.g. skills/aisafety-brief/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 99,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "ckryptickunal/OpenDesigner",
+   "owner": "ckryptickunal",
+   "name": "OpenDesigner",
+   "url": "https://github.com/ckryptickunal/OpenDesigner",
+   "description": "A free, open-source add-on for Claude, ChatGPT, Codex and Cursor that turns a few plain answers into a design system, so everything you build looks like it belongs together.",
+   "stars": 169,
+   "topics": [
+    "accessibility",
+    "agent-skills",
+    "ai-agents",
+    "chatgpt",
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "codex"
+   ],
+   "license": "MIT",
+   "created_at": "2026-09-23T12:54:12Z",
+   "pushed_at": "2026-11-16T05:03:46Z",
+   "scout": "skills",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "38 skills with a valid SKILL.md (e.g. .agents/skills/opendesigner-export/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 93,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-31T06:12:28.025310+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "AGIHunt/blurt",
+   "owner": "AGIHunt",
+   "name": "blurt",
+   "url": "https://github.com/AGIHunt/blurt",
+   "description": "The keyboard for the agent era: dictation, copy text from screen, translation, snaps and screen recordings for Claude Code, Codex and your other agents. Free, open source, Mac. \u53e3\u55b7\u9e21\uff1aAgent \u65f6\u4ee3\u7684\u8f93\u5165\u6cd5\u3002",
+   "stars": 389,
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "dictation",
+    "feedback",
+    "macos",
+    "ocr"
+   ],
+   "license": "MIT",
+   "created_at": "2026-09-25T09:59:27Z",
+   "pushed_at": "2026-11-16T07:09:17Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "2 skills with a valid SKILL.md (e.g. .claude/skills/blurt-dictation-review/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 95,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "rehan-remade/universal-modder",
+   "owner": "rehan-remade",
+   "name": "universal-modder",
+   "url": "https://github.com/rehan-remade/universal-modder",
+   "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
+   "stars": 9722,
+   "topics": [
+    "age-of-empires",
+    "claude-code",
+    "claude-code-plugin",
+    "fal",
+    "game-assets",
+    "game-modding",
+    "mcp",
+    "modding"
+   ],
+   "license": "MIT",
+   "created_at": "2026-09-30T05:00:35Z",
+   "pushed_at": "2026-11-16T06:40:58Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 100,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "JoahanMorales/upiixia-agentic-kit",
+   "owner": "JoahanMorales",
+   "name": "upiixia-agentic-kit",
+   "url": "https://github.com/JoahanMorales/upiixia-agentic-kit",
+   "description": "Multi-agent coordination kit for Claude Code, Codex, Cursor & Gemini CLI: parallel AI agents with claims, leases, bounded loops, reviews and merges over Git.",
+   "stars": 21,
+   "topics": [
+    "agentic-workflow",
+    "agents-md-template",
+    "ai-agents",
+    "ai-coding",
+    "claude-code",
+    "claude-code-plugin",
+    "codex",
+    "cursor"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-06T18:28:55Z",
+   "pushed_at": "2026-11-16T02:27:10Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "36 skills with a valid SKILL.md (e.g. kit/.agents/skills/uak-advise/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 88,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-13T06:32:13.161275+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Graphicle-AI/graphicle",
+   "owner": "Graphicle-AI",
+   "name": "graphicle",
+   "url": "https://github.com/Graphicle-AI/graphicle",
+   "description": "Code graph and memory for your coding agents, in one Rust program. For Claude Code, Codex, Cursor and any MCP client.",
+   "stars": 579,
+   "topics": [
+    "agent-memory",
+    "ai-agents",
+    "claude-code",
+    "code-analysis",
+    "code-graph",
+    "code-intelligence",
+    "code-search",
+    "codex"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-10-14T12:25:36Z",
+   "pushed_at": "2026-11-16T06:03:03Z",
+   "scout": "repos",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "3 skills with a valid SKILL.md (e.g. crates/graphicle-graph/src/assets/install/SKILL.md)"
+   ],
+   "score": 96,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "UnderleveledBuilder/awesome-short-drama-skills",
+   "owner": "UnderleveledBuilder",
+   "name": "awesome-short-drama-skills",
+   "url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills",
+   "description": "AI \u77ed\u5267 \u00b7 \u6f2b\u5267 Skill\uff08\u6280\u80fd\u5305\uff09\u7cbe\u9009\uff1a\u5267\u672c\u3001\u6539\u7f16\u3001\u5206\u955c\u3001Seedance / \u53ef\u7075 / MiniMax \u89c6\u9891\u63d0\u793a\u8bcd\uff0c\u5343\u95ee\u3001\u8c46\u5305\u3001\u9f99\u867e OpenClaw\u3001WorkBuddy\u3001Claude Code\u3001Codex \u7b49\u667a\u80fd\u4f53\u53ef\u7528 | Curated agent skills for AI short drama, micro drama / microdrama, vertical drama and manju (AI comic drama): screenwriting, storyboards, Seedance / Kling / MiniMax video prompts",
+   "stars": 2387,
+   "topics": [
+    "agent-skills",
+    "ai-drama",
+    "ai-short-drama",
+    "awesome",
+    "awesome-list",
+    "claude-code",
+    "claude-skills",
+    "codex"
+   ],
+   "license": "CC0-1.0",
+   "created_at": "2026-10-13T20:35:18Z",
+   "pushed_at": "2026-11-16T01:04:42Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/short-drama-skill-finder/SKILL.md)"
+   ],
+   "score": 100,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "UnderleveledBuilder/awesome-social-media-skills",
+   "owner": "UnderleveledBuilder",
+   "name": "awesome-social-media-skills",
+   "url": "https://github.com/UnderleveledBuilder/awesome-social-media-skills",
+   "description": "\u81ea\u5a92\u4f53\u8fd0\u8425 Skill\uff08\u6280\u80fd\u5305\uff09\u7cbe\u9009\uff1a\u5c0f\u7ea2\u4e66\u3001\u6296\u97f3\u3001\u516c\u4f17\u53f7\u3001\u89c6\u9891\u53f7\u3001B \u7ad9\u3001X\u3001YouTube\u3001TikTok\u3001LinkedIn \u7684\u9009\u9898\u3001\u5199\u7a3f\u3001\u914d\u56fe\u3001\u53d1\u5e03\u548c\u6570\u636e\uff0c\u5343\u95ee\u3001\u8c46\u5305\u3001\u9f99\u867e OpenClaw\u3001WorkBuddy\u3001Claude Code\u3001Codex \u7b49\u667a\u80fd\u4f53\u53ef\u7528 | Curated agent skills for social media: Xiaohongshu (RedNote), Douyin, WeChat, X, YouTube, TikTok and LinkedIn",
+   "stars": 293,
+   "topics": [
+    "agent-skills",
+    "awesome",
+    "awesome-list",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "content-creator",
+    "douyin"
+   ],
+   "license": "CC0-1.0",
+   "created_at": "2026-10-19T21:12:45Z",
+   "pushed_at": "2026-11-16T01:36:39Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/social-media-skill-finder/SKILL.md)"
+   ],
+   "score": 94,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "vegardjorg/ravenseat",
+   "owner": "vegardjorg",
+   "name": "ravenseat",
+   "url": "https://github.com/vegardjorg/ravenseat",
+   "description": "Your Claude Code agents keep building. You make the decisions. A local-first work queue that runs parallel agents in isolated worktrees, checks their work with your own gates, and keeps the project moving across sessions.",
+   "stars": 14,
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "claude-code-plugin",
+    "git-worktree",
+    "kanban",
+    "project-management"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-27T19:58:44Z",
+   "pushed_at": "2026-11-16T01:50:09Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "13 skills with a valid SKILL.md (e.g. plugin/skills/add-helper/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 87,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "zuiho-kai/bothouse",
+   "owner": "zuiho-kai",
+   "name": "bothouse",
+   "url": "https://github.com/zuiho-kai/bothouse",
+   "description": "\u628a Claude Code\u3001Codex\u3001Gemini \u62c9\u8fdb\u4e00\u4e2a\u7fa4\uff0c\u7ec4\u957f AI \u5206\u6d3b\uff0c\u5927\u5bb6\u5171\u7528\u4e00\u4efd\u8bb0\u5fc6\u3002| Put Claude Code, Codex and Gemini CLI in one Discord group: a team-lead AI splits the work, and they share one memory.",
+   "stars": 231,
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "deepseek",
+    "discord-bot",
+    "feishu",
+    "gemini-cli",
+    "multi-agent"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-10-21T11:49:21Z",
+   "pushed_at": "2026-11-16T06:56:01Z",
+   "scout": "plugins",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "2 skills with a valid SKILL.md (e.g. bridge/core/skills/model-switch/SKILL.md)"
+   ],
+   "score": 94,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Zleap-AI/SAG-Wiki",
+   "owner": "Zleap-AI",
+   "name": "SAG-Wiki",
+   "url": "https://github.com/Zleap-AI/SAG-Wiki",
+   "description": "A lightweight knowledge base for people and agents, with ultra fast indexing and most precise retrieval.",
+   "stars": 1241,
+   "topics": [
+    "knowledge-base",
+    "knowledge-graph",
+    "rag",
+    "rust",
+    "sag",
+    "sag-wiki",
+    "wiki"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-18T14:51:30Z",
+   "pushed_at": "2026-11-16T06:36:56Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. cli/skills/sag/SKILL.md)"
+   ],
+   "score": 98,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-10T06:28:23.384099+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "TixXin/Fuyu",
+   "owner": "TixXin",
+   "name": "Fuyu",
+   "url": "https://github.com/TixXin/Fuyu",
+   "description": "\u6d6e\u5c7f\uff1aWindows \u548c macOS \u4e0a\u7684\u8f7b\u91cf\u7075\u52a8\u5c9b\u3002\u5728\u5c4f\u5e55\u9876\u90e8\u6c47\u603b QQ\u3001\u5fae\u4fe1\u548c\u90ae\u4ef6\u901a\u77e5\uff0c\u67e5\u770b Claude Code / Codex \u7684\u8fd0\u884c\u72b6\u6001\u5e76\u76f4\u63a5\u5728\u5c9b\u4e0a\u5ba1\u6279\uff0c\u8fd8\u6709\u526a\u8d34\u677f\u5386\u53f2\u3001\u5feb\u6377\u7ffb\u8bd1\u3001\u97f3\u4e50\u4e0e\u6b4c\u8bcd\u3001\u5f85\u529e\u3001\u65e5\u5386\u548c\u6587\u4ef6\u4e2d\u8f6c\uff0c\u652f\u6301\u63d2\u4ef6\u6269\u5c55\u3002",
+   "stars": 246,
+   "topics": [
+    "clipboard-manager",
+    "desktop-island",
+    "desktop-widget",
+    "dynamic-island",
+    "floating-widget",
+    "lyrics",
+    "macos",
+    "media-controls"
+   ],
+   "license": "AGPL-3.0",
+   "created_at": "2026-11-03T06:41:12Z",
+   "pushed_at": "2026-11-16T06:56:28Z",
+   "scout": "repos",
+   "kinds": [],
+   "checks": {
+    "skill_manifest": false,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description"
+   ],
+   "score": 39,
+   "category": "Apps & UIs",
+   "first_scouted": "2026-11-12T06:33:53.194242+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "tayyabimam1/awesome-ai-agent-stack",
+   "owner": "tayyabimam1",
+   "name": "awesome-ai-agent-stack",
+   "url": "https://github.com/tayyabimam1/awesome-ai-agent-stack",
+   "description": "Curated map of 3,000+ open-source AI agent tools: coding agents, agent frameworks, MCP servers, RAG, memory and local LLMs, sorted by layer and ranked by GitHub stars.",
+   "stars": 32,
+   "topics": [
+    "agentic-ai",
+    "ai-agents",
+    "ai-tools",
+    "artificial-intelligence",
+    "awesome",
+    "awesome-list",
+    "claude-code",
+    "coding-agents"
+   ],
+   "license": "CC-BY-4.0",
+   "created_at": "2026-09-18T07:33:15Z",
+   "pushed_at": "2026-11-16T05:47:56Z",
+   "scout": "plugins",
+   "kinds": [],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [],
+   "score": 49,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-04T06:32:01.416439+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "showheyohtaki/motion-prompt",
+   "owner": "showheyohtaki",
+   "name": "motion-prompt",
+   "url": "https://github.com/showheyohtaki/motion-prompt",
+   "description": "",
+   "stars": 2201,
+   "topics": [],
+   "license": "MIT",
+   "created_at": "2026-10-14T11:34:19Z",
+   "pushed_at": "2026-11-16T06:39:00Z",
+   "scout": "skills",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/motion-prompt/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 100,
+   "category": "Prompts & Guides",
+   "first_scouted": "2026-11-13T06:32:13.161275+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "JuneYaooo/rea-video",
+   "owner": "JuneYaooo",
+   "name": "rea-video",
+   "url": "https://github.com/JuneYaooo/rea-video",
+   "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
+   "stars": 9361,
+   "topics": [
+    "agent-skills",
+    "ai-video",
+    "aigc-detection",
+    "claude-code",
+    "codex",
+    "ffmpeg",
+    "prompt-engineering",
+    "remotion"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-10-29T16:15:01Z",
+   "pushed_at": "2026-11-16T05:24:57Z",
+   "scout": "skills",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 100,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-04T06:32:01.416439+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "trina-app/trina-ax",
+   "owner": "trina-app",
+   "name": "trina-ax",
+   "url": "https://github.com/trina-app/trina-ax",
+   "description": "Set up Claude Code once. Your whole company gets it. Self-hosted Claude Code and Codex with your company files, team skills, MCP and per-person folder permissions.",
+   "stars": 117,
+   "topics": [
+    "agent-skills",
+    "ai-workspace",
+    "claude-code",
+    "codex",
+    "document-management",
+    "hwp",
+    "mcp",
+    "self-hosted"
+   ],
+   "license": "AGPL-3.0",
+   "created_at": "2026-10-28T04:31:27Z",
+   "pushed_at": "2026-11-16T07:06:27Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "17 skills with a valid SKILL.md (e.g. .claude/skills/ui-polish/SKILL.md)"
+   ],
+   "score": 92,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "DUNHKpcc/Claude-Guardian",
+   "owner": "DUNHKpcc",
+   "name": "Claude-Guardian",
+   "url": "https://github.com/DUNHKpcc/Claude-Guardian",
+   "description": "Claude Guardian is an all-in-one Claude account safety and risk prevention skill.Claude\u9632\u5c01\u5b9e\u6218 It intelligently assesses your device, account history, network environment, and payment options, then provides personalized guidance for local, VPS, or virtual machine setups. ",
+   "stars": 2108,
+   "topics": [
+    "agent-skills",
+    "ai-tools",
+    "claude-code",
+    "claude-skills",
+    "codex-skill"
+   ],
+   "license": "GPL-3.0",
+   "created_at": "2026-10-15T06:09:53Z",
+   "pushed_at": "2026-11-16T01:59:24Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/claude-guardian/SKILL.md)"
+   ],
+   "score": 99,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "karanb192/cache-tax",
+   "owner": "karanb192",
+   "name": "cache-tax",
+   "url": "https://github.com/karanb192/cache-tax",
+   "description": "Keep Claude Code\u2019s prompt cache warm during breaks and show the estimated cost before a cold send.",
+   "stars": 412,
+   "topics": [
+    "claude-code",
+    "claude-code-plugin",
+    "claude-mods",
+    "function-hooks",
+    "prompt-caching"
+   ],
+   "license": "MIT",
+   "created_at": "2026-09-18T17:24:57Z",
+   "pushed_at": "2026-11-16T05:24:36Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin"
+   ],
+   "checks": {
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "valid .claude-plugin/plugin.json"
+   ],
+   "score": 95,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-05T06:32:34.469895+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "AppitStudio/awesome-jev",
+   "owner": "AppitStudio",
+   "name": "awesome-jev",
+   "url": "https://github.com/AppitStudio/awesome-jev",
+   "description": "Curated Jev resources and runnable examples for typed AI decisions.",
+   "stars": 115,
+   "topics": [
+    "ai",
+    "awesome",
+    "awesome-list",
+    "decision-making",
+    "jev",
+    "system-one",
+    "typesafe-ai"
+   ],
+   "license": "NOASSERTION",
+   "created_at": "2026-09-18T17:56:36Z",
+   "pushed_at": "2026-11-16T07:00:26Z",
+   "scout": "skills",
+   "kinds": [],
+   "checks": {
+    "skill_manifest": false,
+    "readme": false,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description"
+   ],
+   "score": 22,
+   "category": "Prompts & Guides",
+   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "alchaincyf/huashu-art-motion",
+   "owner": "alchaincyf",
+   "name": "huashu-art-motion",
+   "url": "https://github.com/alchaincyf/huashu-art-motion",
+   "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
+   "stars": 6999,
+   "topics": [
+    "agent-skills",
+    "animation",
+    "claude-code",
+    "claude-code-skills",
+    "claude-skills",
+    "codex",
+    "explainer-video",
+    "generative-art"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-06T04:49:37Z",
+   "pushed_at": "2026-11-15T08:20:05Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. SKILL.md)"
+   ],
+   "score": 100,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-10T06:28:23.384099+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "alchaincyf/huashu-motion",
+   "owner": "alchaincyf",
+   "name": "huashu-motion",
+   "url": "https://github.com/alchaincyf/huashu-motion",
+   "description": "\u8ba9\u4f60\u7684agent\u4e00\u952e\u76f4\u51fa\u5546\u4e1a\u7ea7\u4ea7\u54c1\u5ba3\u4f20\u7247\uff1a\u4f1a\u4f5c\u66f2\uff0c\u80fd\u6307\u7740\u753b\u9762\u6539\u3002Commercial-grade launch films by your coding agent \u2014 point at the frame to change it.",
+   "stars": 2752,
+   "topics": [
+    "agent-skills",
+    "animation",
+    "claude-code",
+    "claude-code-skills",
+    "claude-skills",
+    "codex",
+    "explainer-video",
+    "gsap"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-18T12:19:27Z",
+   "pushed_at": "2026-11-16T06:20:58Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/huashu-motion/SKILL.md)"
+   ],
+   "score": 100,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-10T06:28:23.384099+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "muaaz9329/cheap-ag",
+   "owner": "muaaz9329",
+   "name": "cheap-ag",
+   "url": "https://github.com/muaaz9329/cheap-ag",
+   "description": "50x your usage with cheap-ag. Opus/Astra plans, a dirt-cheap model writes every line, and tests decide what ships. Your $20 plan stops hitting limits. One MCP server for Claude Code & Codex.",
+   "stars": 333,
+   "topics": [
+    "agentic-coding",
+    "ai-agents",
+    "anthropic",
+    "cheap-llm",
+    "claude",
+    "claude-code",
+    "claude-code-hooks",
+    "claude-code-plugin"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-28T22:26:18Z",
+   "pushed_at": "2026-11-16T06:23:24Z",
+   "scout": "plugins",
+   "kinds": [
+    "mcp",
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "7 skills with a valid SKILL.md (e.g. plugin/skills/allow/SKILL.md)",
+    "valid .claude-plugin/marketplace.json",
+    "depends on an MCP SDK"
+   ],
+   "score": 95,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-31T06:12:28.025310+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "QingYunA/answer-me-with-html",
+   "owner": "QingYunA",
+   "name": "answer-me-with-html",
+   "url": "https://github.com/QingYunA/answer-me-with-html",
+   "description": "Answer me with HTML \u2014 an agent skill that answers hard questions with a one-page HTML you can actually read. \u8ba9 AI Agent \u7528\u4e00\u9875 HTML \u56de\u7b54\u590d\u6742\u95ee\u9898\u3002",
+   "stars": 6350,
+   "topics": [
+    "agent-skill",
+    "ai-agent",
+    "claude-code",
+    "claude-code-skill",
+    "claude-skill",
+    "claude-skills",
+    "cli",
+    "diagram"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-02T09:57:40Z",
+   "pushed_at": "2026-11-16T05:37:19Z",
+   "scout": "skills",
+   "kinds": [
+    "plugin"
+   ],
+   "checks": {
+    "skill_manifest": false,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 85,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "modelflare-ai/AnyModelBot",
+   "owner": "modelflare-ai",
+   "name": "AnyModelBot",
+   "url": "https://github.com/modelflare-ai/AnyModelBot",
+   "description": "\ud83e\udd16 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and",
+   "stars": 4156,
+   "topics": [
+    "ai-agent",
+    "ai-assistant",
+    "chatbot",
+    "claude",
+    "computer-use",
+    "deepseek",
+    "desktop-app",
+    "dsh"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-27T08:51:18Z",
+   "pushed_at": "2026-11-16T07:08:14Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "10 skills with a valid SKILL.md (e.g. .claude/skills/amb-bot-dev/SKILL.md)"
+   ],
+   "score": 100,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-09T06:35:31.540811+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "kydlikebtc/awesome-jev",
+   "owner": "kydlikebtc",
+   "name": "awesome-jev",
+   "url": "https://github.com/kydlikebtc/awesome-jev",
+   "description": "Launch what you built on Jev, TypeSafe AI's System One decision model: a weekly board where makers launch and people vote, over an index of public Jev examples by decision pattern, with source citations, dated link checks and call-site text checks; runtime and performance are not independently teste",
+   "stars": 602,
+   "topics": [
+    "agent-tools",
+    "ai-agents",
+    "awesome",
+    "awesome-list",
+    "calibration",
+    "catalog",
+    "classification",
+    "context-compaction"
+   ],
+   "license": "NOASSERTION",
+   "created_at": "2026-09-22T02:22:54Z",
+   "pushed_at": "2026-11-16T06:16:00Z",
+   "scout": "plugins",
+   "kinds": [
+    "mcp",
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/awesome-jev/SKILL.md)",
+    "valid .claude-plugin/marketplace.json",
+    "depends on an MCP SDK"
+   ],
+   "score": 96,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-09T06:35:31.540811+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "systemind-team/sharednet-client",
+   "owner": "systemind-team",
+   "name": "sharednet-client",
+   "url": "https://github.com/systemind-team/sharednet-client",
+   "description": "Official Implementation of SharedNet, SharedNet CLI and Sharednet Skills. ",
+   "stars": 36,
+   "topics": [
+    "agent-communication",
+    "agent-skills",
+    "agent-to-agent",
+    "ai-agents",
+    "claude-code",
+    "claude-code-plugin",
+    "cli",
+    "codex"
+   ],
+   "license": "MIT",
+   "created_at": "2026-09-24T17:11:08Z",
+   "pushed_at": "2026-11-16T02:05:15Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/sharednet-room/SKILL.md)",
+    "valid .claude-plugin/plugin.json"
+   ],
+   "score": 89,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-05T06:32:34.469895+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Rikinshah787/dotpals",
+   "owner": "Rikinshah787",
+   "name": "dotpals",
+   "url": "https://github.com/Rikinshah787/dotpals",
+   "description": "See what your coding agent actually did. A desktop pal and notch for Claude Code, Codex, Cursor, Gemini CLI and any agent: test results read from the output, faked passes caught, and an MCP server any AI tool can ask. New: talk to Blu, who sees your screen, draws on it as it explains and uses your a",
+   "stars": 93,
+   "topics": [
+    "agent-observability",
+    "ai-agents",
+    "ai-coding",
+    "anthropic",
+    "claude-code",
+    "codex",
+    "coding-agent",
+    "cursor"
+   ],
+   "license": "MIT",
+   "created_at": "2026-09-30T19:43:43Z",
+   "pushed_at": "2026-11-16T06:33:53Z",
+   "scout": "plugins",
+   "kinds": [
+    "mcp",
+    "plugin"
+   ],
+   "checks": {
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "valid .claude-plugin/marketplace.json",
+    "depends on an MCP SDK"
+   ],
+   "score": 91,
+   "category": "MCP Servers",
+   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "trustabl/agent-reliability-skills",
+   "owner": "trustabl",
+   "name": "agent-reliability-skills",
+   "url": "https://github.com/trustabl/agent-reliability-skills",
+   "description": "Forge Claude Code skills generate more reliable agents",
+   "stars": 62,
+   "topics": [],
+   "license": "Apache-2.0",
+   "created_at": "2026-10-30T04:59:40Z",
+   "pushed_at": "2026-11-15T22:22:05Z",
+   "scout": "repos",
+   "kinds": [
+    "mcp",
+    "plugin"
+   ],
+   "checks": {
+    "skill_manifest": false,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description",
+    "valid .claude-plugin/marketplace.json",
+    "depends on an MCP SDK"
+   ],
+   "score": 75,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-06T06:32:40.722758+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "erkamyaman/unslopovich",
+   "owner": "erkamyaman",
+   "name": "unslopovich",
+   "url": "https://github.com/erkamyaman/unslopovich",
+   "description": "Your app looks AI-generated. Dr. Unslopovich noticed. An agent skill that finds and fixes AI-looking UI and UX in mobile apps, web apps, and websites.",
+   "stars": 143,
+   "topics": [
+    "accessibility",
+    "agent-skills",
+    "agent-skills-tools",
+    "agents",
+    "agentskills",
+    "ai-slop",
+    "claude",
+    "claude-code"
+   ],
+   "license": "MIT",
+   "created_at": "2026-11-09T19:42:33Z",
+   "pushed_at": "2026-11-16T06:42:36Z",
+   "scout": "skills",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. skills/unslopovich/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 92,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Ludi-Herry/desktop-agent-ui",
+   "owner": "Ludi-Herry",
+   "name": "desktop-agent-ui",
+   "url": "https://github.com/Ludi-Herry/desktop-agent-ui",
+   "description": "\u73b0\u4ee3\u684c\u9762 Agent / AI \u5e94\u7528\u7684\u8bbe\u8ba1\u89c4\u8303\u3001\u4ea4\u4e92\u7269\u7406\u5b66\u4e0e\u6df1\u5ea6\u5de5\u7a0b\u5b9e\u8df5\u6307\u5357",
+   "stars": 130,
+   "topics": [],
+   "license": "MIT",
+   "created_at": "2026-10-22T18:13:39Z",
+   "pushed_at": "2026-11-16T06:52:06Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. SKILL.md)"
+   ],
+   "score": 92,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "sara-fox-42/cursor-pro-desktop",
+   "owner": "sara-fox-42",
+   "name": "cursor-pro-desktop",
+   "url": "https://github.com/sara-fox-42/cursor-pro-desktop",
+   "description": "Cursor Pro 2026 desktop setup with full scripting workspace, bundled runtime, multilingual resources and portable mode for Windows 11.",
+   "stars": 119,
+   "topics": [
+    "agent-skill",
+    "agent-skills",
+    "code-quality",
+    "coding-agents",
+    "cursor",
+    "cursor-agent",
+    "cursor-desktop",
+    "cursor-download"
+   ],
+   "license": "MIT",
+   "created_at": "2026-11-15T11:13:19Z",
+   "pushed_at": "2026-11-16T05:02:53Z",
+   "scout": "skills",
+   "kinds": [],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [],
+   "score": 52,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Ludi-Herry/b-end-design-system-skill",
+   "owner": "Ludi-Herry",
+   "name": "b-end-design-system-skill",
+   "url": "https://github.com/Ludi-Herry/b-end-design-system-skill",
+   "description": "B\u7aef\u8bbe\u8ba1\u7cfb\u7edf\u4e0e\u7ec4\u4ef6\u89c4\u8303 AI \u6267\u884c\u7ea7 Skill (UI/UX Design System Skill for AI Agents, Cursor, Claude Code & Windsurf)",
+   "stars": 103,
+   "topics": [],
+   "license": "MIT",
+   "created_at": "2026-10-25T05:55:46Z",
+   "pushed_at": "2026-11-16T06:49:23Z",
+   "scout": "skills",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. SKILL.md)"
+   ],
+   "score": 92,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "tranphucbol/table-craft",
+   "owner": "tranphucbol",
+   "name": "table-craft",
+   "url": "https://github.com/tranphucbol/table-craft",
+   "description": "TableCraft \u2014 a free, open-source desktop database IDE in the spirit of DataGrip, with an MCP server for AI agents. MySQL, PostgreSQL, SQLite, Oracle, SQL Server, DuckDB, Redis, etcd.",
+   "stars": 42,
+   "topics": [
+    "bun",
+    "codemirror",
+    "database-client",
+    "database-gui",
+    "database-ide",
+    "datagrip-alternative",
+    "desktop-app",
+    "electron"
+   ],
+   "license": "GPL-3.0",
+   "created_at": "2026-10-21T18:37:06Z",
+   "pushed_at": "2026-11-16T06:06:38Z",
+   "scout": "plugins",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "2 skills with a valid SKILL.md (e.g. .agents/skills/create-pr/SKILL.md)"
+   ],
+   "score": 89,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "basdotio/bas-guard",
+   "owner": "basdotio",
+   "name": "bas-guard",
+   "url": "https://github.com/basdotio/bas-guard",
+   "description": "",
+   "stars": 30,
+   "topics": [],
+   "license": "MIT",
+   "created_at": "2026-09-30T04:46:12Z",
+   "pushed_at": "2026-11-16T06:17:23Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "3 skills with a valid SKILL.md (e.g. plugin/skills/bas-guard-audit/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 88,
+   "category": "Other",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "suzhe-ai/suzhe-ui",
+   "owner": "suzhe-ai",
+   "name": "suzhe-ui",
+   "url": "https://github.com/suzhe-ai/suzhe-ui",
+   "description": "The web design method behind suzhe.ai, as a Claude Skill. Two registers, one signature visual per page, fewer elements, smooth on every device. \u82cf\u54f2 UI",
+   "stars": 18,
+   "topics": [
+    "claude-code",
+    "claude-plugin",
+    "claude-skills",
+    "design-system",
+    "frontend",
+    "ui-design",
+    "web-design"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-11-15T06:53:18Z",
+   "pushed_at": "2026-11-15T07:01:27Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin"
+   ],
+   "checks": {
+    "skill_manifest": false,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "SKILL.md found but its frontmatter lacks a name or a real description",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 72,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "pihu26112005/claude-editing-skills",
+   "owner": "pihu26112005",
+   "name": "claude-editing-skills",
+   "url": "https://github.com/pihu26112005/claude-editing-skills",
+   "description": "Free, open-source Claude plugin with 76 motion-graphics skills: animated captions, titles, frames, zooms and explainer animations for Reels, TikTok and Shorts. Your footage stays untouched.",
+   "stars": 17,
+   "topics": [
+    "agent-skills",
+    "ai-editing",
+    "ai-video-editing",
+    "animated-captions",
+    "captions",
+    "claude",
+    "claude-code",
+    "claude-code-plugin"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-31T11:52:18Z",
+   "pushed_at": "2026-11-14T18:44:01Z",
+   "scout": "plugins",
+   "kinds": [
+    "plugin",
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "plugin_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "77 skills with a valid SKILL.md (e.g. skills/103-graphics-thread-word-relay/SKILL.md)",
+    "valid .claude-plugin/marketplace.json"
+   ],
+   "score": 87,
+   "category": "Skills & Plugins",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "kanaworksai-hue/audio-studio-mcp",
+   "owner": "kanaworksai-hue",
+   "name": "audio-studio-mcp",
+   "url": "https://github.com/kanaworksai-hue/audio-studio-mcp",
+   "description": "Local AI BGM and sound effects for Claude Code and any MCP client. Stable Audio 3 on Apple Silicon (MLX) and Windows NVIDIA GPUs (PyTorch). No cloud, no API key.",
+   "stars": 673,
+   "topics": [
+    "apple-silicon",
+    "audio-generation",
+    "claude-code",
+    "cuda",
+    "game-audio",
+    "mcp",
+    "mcp-server",
+    "mlx"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-18T11:13:56Z",
+   "pushed_at": "2026-11-16T06:55:12Z",
+   "scout": "repos",
+   "kinds": [
+    "mcp"
+   ],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "depends on an MCP SDK"
+   ],
+   "score": 96,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "Tthanh2k6/turbo-browser-mcp",
+   "owner": "Tthanh2k6",
+   "name": "turbo-browser-mcp",
+   "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+   "description": "Playwright MCP server built to cut agent turns and tokens: one-call form filling, delta snapshots, batched steps, and a submit guard on by default",
+   "stars": 115,
+   "topics": [
+    "ai-agents",
+    "browser-automation",
+    "cdp",
+    "claude-code",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "playwright"
+   ],
+   "license": "MIT",
+   "created_at": "2026-11-14T12:11:07Z",
+   "pushed_at": "2026-11-16T07:08:23Z",
+   "scout": "repos",
+   "kinds": [
+    "mcp"
+   ],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "depends on an MCP SDK"
+   ],
+   "score": 92,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "0xfe-project/eta",
+   "owner": "0xfe-project",
+   "name": "eta",
+   "url": "https://github.com/0xfe-project/eta",
+   "description": "Eta is a self-contained 0-vendor multi-agent all-in-one endomorphic agent loop/runtime/harness/app.",
+   "stars": 76,
+   "topics": [
+    "agent",
+    "claude-code",
+    "grok-bot",
+    "harness",
+    "muse"
+   ],
+   "license": "MIT",
+   "created_at": "2026-10-06T12:55:08Z",
+   "pushed_at": "2026-11-16T06:59:47Z",
+   "scout": "repos",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "1 skill with a valid SKILL.md (e.g. apps/eta/test/fixtures/plugins/hello-plugin/skills/greet/SKILL.md)"
+   ],
+   "score": 91,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "icodehq/icode-workbench",
+   "owner": "icodehq",
+   "name": "icode-workbench",
+   "url": "https://github.com/icodehq/icode-workbench",
+   "description": "The universal ADE \u2014 every agent, every platform, one workbench. Parallel, isolated, yours.",
+   "stars": 64,
+   "topics": [
+    "ade",
+    "agent-manager",
+    "agent-orchestration",
+    "agentic-development-environment",
+    "ai-agents",
+    "claude-code",
+    "code-review",
+    "codex"
+   ],
+   "license": "AGPL-3.0",
+   "created_at": "2026-11-04T09:26:46Z",
+   "pushed_at": "2026-11-16T07:10:01Z",
+   "scout": "repos",
+   "kinds": [],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [],
+   "score": 50,
+   "category": "Agents & SDK",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "pierlink/Pierlink",
+   "owner": "pierlink",
+   "name": "Pierlink",
+   "url": "https://github.com/pierlink/Pierlink",
+   "description": "Windows workbench for running a crew of AI agents: agents on your servers edit Windows files, run commands and drive terminals via MCP, with approvals on desktop or phone \u00b7 \u7ba1\u4e00\u7fa4 AI agent \u7684 Windows \u5de5\u4f5c\u53f0",
+   "stars": 39,
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "file-sync",
+    "mcp",
+    "remote-development",
+    "ssh",
+    "syncthing",
+    "tauri"
+   ],
+   "license": "NOASSERTION",
+   "created_at": "2026-10-28T01:35:10Z",
+   "pushed_at": "2026-11-16T06:54:58Z",
+   "scout": "repos",
+   "kinds": [],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [],
+   "score": 49,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "EngChooN/ai-office",
+   "owner": "EngChooN",
+   "name": "ai-office",
+   "url": "https://github.com/EngChooN/ai-office",
+   "description": "Claude\uc640 GPT \uc9c1\uc6d0\uc744 \ud568\uaed8 \ubf51\uc544 \uc77c\uc744 \ub9e1\uae30\uace0, \uacb0\uc7ac\ud558\uace0, \ubcf4\uace0\ubc1b\ub294 \ubb34\ub8cc \uc624\ud508\uc18c\uc2a4 \ub370\uc2a4\ud06c\ud1b1 \uc571 (Electron \u00b7 React \u00b7 Phaser)",
+   "stars": 36,
+   "topics": [],
+   "license": "MIT",
+   "created_at": "2026-10-25T13:26:23Z",
+   "pushed_at": "2026-11-16T03:36:14Z",
+   "scout": "repos",
+   "kinds": [
+    "skill"
+   ],
+   "checks": {
+    "skill_manifest": true,
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [
+    "3 skills with a valid SKILL.md (e.g. docs/specs/manual-backup/feature-flow-large/SKILL.md)"
+   ],
+   "score": 89,
+   "category": "Other",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
+  },
+  {
+   "full_name": "petritavd/airoom",
+   "owner": "petritavd",
+   "name": "airoom",
+   "url": "https://github.com/petritavd/airoom",
+   "description": "A control room for your Claude Code agents. Every session on one screen, approvals in one click. macOS and Windows.",
+   "stars": 36,
+   "topics": [
+    "ai-agents",
+    "anthropic",
+    "claude",
+    "claude-agent-sdk",
+    "claude-code",
+    "developer-tools",
+    "electron",
+    "macos"
+   ],
+   "license": "Apache-2.0",
+   "created_at": "2026-11-11T00:09:21Z",
+   "pushed_at": "2026-11-15T23:04:05Z",
+   "scout": "repos",
+   "kinds": [],
+   "checks": {
+    "readme": true,
+    "licence": true,
+    "active": true,
+    "has_files": true
+   },
+   "notes": [],
+   "score": 49,
+   "category": "MCP Servers",
+   "first_scouted": "2026-11-16T07:08:45.143095+00:00",
+   "demoed_at": "2026-11-16T07:08:45.143095+00:00"
   },
   {
    "full_name": "pqthangv/AutoInternshipClaude",
@@ -503,82 +2832,6 @@
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
-   "full_name": "nwverse/persona",
-   "owner": "nwverse",
-   "name": "persona",
-   "url": "https://github.com/nwverse/persona",
-   "description": "",
-   "stars": 327,
-   "topics": [
-    "agent",
-    "personal-agent",
-    "super-agent"
-   ],
-   "license": "MIT",
-   "created_at": "2026-11-06T15:25:24Z",
-   "pushed_at": "2026-11-15T06:27:13Z",
-   "scout": "repos",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. server/internal/assistantskills/builtin/persona-office/SKILL.md)"
-   ],
-   "score": 95,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-11T06:30:02.613932+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "delexw/motion-graphics-agent",
-   "owner": "delexw",
-   "name": "motion-graphics-agent",
-   "url": "https://github.com/delexw/motion-graphics-agent",
-   "description": "Turn ideas into motion graphics and animated videos with Claude or Codex. \u7528 Claude \u6216 Codex\uff0c\u5c06\u521b\u610f\u53d8\u6210\u52a8\u6001\u56fe\u5f62\u548c\u52a8\u753b\u89c6\u9891\u3002",
-   "stars": 87,
-   "topics": [
-    "ai-agent",
-    "ai-video",
-    "claude",
-    "codex",
-    "creative-coding",
-    "gsap",
-    "hyperframes",
-    "local-first"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-15T20:25:36Z",
-   "pushed_at": "2026-11-15T04:46:58Z",
-   "scout": "repos",
-   "kinds": [
-    "agent",
-    "mcp"
-   ],
-   "checks": {
-    "skill_manifest": false,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "SKILL.md found but its frontmatter lacks a name or a real description",
-    "depends on an MCP SDK",
-    "uses the Anthropic / Claude Agent SDK"
-   ],
-   "score": 76,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-08T06:23:09.309724+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
    "full_name": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
    "owner": "heitorcarvalhohlbryzeis6-cloud",
    "name": "whatsapp-mcp-server",
@@ -609,272 +2862,6 @@
    "notes": [],
    "score": 40,
    "category": "MCP Servers",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "adsorgcn/WorkBuddy",
-   "owner": "adsorgcn",
-   "name": "WorkBuddy",
-   "url": "https://github.com/adsorgcn/WorkBuddy",
-   "description": "iLang \u4e13\u5bb6\u4e0e\u6280\u80fd\u7684 GitHub \u5b89\u88c5\u6e90\uff0c\u6d77\u5916\u7248 WorkBuddy \u53ef\u76f4\u63a5\u88c5\uff1a\u516c\u4f17\u53f7\u7206\u6587\u7ed3\u6784\u4e13\u5bb6 v2.0\uff08\u7d20\u6750\u8fdb\u7a3f\u5b50\u51fa\uff0c12 \u9879\u81ea\u67e5\uff0c\u5185\u7f6e\u53bb AI \u5473\uff09\u00b7 iLang experts & skills for WorkBuddy, installable from GitHub",
-   "stars": 129,
-   "topics": [
-    "agent-skills",
-    "ai-writing",
-    "chinese",
-    "claude-code-plugin",
-    "codebuddy",
-    "content-creation",
-    "deai",
-    "gongzhonghao"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-08T14:41:42Z",
-   "pushed_at": "2026-11-15T02:03:01Z",
-   "scout": "plugins",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "7 skills with a valid SKILL.md (e.g. experts/ilang-wechat-awesome/skills/remote-dispatch/SKILL.md)"
-   ],
-   "score": 92,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-29T06:16:10.213568+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "shinyobjectz/raea",
-   "owner": "shinyobjectz",
-   "name": "raea",
-   "url": "https://github.com/shinyobjectz/raea",
-   "description": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows.",
-   "stars": 2500,
-   "topics": [
-    "3d",
-    "agent-skills",
-    "ai-agents",
-    "ai-video",
-    "bevy",
-    "claude-code",
-    "game-engine",
-    "gpu"
-   ],
-   "license": "NOASSERTION",
-   "created_at": "2026-10-18T18:08:48Z",
-   "pushed_at": "2026-11-15T06:18:31Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin"
-   ],
-   "checks": {
-    "skill_manifest": false,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "SKILL.md found but its frontmatter lacks a name or a real description",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 85,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "Parcha-ai/agentrun",
-   "owner": "Parcha-ai",
-   "name": "agentrun",
-   "url": "https://github.com/Parcha-ai/agentrun",
-   "description": "AgentRun is an open-source platform that supercharges your agents. It adds self-improvement, durable execution and a control plane on top of your favorite agent harness. Your agents become smarter, more fault tolerant and use fewer tokens with every run.",
-   "stars": 1051,
-   "topics": [],
-   "license": "Apache-2.0",
-   "created_at": "2026-09-23T00:27:34Z",
-   "pushed_at": "2026-11-15T06:25:56Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "15 skills with a valid SKILL.md (e.g. .agents/skills/code-review-knowledge/SKILL.md)"
-   ],
-   "score": 98,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "bayshores/godspeed",
-   "owner": "bayshores",
-   "name": "godspeed",
-   "url": "https://github.com/bayshores/godspeed",
-   "description": "Free, open-source AI tutor for your classes. Claude Code, Codex or any MCP app teaches you step by step, tracks what you know in a knowledge graph, and preps you for exams. No API keys. Mac, Windows, Linux.",
-   "stars": 17,
-   "topics": [
-    "ai-education",
-    "ai-tutor",
-    "claude-code",
-    "claude-code-plugin",
-    "codex",
-    "desktop-app",
-    "edtech",
-    "education"
-   ],
-   "license": "AGPL-3.0",
-   "created_at": "2026-10-27T00:24:01Z",
-   "pushed_at": "2026-11-15T06:16:44Z",
-   "scout": "plugins",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. integrations/skills/godspeed/SKILL.md)"
-   ],
-   "score": 87,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "sno-ai/sno-station",
-   "owner": "sno-ai",
-   "name": "sno-station",
-   "url": "https://github.com/sno-ai/sno-station",
-   "description": "When Claude Code hits its usage limit, Codex picks the task up from the same memory. Sno Station puts Codex, Claude Code, Cursor, Hermes Agent and OpenClaw on one squad: they hand work to each other and review each other's code. Open source, runs on your computer.",
-   "stars": 1020,
-   "topics": [
-    "agent-memory",
-    "agent-orchestration",
-    "agentic-coding",
-    "ai-code-review",
-    "ai-coding-agent",
-    "ai-memory",
-    "claude-code",
-    "claude-code-skills"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-09-19T06:55:24Z",
-   "pushed_at": "2026-11-15T06:25:50Z",
-   "scout": "skills",
-   "kinds": [
-    "agent",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "11 skills with a valid SKILL.md (e.g. apps/mem-claude/skills/sno-mem-claude/SKILL.md)",
-    "uses the Anthropic / Claude Agent SDK"
-   ],
-   "score": 98,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "wh000wh000/awesome-jev-live",
-   "owner": "wh000wh000",
-   "name": "awesome-jev-live",
-   "url": "https://github.com/wh000wh000/awesome-jev-live",
-   "description": "Awesome Jev \u2014 evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languages, rebuilt every 2 hours.",
-   "stars": 379,
-   "topics": [
-    "ai-agents",
-    "artificial-intelligence",
-    "awesome",
-    "awesome-jev",
-    "awesome-list",
-    "calibration",
-    "curated-list",
-    "decision-making"
-   ],
-   "license": "NOASSERTION",
-   "created_at": "2026-09-18T13:37:03Z",
-   "pushed_at": "2026-11-15T04:59:11Z",
-   "scout": "plugins",
-   "kinds": [],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [],
-   "score": 55,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "sno-ai/sno-station-skills",
-   "owner": "sno-ai",
-   "name": "sno-station-skills",
-   "url": "https://github.com/sno-ai/sno-station-skills",
-   "description": "Sno Station Skills: 31 tested skills that turn Claude Code and Codex into one working team. Cross-vendor peer review, automatic handoff when an agent hits its quota, a one-page morning brief, work orders with proof, and a nightly loop that learns from your own sessions. Open source, installed with o",
-   "stars": 864,
-   "topics": [
-    "agent-skills",
-    "agentic-coding",
-    "ai-code-review",
-    "ai-coding-agent",
-    "ai-coding-assistant",
-    "claude-code",
-    "claude-code-plugin",
-    "claude-code-skills"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-01T04:18:51Z",
-   "pushed_at": "2026-11-14T23:28:07Z",
-   "scout": "skills",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "52 skills with a valid SKILL.md (e.g. plugins/sno-station-standalone/skills/agentic-walkthrough/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 97,
-   "category": "Skills & Plugins",
    "first_scouted": "2026-10-27T06:53:30.396213+00:00",
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
@@ -919,47 +2906,6 @@
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
-   "full_name": "Vancci-sloth/Sloth",
-   "owner": "Vancci-sloth",
-   "name": "Sloth",
-   "url": "https://github.com/Vancci-sloth/Sloth",
-   "description": "Videos verticales con agentes de Claude, a la vista y paso a paso. C\u00f3digo abierto para uso libre, sin reventa.",
-   "stars": 47,
-   "topics": [
-    "ai-agents",
-    "claude",
-    "desktop-app",
-    "electron",
-    "instagram-reels",
-    "remotion",
-    "spanish",
-    "tiktok"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-26T16:15:06Z",
-   "pushed_at": "2026-11-15T00:04:57Z",
-   "scout": "repos",
-   "kinds": [
-    "agent",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "10 skills with a valid SKILL.md (e.g. skills/crear-estilo/SKILL.md)",
-    "uses the Anthropic / Claude Agent SDK"
-   ],
-   "score": 90,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-03T06:28:23.500263+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
    "full_name": "Rijalmoneyfinder/mcp-game-asset-forge",
    "owner": "Rijalmoneyfinder",
    "name": "mcp-game-asset-forge",
@@ -991,83 +2937,6 @@
    "score": 41,
    "category": "MCP Servers",
    "first_scouted": "2026-10-27T09:27:22.852203+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "Derrors/iphone-control",
-   "owner": "Derrors",
-   "name": "iphone-control",
-   "url": "https://github.com/Derrors/iphone-control",
-   "description": "Control a real USB-connected iPhone from Linux (no Mac, no paid developer account) and expose it to AI agents as MCP tools",
-   "stars": 40,
-   "topics": [
-    "ai-agent",
-    "automation",
-    "claude",
-    "claude-code",
-    "docker",
-    "ios",
-    "iphone",
-    "linux"
-   ],
-   "license": "MIT",
-   "created_at": "2026-11-01T15:37:29Z",
-   "pushed_at": "2026-11-15T06:19:04Z",
-   "scout": "repos",
-   "kinds": [
-    "mcp"
-   ],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "depends on an MCP SDK"
-   ],
-   "score": 89,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "agentes-chat/agentes-chat",
-   "owner": "agentes-chat",
-   "name": "agentes-chat",
-   "url": "https://github.com/agentes-chat/agentes-chat",
-   "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGP",
-   "stars": 1417,
-   "topics": [
-    "agentic-ai",
-    "ai-agents",
-    "browser-automation",
-    "chat",
-    "claude",
-    "claude-code",
-    "codex",
-    "collaboration"
-   ],
-   "license": "AGPL-3.0",
-   "created_at": "2026-11-09T00:50:28Z",
-   "pushed_at": "2026-11-15T06:22:40Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "6 skills with a valid SKILL.md (e.g. .claude/skills/ui-polish/SKILL.md)"
-   ],
-   "score": 98,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-12T06:33:53.194242+00:00",
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
@@ -1144,45 +3013,6 @@
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
-   "full_name": "alexsergivan/kwant",
-   "owner": "alexsergivan",
-   "name": "kwant",
-   "url": "https://github.com/alexsergivan/kwant",
-   "description": "Your own team of AI bots in one self-hosted binary: spaces, every account you have, handoffs, approvals and routines. Open-source, self-hosted alternative to Grok Bot, Claude Duet and OpenAI dots. Rust + React.",
-   "stars": 565,
-   "topics": [
-    "ai-agents",
-    "ai-assistant",
-    "ai-bot",
-    "automation",
-    "bot",
-    "bots-team",
-    "chatbot",
-    "claude-duet"
-   ],
-   "license": "AGPL-3.0",
-   "created_at": "2026-10-22T18:41:24Z",
-   "pushed_at": "2026-11-15T06:13:33Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. tests/fixtures/import/SKILL.md)"
-   ],
-   "score": 96,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-07T06:22:09.950361+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
    "full_name": "volekerb/hivemill",
    "owner": "volekerb",
    "name": "hivemill",
@@ -1225,48 +3055,6 @@
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
-   "full_name": "ClickHouse/loom",
-   "owner": "ClickHouse",
-   "name": "loom",
-   "url": "https://github.com/ClickHouse/loom",
-   "description": "Shared long-term memory, document search and a code index for AI agents, linked to your code. Memories point at the files and symbols they're about and surface when an agent edits them. MCP server, Claude Code and Codex plugins, SDKs. Self-hosted on ClickHouse.",
-   "stars": 70,
-   "topics": [
-    "agent-memory",
-    "ai-agents",
-    "ai-memory",
-    "claude-code",
-    "claude-code-plugin",
-    "clickhouse",
-    "code-intelligence",
-    "code-search"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-08T12:50:03Z",
-   "pushed_at": "2026-11-15T06:24:11Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "29 skills with a valid SKILL.md (e.g. .claude/skills/loom-address-review/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 91,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
    "full_name": "ELU-Labs/elu",
    "owner": "ELU-Labs",
    "name": "elu",
@@ -1300,46 +3088,6 @@
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
-   "full_name": "tokensafe-dev/tokensafe",
-   "owner": "tokensafe-dev",
-   "name": "tokensafe",
-   "url": "https://github.com/tokensafe-dev/tokensafe",
-   "description": "Make AI coding agents 3x faster and stop burning team quotas. Smart code slicing, prompt cache locking, and pre-git security for Cursor, Claude Code, and Codex.",
-   "stars": 41,
-   "topics": [
-    "ai-agents",
-    "ai-tools",
-    "antigravity",
-    "claude",
-    "claude-code",
-    "claude-desktop",
-    "codex",
-    "context-window"
-   ],
-   "license": "MIT",
-   "created_at": "2026-11-08T00:30:49Z",
-   "pushed_at": "2026-11-15T04:23:23Z",
-   "scout": "repos",
-   "kinds": [
-    "mcp"
-   ],
-   "checks": {
-    "skill_manifest": false,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "SKILL.md found but its frontmatter lacks a name or a real description",
-    "depends on an MCP SDK"
-   ],
-   "score": 74,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
    "full_name": "magpie-community/plugins",
    "owner": "magpie-community",
    "name": "plugins",
@@ -1367,46 +3115,6 @@
    "score": 94,
    "category": "Skills & Plugins",
    "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "beluga-labs/beluga",
-   "owner": "beluga-labs",
-   "name": "beluga",
-   "url": "https://github.com/beluga-labs/beluga",
-   "description": "Beluga: AI native IDE designed around AI first development",
-   "stars": 554,
-   "topics": [
-    "ai-agents",
-    "claude",
-    "claude-code",
-    "git-worktree",
-    "macos",
-    "peer-to-peer",
-    "tauri",
-    "tui"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-16T13:27:30Z",
-   "pushed_at": "2026-11-14T22:37:41Z",
-   "scout": "repos",
-   "kinds": [
-    "agent",
-    "mcp"
-   ],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "depends on an MCP SDK",
-    "uses the Anthropic / Claude Agent SDK"
-   ],
-   "score": 96,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-11T06:30:02.613932+00:00",
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
@@ -1446,78 +3154,6 @@
    "score": 91,
    "category": "MCP Servers",
    "first_scouted": "2026-11-08T06:23:09.309724+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "amurgola/LumaBrowser",
-   "owner": "amurgola",
-   "name": "LumaBrowser",
-   "url": "https://github.com/amurgola/LumaBrowser",
-   "description": "Local AI desktop app: a Chromium browser with a GPU-aware llama.cpp runtime, OpenAI-compatible API, AI chat and agents, Stable Diffusion image/video, TTS and music, plus an MCP server so Claude Code, Codex and Cline can drive your browser. Windows, macOS, Linux.",
-   "stars": 144,
-   "topics": [
-    "ai-agents",
-    "ai-browser",
-    "browser-automation",
-    "chatgpt-alternative",
-    "desktop-app",
-    "electron",
-    "gguf",
-    "llama-cpp"
-   ],
-   "license": "NOASSERTION",
-   "created_at": "2026-10-09T15:01:21Z",
-   "pushed_at": "2026-11-15T03:01:41Z",
-   "scout": "repos",
-   "kinds": [
-    "mcp"
-   ],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "depends on an MCP SDK"
-   ],
-   "score": 92,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-29T06:16:10.213568+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "tbee6061-ctrl/studio-live-window-capture",
-   "owner": "tbee6061-ctrl",
-   "name": "studio-live-window-capture",
-   "url": "https://github.com/tbee6061-ctrl/studio-live-window-capture",
-   "description": "Roblox Studio macOS Window Capture Fix 2026: Real Screenshot Tool Instead of Magenta Playtest Glitch",
-   "stars": 71,
-   "topics": [
-    "ai-agents",
-    "claude-code",
-    "claude-code-plugin",
-    "developer-tools",
-    "llm-tools",
-    "macos",
-    "mcp",
-    "model-context-protocol"
-   ],
-   "license": null,
-   "created_at": "2026-09-22T21:00:35Z",
-   "pushed_at": "2026-11-15T03:51:24Z",
-   "scout": "plugins",
-   "kinds": [],
-   "checks": {
-    "readme": true,
-    "licence": false,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [],
-   "score": 41,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-27T09:27:22.852203+00:00",
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
@@ -1679,48 +3315,6 @@
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
-   "full_name": "wuyoscar/AISafetyHot",
-   "owner": "wuyoscar",
-   "name": "AISafetyHot",
-   "url": "https://github.com/wuyoscar/AISafetyHot",
-   "description": "AI Safety HOT: daily AI safety news, papers and incidents in one place \u2014 jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
-   "stars": 2127,
-   "topics": [
-    "ai-alignment",
-    "ai-governance",
-    "ai-safety",
-    "arxiv-papers",
-    "daily-papers",
-    "jailbreak",
-    "llm-security",
-    "mcp-server"
-   ],
-   "license": "NOASSERTION",
-   "created_at": "2026-10-01T11:33:59Z",
-   "pushed_at": "2026-11-15T06:05:35Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "4 skills with a valid SKILL.md (e.g. skills/aisafety-brief/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 99,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
    "full_name": "haydenschmitty/floorplan",
    "owner": "haydenschmitty",
    "name": "floorplan",
@@ -1799,132 +3393,6 @@
    "score": 100,
    "category": "Skills & Plugins",
    "first_scouted": "2026-10-29T06:16:10.213568+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "ckryptickunal/OpenDesigner",
-   "owner": "ckryptickunal",
-   "name": "OpenDesigner",
-   "url": "https://github.com/ckryptickunal/OpenDesigner",
-   "description": "A free, open-source add-on for Claude, ChatGPT, Codex and Cursor that turns a few plain answers into a design system, so everything you build looks like it belongs together.",
-   "stars": 154,
-   "topics": [
-    "accessibility",
-    "agent-skills",
-    "ai-agents",
-    "chatgpt",
-    "claude",
-    "claude-code",
-    "claude-skills",
-    "codex"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-23T12:54:12Z",
-   "pushed_at": "2026-11-15T05:02:36Z",
-   "scout": "skills",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "38 skills with a valid SKILL.md (e.g. .agents/skills/opendesigner-export/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 93,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-31T06:12:28.025310+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "AGIHunt/blurt",
-   "owner": "AGIHunt",
-   "name": "blurt",
-   "url": "https://github.com/AGIHunt/blurt",
-   "description": "The keyboard for the agent era: dictation, copy text from screen, translation, snaps and screen recordings for Claude Code, Codex and your other agents. Free, open source, Mac. \u53e3\u55b7\u9e21\uff1aAgent \u65f6\u4ee3\u7684\u8f93\u5165\u6cd5\u3002",
-   "stars": 382,
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "claude-code",
-    "codex",
-    "dictation",
-    "feedback",
-    "macos",
-    "ocr"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-25T09:59:27Z",
-   "pushed_at": "2026-11-15T04:55:59Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "2 skills with a valid SKILL.md (e.g. .claude/skills/blurt-dictation-review/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 95,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-15T06:25:46.357621+00:00"
-  },
-  {
-   "full_name": "rehan-remade/universal-modder",
-   "owner": "rehan-remade",
-   "name": "universal-modder",
-   "url": "https://github.com/rehan-remade/universal-modder",
-   "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-   "stars": 9700,
-   "topics": [
-    "age-of-empires",
-    "claude-code",
-    "claude-code-plugin",
-    "fal",
-    "game-assets",
-    "game-modding",
-    "mcp",
-    "modding"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-30T05:00:35Z",
-   "pushed_at": "2026-11-15T06:25:50Z",
-   "scout": "repos",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 100,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
    "demoed_at": "2026-11-15T06:25:46.357621+00:00"
   },
   {
@@ -3104,48 +4572,6 @@
    "demoed_at": "2026-11-14T06:23:55.515087+00:00"
   },
   {
-   "full_name": "JoahanMorales/upiixia-agentic-kit",
-   "owner": "JoahanMorales",
-   "name": "upiixia-agentic-kit",
-   "url": "https://github.com/JoahanMorales/upiixia-agentic-kit",
-   "description": "Multi-agent coordination kit for Claude Code, Codex, Cursor & Gemini CLI: parallel AI agents with claims, leases, bounded loops, reviews and merges over Git.",
-   "stars": 20,
-   "topics": [
-    "agentic-workflow",
-    "agents-md-template",
-    "ai-agents",
-    "ai-coding",
-    "claude-code",
-    "claude-code-plugin",
-    "codex",
-    "cursor"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-06T18:28:55Z",
-   "pushed_at": "2026-11-14T05:46:35Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "36 skills with a valid SKILL.md (e.g. kit/.agents/skills/uak-advise/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 87,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-13T06:32:13.161275+00:00",
-   "demoed_at": "2026-11-14T06:23:55.515087+00:00"
-  },
-  {
    "full_name": "karanb192/awesome-claude-code-mods",
    "owner": "karanb192",
    "name": "awesome-claude-code-mods",
@@ -3499,45 +4925,6 @@
    "demoed_at": "2026-11-14T06:23:55.515087+00:00"
   },
   {
-   "full_name": "Graphicle-AI/graphicle",
-   "owner": "Graphicle-AI",
-   "name": "graphicle",
-   "url": "https://github.com/Graphicle-AI/graphicle",
-   "description": "Code graph and memory for your coding agents, in one Rust program. For Claude Code, Codex, Cursor and any MCP client.",
-   "stars": 571,
-   "topics": [
-    "agent-memory",
-    "ai-agents",
-    "claude-code",
-    "code-analysis",
-    "code-graph",
-    "code-intelligence",
-    "code-search",
-    "codex"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-14T12:25:36Z",
-   "pushed_at": "2026-11-14T06:01:54Z",
-   "scout": "repos",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "3 skills with a valid SKILL.md (e.g. crates/graphicle-graph/src/assets/install/SKILL.md)"
-   ],
-   "score": 96,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-14T06:23:55.515087+00:00"
-  },
-  {
    "full_name": "mikecann/threadbear",
    "owner": "mikecann",
    "name": "threadbear",
@@ -3818,84 +5205,6 @@
    "demoed_at": "2026-11-14T06:23:55.515087+00:00"
   },
   {
-   "full_name": "UnderleveledBuilder/awesome-short-drama-skills",
-   "owner": "UnderleveledBuilder",
-   "name": "awesome-short-drama-skills",
-   "url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills",
-   "description": "AI \u77ed\u5267 \u00b7 \u6f2b\u5267 Skill\uff08\u6280\u80fd\u5305\uff09\u7cbe\u9009\uff1a\u5267\u672c\u3001\u6539\u7f16\u3001\u5206\u955c\u3001Seedance / \u53ef\u7075 / MiniMax \u89c6\u9891\u63d0\u793a\u8bcd\uff0c\u5343\u95ee\u3001\u8c46\u5305\u3001\u9f99\u867e OpenClaw\u3001WorkBuddy\u3001Claude Code\u3001Codex \u7b49\u667a\u80fd\u4f53\u53ef\u7528 | Curated agent skills for AI short drama, micro drama / microdrama, vertical drama and manju (AI comic drama): screenwriting, storyboards, Seedance / Kling / MiniMax video prompts",
-   "stars": 2297,
-   "topics": [
-    "agent-skills",
-    "ai-drama",
-    "ai-short-drama",
-    "awesome",
-    "awesome-list",
-    "claude-code",
-    "claude-skills",
-    "codex"
-   ],
-   "license": "CC0-1.0",
-   "created_at": "2026-10-13T20:35:18Z",
-   "pushed_at": "2026-11-14T04:56:59Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/short-drama-skill-finder/SKILL.md)"
-   ],
-   "score": 100,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
-   "demoed_at": "2026-11-14T06:23:55.515087+00:00"
-  },
-  {
-   "full_name": "UnderleveledBuilder/awesome-social-media-skills",
-   "owner": "UnderleveledBuilder",
-   "name": "awesome-social-media-skills",
-   "url": "https://github.com/UnderleveledBuilder/awesome-social-media-skills",
-   "description": "\u81ea\u5a92\u4f53\u8fd0\u8425 Skill\uff08\u6280\u80fd\u5305\uff09\u7cbe\u9009\uff1a\u5c0f\u7ea2\u4e66\u3001\u6296\u97f3\u3001\u516c\u4f17\u53f7\u3001\u89c6\u9891\u53f7\u3001B \u7ad9\u3001X\u3001YouTube\u3001TikTok\u3001LinkedIn \u7684\u9009\u9898\u3001\u5199\u7a3f\u3001\u914d\u56fe\u3001\u53d1\u5e03\u548c\u6570\u636e\uff0c\u5343\u95ee\u3001\u8c46\u5305\u3001\u9f99\u867e OpenClaw\u3001WorkBuddy\u3001Claude Code\u3001Codex \u7b49\u667a\u80fd\u4f53\u53ef\u7528 | Curated agent skills for social media: Xiaohongshu (RedNote), Douyin, WeChat, X, YouTube, TikTok and LinkedIn",
-   "stars": 278,
-   "topics": [
-    "agent-skills",
-    "awesome",
-    "awesome-list",
-    "claude-code",
-    "claude-skills",
-    "codex",
-    "content-creator",
-    "douyin"
-   ],
-   "license": "CC0-1.0",
-   "created_at": "2026-10-19T21:12:45Z",
-   "pushed_at": "2026-11-14T06:12:50Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/social-media-skill-finder/SKILL.md)"
-   ],
-   "score": 94,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
-   "demoed_at": "2026-11-14T06:23:55.515087+00:00"
-  },
-  {
    "full_name": "UnderleveledBuilder/awesome-novel-skills",
    "owner": "UnderleveledBuilder",
    "name": "awesome-novel-skills",
@@ -4159,46 +5468,6 @@
    "demoed_at": "2026-11-14T06:23:55.515087+00:00"
   },
   {
-   "full_name": "vegardjorg/ravenseat",
-   "owner": "vegardjorg",
-   "name": "ravenseat",
-   "url": "https://github.com/vegardjorg/ravenseat",
-   "description": "Your Claude Code agents keep building. You make the decisions. A local-first work queue that runs parallel agents in isolated worktrees, checks their work with your own gates, and keeps the project moving across sessions.",
-   "stars": 13,
-   "topics": [
-    "ai-agents",
-    "claude-code",
-    "claude-code-plugin",
-    "git-worktree",
-    "kanban",
-    "project-management"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-27T19:58:44Z",
-   "pushed_at": "2026-11-14T03:36:08Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "13 skills with a valid SKILL.md (e.g. plugin/skills/add-helper/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 86,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-14T06:23:55.515087+00:00",
-   "demoed_at": "2026-11-14T06:23:55.515087+00:00"
-  },
-  {
    "full_name": "Ianzhyh/workbuddy-to-dsh",
    "owner": "Ianzhyh",
    "name": "workbuddy-to-dsh",
@@ -4298,45 +5567,6 @@
    "demoed_at": "2026-11-14T06:23:55.515087+00:00"
   },
   {
-   "full_name": "zuiho-kai/bothouse",
-   "owner": "zuiho-kai",
-   "name": "bothouse",
-   "url": "https://github.com/zuiho-kai/bothouse",
-   "description": "\u628a Claude Code\u3001Codex\u3001Gemini \u62c9\u8fdb\u4e00\u4e2a\u7fa4\uff0c\u7ec4\u957f AI \u5206\u6d3b\uff0c\u5927\u5bb6\u5171\u7528\u4e00\u4efd\u8bb0\u5fc6\u3002| Put Claude Code, Codex and Gemini CLI in one Discord group: a team-lead AI splits the work, and they share one memory.",
-   "stars": 218,
-   "topics": [
-    "ai-agents",
-    "claude-code",
-    "codex",
-    "deepseek",
-    "discord-bot",
-    "feishu",
-    "gemini-cli",
-    "multi-agent"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-21T11:49:21Z",
-   "pushed_at": "2026-11-13T06:32:16Z",
-   "scout": "plugins",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "2 skills with a valid SKILL.md (e.g. bridge/core/skills/model-switch/SKILL.md)"
-   ],
-   "score": 94,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
-   "demoed_at": "2026-11-13T06:32:13.161275+00:00"
-  },
-  {
    "full_name": "michael-denyer/agent-formal-verify",
    "owner": "michael-denyer",
    "name": "agent-formal-verify",
@@ -4376,44 +5606,6 @@
    "score": 89,
    "category": "Skills & Plugins",
    "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-13T06:32:13.161275+00:00"
-  },
-  {
-   "full_name": "Zleap-AI/SAG-Wiki",
-   "owner": "Zleap-AI",
-   "name": "SAG-Wiki",
-   "url": "https://github.com/Zleap-AI/SAG-Wiki",
-   "description": "A lightweight knowledge base for people and agents, with ultra fast indexing and most precise retrieval.",
-   "stars": 1133,
-   "topics": [
-    "knowledge-base",
-    "knowledge-graph",
-    "rag",
-    "rust",
-    "sag",
-    "sag-wiki",
-    "wiki"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-18T14:51:30Z",
-   "pushed_at": "2026-11-13T06:12:50Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. cli/skills/sag/SKILL.md)"
-   ],
-   "score": 98,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-10T06:28:23.384099+00:00",
    "demoed_at": "2026-11-13T06:32:13.161275+00:00"
   },
   {
@@ -4609,43 +5801,6 @@
    "demoed_at": "2026-11-13T06:32:13.161275+00:00"
   },
   {
-   "full_name": "TixXin/Fuyu",
-   "owner": "TixXin",
-   "name": "Fuyu",
-   "url": "https://github.com/TixXin/Fuyu",
-   "description": "\u6d6e\u5c7f\uff1aWindows \u4e0a\u7684\u8f7b\u91cf\u7075\u52a8\u5c9b\u3002\u5728\u5c4f\u5e55\u9876\u90e8\u6c47\u603b QQ\u3001\u5fae\u4fe1\u548c\u90ae\u4ef6\u901a\u77e5\uff0c\u67e5\u770b Claude Code / Codex \u7684\u8fd0\u884c\u72b6\u6001\u5e76\u76f4\u63a5\u5728\u5c9b\u4e0a\u5ba1\u6279\uff0c\u8fd8\u6709\u526a\u8d34\u677f\u5386\u53f2\u3001\u5feb\u6377\u7ffb\u8bd1\u3001\u97f3\u4e50\u4e0e\u6b4c\u8bcd\u3001\u5f85\u529e\u3001\u65e5\u5386\u548c\u6587\u4ef6\u4e2d\u8f6c\uff0c\u652f\u6301\u63d2\u4ef6\u6269\u5c55\u3002",
-   "stars": 127,
-   "topics": [
-    "claude-code",
-    "clipboard-manager",
-    "codex",
-    "desktop-widget",
-    "dynamic-island",
-    "notifications",
-    "productivity",
-    "react"
-   ],
-   "license": "GPL-3.0",
-   "created_at": "2026-11-03T06:41:12Z",
-   "pushed_at": "2026-11-13T06:32:10Z",
-   "scout": "repos",
-   "kinds": [],
-   "checks": {
-    "skill_manifest": false,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "SKILL.md found but its frontmatter lacks a name or a real description"
-   ],
-   "score": 37,
-   "category": "Apps & UIs",
-   "first_scouted": "2026-11-12T06:33:53.194242+00:00",
-   "demoed_at": "2026-11-13T06:32:13.161275+00:00"
-  },
-  {
    "full_name": "obs-rust/obs-studio",
    "owner": "obs-rust",
    "name": "obs-studio",
@@ -4757,40 +5912,6 @@
    "score": 86,
    "category": "Skills & Plugins",
    "first_scouted": "2026-11-10T06:28:23.384099+00:00",
-   "demoed_at": "2026-11-13T06:32:13.161275+00:00"
-  },
-  {
-   "full_name": "tayyabimam1/awesome-ai-agent-stack",
-   "owner": "tayyabimam1",
-   "name": "awesome-ai-agent-stack",
-   "url": "https://github.com/tayyabimam1/awesome-ai-agent-stack",
-   "description": "Curated map of 3,000+ open-source AI agent tools: coding agents, agent frameworks, MCP servers, RAG, memory and local LLMs, sorted by layer and ranked by GitHub stars.",
-   "stars": 31,
-   "topics": [
-    "agentic-ai",
-    "ai-agents",
-    "ai-tools",
-    "artificial-intelligence",
-    "awesome",
-    "awesome-list",
-    "claude-code",
-    "coding-agents"
-   ],
-   "license": "CC-BY-4.0",
-   "created_at": "2026-09-18T07:33:15Z",
-   "pushed_at": "2026-11-13T05:32:59Z",
-   "scout": "plugins",
-   "kinds": [],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [],
-   "score": 49,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-04T06:32:01.416439+00:00",
    "demoed_at": "2026-11-13T06:32:13.161275+00:00"
   },
   {
@@ -5058,39 +6179,6 @@
    "score": 91,
    "category": "Apps & UIs",
    "first_scouted": "2026-11-03T06:28:23.500263+00:00",
-   "demoed_at": "2026-11-13T06:32:13.161275+00:00"
-  },
-  {
-   "full_name": "showheyohtaki/motion-prompt",
-   "owner": "showheyohtaki",
-   "name": "motion-prompt",
-   "url": "https://github.com/showheyohtaki/motion-prompt",
-   "description": "",
-   "stars": 2002,
-   "topics": [],
-   "license": "MIT",
-   "created_at": "2026-10-14T11:34:19Z",
-   "pushed_at": "2026-11-13T06:07:25Z",
-   "scout": "skills",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/motion-prompt/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 99,
-   "category": "Prompts & Guides",
-   "first_scouted": "2026-11-13T06:32:13.161275+00:00",
    "demoed_at": "2026-11-13T06:32:13.161275+00:00"
   },
   {
@@ -5888,48 +6976,6 @@
    "demoed_at": "2026-11-12T06:33:53.194242+00:00"
   },
   {
-   "full_name": "JuneYaooo/rea-video",
-   "owner": "JuneYaooo",
-   "name": "rea-video",
-   "url": "https://github.com/JuneYaooo/rea-video",
-   "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
-   "stars": 7195,
-   "topics": [
-    "agent-skills",
-    "ai-video",
-    "aigc-detection",
-    "claude-code",
-    "codex",
-    "ffmpeg",
-    "prompt-engineering",
-    "remotion"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-29T16:15:01Z",
-   "pushed_at": "2026-11-12T06:21:24Z",
-   "scout": "skills",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 100,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-04T06:32:01.416439+00:00",
-   "demoed_at": "2026-11-12T06:33:53.194242+00:00"
-  },
-  {
    "full_name": "frankShan001/CutVoke",
    "owner": "frankShan001",
    "name": "CutVoke",
@@ -6082,45 +7128,6 @@
    "score": 87,
    "category": "Skills & Plugins",
    "first_scouted": "2026-11-10T06:28:23.384099+00:00",
-   "demoed_at": "2026-11-12T06:33:53.194242+00:00"
-  },
-  {
-   "full_name": "trina-app/trina-ax",
-   "owner": "trina-app",
-   "name": "trina-ax",
-   "url": "https://github.com/trina-app/trina-ax",
-   "description": "Set up Claude Code once. Your whole company gets it. Self-hosted Claude Code and Codex with your company files, team skills, MCP and per-person folder permissions.",
-   "stars": 117,
-   "topics": [
-    "agent-skills",
-    "ai-workspace",
-    "claude-code",
-    "codex",
-    "document-management",
-    "hwp",
-    "mcp",
-    "self-hosted"
-   ],
-   "license": "AGPL-3.0",
-   "created_at": "2026-10-28T04:31:27Z",
-   "pushed_at": "2026-11-12T06:32:05Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "17 skills with a valid SKILL.md (e.g. .claude/skills/ui-polish/SKILL.md)"
-   ],
-   "score": 92,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
    "demoed_at": "2026-11-12T06:33:53.194242+00:00"
   },
   {
@@ -6931,42 +7938,6 @@
    "demoed_at": "2026-11-11T06:30:02.613932+00:00"
   },
   {
-   "full_name": "DUNHKpcc/Claude-Guardian",
-   "owner": "DUNHKpcc",
-   "name": "Claude-Guardian",
-   "url": "https://github.com/DUNHKpcc/Claude-Guardian",
-   "description": "Claude Guardian is an all-in-one Claude account safety and risk prevention skill.Claude\u9632\u5c01\u5b9e\u6218 It intelligently assesses your device, account history, network environment, and payment options, then provides personalized guidance for local, VPS, or virtual machine setups. ",
-   "stars": 1945,
-   "topics": [
-    "agent-skills",
-    "ai-tools",
-    "claude-code",
-    "claude-skills",
-    "codex-skill"
-   ],
-   "license": "GPL-3.0",
-   "created_at": "2026-10-15T06:09:53Z",
-   "pushed_at": "2026-11-11T00:51:25Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/claude-guardian/SKILL.md)"
-   ],
-   "score": 99,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-11T06:30:02.613932+00:00"
-  },
-  {
    "full_name": "0toshigami/claude-desktop-themes",
    "owner": "0toshigami",
    "name": "claude-desktop-themes",
@@ -7239,42 +8210,6 @@
    "notes": [],
    "score": 49,
    "category": "MCP Servers",
-   "first_scouted": "2026-11-05T06:32:34.469895+00:00",
-   "demoed_at": "2026-11-11T06:30:02.613932+00:00"
-  },
-  {
-   "full_name": "karanb192/cache-tax",
-   "owner": "karanb192",
-   "name": "cache-tax",
-   "url": "https://github.com/karanb192/cache-tax",
-   "description": "Keep Claude Code\u2019s prompt cache warm during breaks and show the estimated cost before a cold send.",
-   "stars": 378,
-   "topics": [
-    "claude-code",
-    "claude-code-plugin",
-    "claude-mods",
-    "function-hooks",
-    "prompt-caching"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-18T17:24:57Z",
-   "pushed_at": "2026-11-11T03:50:02Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin"
-   ],
-   "checks": {
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "valid .claude-plugin/plugin.json"
-   ],
-   "score": 95,
-   "category": "Skills & Plugins",
    "first_scouted": "2026-11-05T06:32:34.469895+00:00",
    "demoed_at": "2026-11-11T06:30:02.613932+00:00"
   },
@@ -7780,42 +8715,6 @@
    "demoed_at": "2026-11-10T06:28:23.384099+00:00"
   },
   {
-   "full_name": "AppitStudio/awesome-jev",
-   "owner": "AppitStudio",
-   "name": "awesome-jev",
-   "url": "https://github.com/AppitStudio/awesome-jev",
-   "description": "Curated Jev resources and runnable examples for typed AI decisions.",
-   "stars": 113,
-   "topics": [
-    "ai",
-    "awesome",
-    "awesome-list",
-    "decision-making",
-    "jev",
-    "system-one",
-    "typesafe-ai"
-   ],
-   "license": "NOASSERTION",
-   "created_at": "2026-09-18T17:56:36Z",
-   "pushed_at": "2026-11-10T06:10:07Z",
-   "scout": "plugins",
-   "kinds": [],
-   "checks": {
-    "skill_manifest": false,
-    "readme": false,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "SKILL.md found but its frontmatter lacks a name or a real description"
-   ],
-   "score": 22,
-   "category": "Prompts & Guides",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-10T06:28:23.384099+00:00"
-  },
-  {
    "full_name": "dominikmartn/harp",
    "owner": "dominikmartn",
    "name": "harp",
@@ -7845,84 +8744,6 @@
    "score": 97,
    "category": "Agents & SDK",
    "first_scouted": "2026-10-29T06:16:10.213568+00:00",
-   "demoed_at": "2026-11-10T06:28:23.384099+00:00"
-  },
-  {
-   "full_name": "alchaincyf/huashu-art-motion",
-   "owner": "alchaincyf",
-   "name": "huashu-art-motion",
-   "url": "https://github.com/alchaincyf/huashu-art-motion",
-   "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
-   "stars": 6637,
-   "topics": [
-    "agent-skills",
-    "animation",
-    "claude-code",
-    "claude-code-skills",
-    "claude-skills",
-    "codex",
-    "explainer-video",
-    "generative-art"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-06T04:49:37Z",
-   "pushed_at": "2026-11-10T01:40:26Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. SKILL.md)"
-   ],
-   "score": 100,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-10T06:28:23.384099+00:00",
-   "demoed_at": "2026-11-10T06:28:23.384099+00:00"
-  },
-  {
-   "full_name": "alchaincyf/huashu-motion",
-   "owner": "alchaincyf",
-   "name": "huashu-motion",
-   "url": "https://github.com/alchaincyf/huashu-motion",
-   "description": "\u8ba9\u4f60\u7684agent\u4e00\u952e\u76f4\u51fa\u5546\u4e1a\u7ea7\u4ea7\u54c1\u5ba3\u4f20\u7247\uff1a\u4f1a\u4f5c\u66f2\uff0c\u80fd\u6307\u7740\u753b\u9762\u6539\u3002Commercial-grade launch films by your coding agent \u2014 point at the frame to change it.",
-   "stars": 2578,
-   "topics": [
-    "agent-skills",
-    "animation",
-    "claude-code",
-    "claude-code-skills",
-    "claude-skills",
-    "codex",
-    "explainer-video",
-    "gsap"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-18T12:19:27Z",
-   "pushed_at": "2026-11-10T00:15:11Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/huashu-motion/SKILL.md)"
-   ],
-   "score": 100,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-10T06:28:23.384099+00:00",
    "demoed_at": "2026-11-10T06:28:23.384099+00:00"
   },
   {
@@ -8318,50 +9139,6 @@
    "demoed_at": "2026-11-09T06:35:31.540811+00:00"
   },
   {
-   "full_name": "muaaz9329/cheap-ag",
-   "owner": "muaaz9329",
-   "name": "cheap-ag",
-   "url": "https://github.com/muaaz9329/cheap-ag",
-   "description": "50x your usage with cheap-ag. Opus/Astra plans, a dirt-cheap model writes every line, and tests decide what ships. Your $20 plan stops hitting limits. One MCP server for Claude Code & Codex.",
-   "stars": 314,
-   "topics": [
-    "agentic-coding",
-    "ai-agents",
-    "anthropic",
-    "cheap-llm",
-    "claude",
-    "claude-code",
-    "claude-code-hooks",
-    "claude-code-plugin"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-28T22:26:18Z",
-   "pushed_at": "2026-11-09T05:07:36Z",
-   "scout": "plugins",
-   "kinds": [
-    "mcp",
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "7 skills with a valid SKILL.md (e.g. plugin/skills/allow/SKILL.md)",
-    "valid .claude-plugin/marketplace.json",
-    "depends on an MCP SDK"
-   ],
-   "score": 94,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-31T06:12:28.025310+00:00",
-   "demoed_at": "2026-11-09T06:35:31.540811+00:00"
-  },
-  {
    "full_name": "FengZhenfei/carrel",
    "owner": "FengZhenfei",
    "name": "carrel",
@@ -8598,47 +9375,6 @@
    "score": 100,
    "category": "Skills & Plugins",
    "first_scouted": "2026-11-04T06:32:01.416439+00:00",
-   "demoed_at": "2026-11-09T06:35:31.540811+00:00"
-  },
-  {
-   "full_name": "QingYunA/answer-me-with-html",
-   "owner": "QingYunA",
-   "name": "answer-me-with-html",
-   "url": "https://github.com/QingYunA/answer-me-with-html",
-   "description": "Answer me with HTML \u2014 an agent skill that answers hard questions with a one-page HTML you can actually read. \u8ba9 AI Agent \u7528\u4e00\u9875 HTML \u56de\u7b54\u590d\u6742\u95ee\u9898\u3002",
-   "stars": 6108,
-   "topics": [
-    "agent-skill",
-    "ai-agent",
-    "claude-code",
-    "claude-code-skill",
-    "claude-skill",
-    "claude-skills",
-    "cli",
-    "diagram"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-02T09:57:40Z",
-   "pushed_at": "2026-11-09T06:28:23Z",
-   "scout": "skills",
-   "kinds": [
-    "plugin"
-   ],
-   "checks": {
-    "skill_manifest": false,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "SKILL.md found but its frontmatter lacks a name or a real description",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 85,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
    "demoed_at": "2026-11-09T06:35:31.540811+00:00"
   },
   {
@@ -8903,45 +9639,6 @@
    "demoed_at": "2026-11-09T06:35:31.540811+00:00"
   },
   {
-   "full_name": "modelflare-ai/AnyModelBot",
-   "owner": "modelflare-ai",
-   "name": "AnyModelBot",
-   "url": "https://github.com/modelflare-ai/AnyModelBot",
-   "description": "\ud83e\udd16 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and",
-   "stars": 2741,
-   "topics": [
-    "ai-agent",
-    "ai-assistant",
-    "chatbot",
-    "claude",
-    "computer-use",
-    "deepseek",
-    "desktop-app",
-    "dsh"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-27T08:51:18Z",
-   "pushed_at": "2026-11-09T06:29:25Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "10 skills with a valid SKILL.md (e.g. .claude/skills/amb-bot-dev/SKILL.md)"
-   ],
-   "score": 100,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-09T06:35:31.540811+00:00",
-   "demoed_at": "2026-11-09T06:35:31.540811+00:00"
-  },
-  {
    "full_name": "cryer/star-cli",
    "owner": "cryer",
    "name": "star-cli",
@@ -8966,50 +9663,6 @@
     "uses the Anthropic / Claude Agent SDK"
    ],
    "score": 92,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-09T06:35:31.540811+00:00",
-   "demoed_at": "2026-11-09T06:35:31.540811+00:00"
-  },
-  {
-   "full_name": "kydlikebtc/awesome-jev",
-   "owner": "kydlikebtc",
-   "name": "awesome-jev",
-   "url": "https://github.com/kydlikebtc/awesome-jev",
-   "description": "Launch what you built on Jev, TypeSafe AI's System One decision model: a weekly board where makers launch and people vote, over an index of public Jev examples by decision pattern, with source citations, dated link checks and call-site text checks; runtime and performance are not independently teste",
-   "stars": 602,
-   "topics": [
-    "agent-tools",
-    "ai-agents",
-    "awesome",
-    "awesome-list",
-    "calibration",
-    "catalog",
-    "classification",
-    "context-compaction"
-   ],
-   "license": "NOASSERTION",
-   "created_at": "2026-09-22T02:22:54Z",
-   "pushed_at": "2026-11-09T06:10:44Z",
-   "scout": "plugins",
-   "kinds": [
-    "mcp",
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/awesome-jev/SKILL.md)",
-    "valid .claude-plugin/marketplace.json",
-    "depends on an MCP SDK"
-   ],
-   "score": 96,
    "category": "Agents & SDK",
    "first_scouted": "2026-11-09T06:35:31.540811+00:00",
    "demoed_at": "2026-11-09T06:35:31.540811+00:00"
@@ -9473,48 +10126,6 @@
    "score": 77,
    "category": "Skills & Plugins",
    "first_scouted": "2026-11-03T06:28:23.500263+00:00",
-   "demoed_at": "2026-11-08T06:23:09.309724+00:00"
-  },
-  {
-   "full_name": "systemind-team/sharednet-client",
-   "owner": "systemind-team",
-   "name": "sharednet-client",
-   "url": "https://github.com/systemind-team/sharednet-client",
-   "description": "SharedNet CLI and Agent Skill: join persistent SharedNet Rooms where Claude Code, Codex and other coding agents talk over one ordered log. Published to npm as sharednet.",
-   "stars": 22,
-   "topics": [
-    "agent-communication",
-    "agent-skills",
-    "agent-to-agent",
-    "ai-agents",
-    "claude-code",
-    "claude-code-plugin",
-    "cli",
-    "codex"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-24T17:11:08Z",
-   "pushed_at": "2026-11-07T23:55:47Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. skills/sharednet-room/SKILL.md)",
-    "valid .claude-plugin/plugin.json"
-   ],
-   "score": 88,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-05T06:32:34.469895+00:00",
    "demoed_at": "2026-11-08T06:23:09.309724+00:00"
   },
   {
@@ -10523,47 +11134,6 @@
    "score": 92,
    "category": "MCP Servers",
    "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-07T06:22:09.950361+00:00"
-  },
-  {
-   "full_name": "Rikinshah787/dotpals",
-   "owner": "Rikinshah787",
-   "name": "dotpals",
-   "url": "https://github.com/Rikinshah787/dotpals",
-   "description": "See what your coding agent actually did. A desktop pal and notch for Claude Code, Codex, Cursor, Gemini CLI and any agent: test results read from the output, faked passes caught, and an MCP server any AI tool can ask. New: talk to Blu, who sees your screen, draws on it as it explains and uses your a",
-   "stars": 60,
-   "topics": [
-    "agent-observability",
-    "ai-agents",
-    "ai-coding",
-    "anthropic",
-    "claude-code",
-    "codex",
-    "coding-agent",
-    "cursor"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-30T19:43:43Z",
-   "pushed_at": "2026-11-06T20:52:21Z",
-   "scout": "repos",
-   "kinds": [
-    "mcp",
-    "plugin"
-   ],
-   "checks": {
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "valid .claude-plugin/marketplace.json",
-    "depends on an MCP SDK"
-   ],
-   "score": 90,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
    "demoed_at": "2026-11-07T06:22:09.950361+00:00"
   },
   {
@@ -12178,38 +12748,6 @@
    ],
    "score": 87,
    "category": "MCP Servers",
-   "first_scouted": "2026-11-06T06:32:40.722758+00:00",
-   "demoed_at": "2026-11-06T06:32:40.722758+00:00"
-  },
-  {
-   "full_name": "trustabl/agent-reliability-skills",
-   "owner": "trustabl",
-   "name": "agent-reliability-skills",
-   "url": "https://github.com/trustabl/agent-reliability-skills",
-   "description": "Forge Claude Code skills generate more reliable agents",
-   "stars": 48,
-   "topics": [],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-30T04:59:40Z",
-   "pushed_at": "2026-11-06T05:56:23Z",
-   "scout": "repos",
-   "kinds": [
-    "mcp",
-    "plugin"
-   ],
-   "checks": {
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "valid .claude-plugin/marketplace.json",
-    "depends on an MCP SDK"
-   ],
-   "score": 90,
-   "category": "Skills & Plugins",
    "first_scouted": "2026-11-06T06:32:40.722758+00:00",
    "demoed_at": "2026-11-06T06:32:40.722758+00:00"
   },
@@ -14672,566 +15210,6 @@
    "category": "Skills & Plugins",
    "first_scouted": "2026-10-28T06:14:12.390479+00:00",
    "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "Entelligence-AI/agentplay",
-   "owner": "Entelligence-AI",
-   "name": "agentplay",
-   "url": "https://github.com/Entelligence-AI/agentplay",
-   "description": "Replay your coding agent sessions as a map and a timeline",
-   "stars": 340,
-   "topics": [
-    "agent-observability",
-    "ai-agents",
-    "claude",
-    "claude-code",
-    "codex",
-    "coding-agents",
-    "cursor",
-    "developer-tools"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-14T09:06:49Z",
-   "pushed_at": "2026-11-02T06:26:05Z",
-   "scout": "repos",
-   "kinds": [],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [],
-   "score": 55,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-10-27T06:53:30.396213+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "offense-research/offense",
-   "owner": "offense-research",
-   "name": "offense",
-   "url": "https://github.com/offense-research/offense",
-   "description": "OpenRouter for agent security.",
-   "stars": 47,
-   "topics": [],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-27T19:55:51Z",
-   "pushed_at": "2026-11-02T06:22:15Z",
-   "scout": "skills",
-   "kinds": [
-    "mcp",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "6 skills with a valid SKILL.md (e.g. .agents/skills/scanning-with-offense/SKILL.md)",
-    "depends on an MCP SDK"
-   ],
-   "score": 90,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "ycc77cn/skills",
-   "owner": "ycc77cn",
-   "name": "skills",
-   "url": "https://github.com/ycc77cn/skills",
-   "description": "\u6768CC \u5f00\u6e90 AI Agent \u6280\u80fd\u5408\u96c6 | Divination, Software Development, Digital Forensics",
-   "stars": 40,
-   "topics": [],
-   "license": "MIT",
-   "created_at": "2026-10-25T08:36:38Z",
-   "pushed_at": "2026-11-02T06:30:06Z",
-   "scout": "skills",
-   "kinds": [
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "36 skills with a valid SKILL.md (e.g. \u56fd\u5b66\u5360\u535c/\u6885\u82b1\u6613\u6570-\u56db\u6cd5\u5341\u516b\u7c7b/SKILL.md)"
-   ],
-   "score": 89,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "chipfighter/context-attachment-manager",
-   "owner": "chipfighter",
-   "name": "context-attachment-manager",
-   "url": "https://github.com/chipfighter/context-attachment-manager",
-   "description": "Turn Codex and Claude Code into your AI assistant director. Pair them with your favorite image-generation tools, keep image-heavy chats lightweight, and find the right image from a rough description\u2014even after repeated context compaction.",
-   "stars": 714,
-   "topics": [
-    "ai-art",
-    "ai-image",
-    "anthropic",
-    "chatgpt",
-    "claude",
-    "claude-code",
-    "claude-code-plugin",
-    "claude-desktop"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-24T05:00:09Z",
-   "pushed_at": "2026-11-02T01:44:56Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin"
-   ],
-   "checks": {
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 97,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "andyrewlee/awesome-system-one",
-   "owner": "andyrewlee",
-   "name": "awesome-system-one",
-   "url": "https://github.com/andyrewlee/awesome-system-one",
-   "description": "A list of System One models (also called decision models): Jev, the first, plus open and hosted alternatives, agents, tools, SDKs and benchmarks.",
-   "stars": 37,
-   "topics": [
-    "awesome",
-    "awesome-jev",
-    "awesome-list",
-    "calibration",
-    "computer-use",
-    "decision-model",
-    "decision-models",
-    "intent-classification"
-   ],
-   "license": "CC0-1.0",
-   "created_at": "2026-09-19T23:20:48Z",
-   "pushed_at": "2026-11-02T05:58:06Z",
-   "scout": "plugins",
-   "kinds": [],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [],
-   "score": 49,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "Softinator-TechLabs/feedbacks-oss",
-   "owner": "Softinator-TechLabs",
-   "name": "feedbacks-oss",
-   "url": "https://github.com/Softinator-TechLabs/feedbacks-oss",
-   "description": "Your team\u2019s slate for the web. Capture, annotate and discuss website feedback with your team and coding assistants. Self-hosted app, Chrome extension and MCP.",
-   "stars": 36,
-   "topics": [
-    "annotations",
-    "chrome-extension",
-    "codex-plugin",
-    "mcp",
-    "postgresql",
-    "screenshot",
-    "self-hosted",
-    "typescript"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-09-16T01:17:41Z",
-   "pushed_at": "2026-11-02T05:18:39Z",
-   "scout": "plugins",
-   "kinds": [
-    "mcp",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "2 skills with a valid SKILL.md (e.g. plugins/feedbacks/skills/manage-feedbacks-context/SKILL.md)",
-    "depends on an MCP SDK"
-   ],
-   "score": 89,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "MakeItEzzz555/Gridline",
-   "owner": "MakeItEzzz555",
-   "name": "Gridline",
-   "url": "https://github.com/MakeItEzzz555/Gridline",
-   "description": "Portable AI agent skills, subagents, and plugins for architecture/AEC workflows across Codex, Claude Code, Gemini CLI, and other compatible agents.",
-   "stars": 33,
-   "topics": [
-    "aec",
-    "agent-skills",
-    "ai-agents",
-    "architecture",
-    "autocad",
-    "bim",
-    "cad",
-    "civil-engineering"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-30T23:43:27Z",
-   "pushed_at": "2026-11-02T06:18:45Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "60 skills with a valid SKILL.md (e.g. providers/claude/skills/architectural-drawing-generation/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 89,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "Samsung/tizen-agent-skills",
-   "owner": "Samsung",
-   "name": "tizen-agent-skills",
-   "url": "https://github.com/Samsung/tizen-agent-skills",
-   "description": "Tizen development skills & plugins for AI coding agents: install the Tizen SDK, create, build, debug and test Tizen Web, Native, .NET, RPK and RPM packages and Samsung TV apps",
-   "stars": 15,
-   "topics": [
-    "agent-skills",
-    "ai-agent",
-    "claude-code",
-    "claude-code-plugin",
-    "cline",
-    "codex",
-    "developer-tools",
-    "dotnet"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-09-08T01:22:07Z",
-   "pushed_at": "2026-11-02T06:24:28Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "64 skills with a valid SKILL.md (e.g. .agents/skills/tizen-sdk-skills-review/SKILL.md)",
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 87,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "Heyosseus/sloppy",
-   "owner": "Heyosseus",
-   "name": "sloppy",
-   "url": "https://github.com/Heyosseus/sloppy",
-   "description": "Static analysis for the debt AI agents leave in PHP: 34 rules, Claude Code hooks, git-diff review, a Rector and Pint fix pass, Pest expectations, CI annotations and an MCP server. Deterministic, local, no LLM.",
-   "stars": 214,
-   "topics": [
-    "ai",
-    "code-quality",
-    "filament",
-    "laravel",
-    "linter",
-    "mcp",
-    "pest",
-    "php"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-10T07:41:59Z",
-   "pushed_at": "2026-11-02T06:17:37Z",
-   "scout": "repos",
-   "kinds": [],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [],
-   "score": 53,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "scs0209/laya-guard",
-   "owner": "scs0209",
-   "name": "laya-guard",
-   "url": "https://github.com/scs0209/laya-guard",
-   "description": "Free local guardrail for AI coding agents: every tool_call judged on-device (regex + Laya), allow/review/block",
-   "stars": 35,
-   "topics": [
-    "ai-agents",
-    "ai-safety",
-    "claude-code",
-    "coding-assistant",
-    "fastapi",
-    "guardrails",
-    "llm-security",
-    "local-first"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-11T03:55:14Z",
-   "pushed_at": "2026-11-02T06:27:30Z",
-   "scout": "repos",
-   "kinds": [],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [],
-   "score": 49,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "GuiBibeau/solos",
-   "owner": "GuiBibeau",
-   "name": "solos",
-   "url": "https://github.com/GuiBibeau/solos",
-   "description": "Swap, lend, trade perps, add liquidity, move SOL, read the market. One binary your agent calls, across every venue.",
-   "stars": 31,
-   "topics": [
-    "agentic-ai",
-    "ai-agents",
-    "bun",
-    "claude",
-    "claude-code",
-    "cli",
-    "codex",
-    "cursor"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-09-16T01:11:08Z",
-   "pushed_at": "2026-11-02T06:04:36Z",
-   "scout": "repos",
-   "kinds": [
-    "mcp"
-   ],
-   "checks": {
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "depends on an MCP SDK"
-   ],
-   "score": 89,
-   "category": "MCP Servers",
-   "first_scouted": "2026-11-02T06:32:50.653691+00:00",
-   "demoed_at": "2026-11-02T06:32:50.653691+00:00"
-  },
-  {
-   "full_name": "kajisho5/ffmpeg-skill",
-   "owner": "kajisho5",
-   "name": "ffmpeg-skill",
-   "url": "https://github.com/kajisho5/ffmpeg-skill",
-   "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-   "stars": 4205,
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "audio-processing",
-    "captions",
-    "claude-code",
-    "codex",
-    "coding-agent",
-    "cursor"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-03T14:33:38Z",
-   "pushed_at": "2026-10-31T22:51:32Z",
-   "scout": "repos",
-   "kinds": [
-    "mcp",
-    "plugin",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "14 skills with a valid SKILL.md (e.g. .claude/skills/build-artifacts/SKILL.md)",
-    "valid .claude-plugin/marketplace.json",
-    "depends on an MCP SDK"
-   ],
-   "score": 100,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-28T06:14:12.390479+00:00",
-   "demoed_at": "2026-11-01T06:16:37.664715+00:00"
-  },
-  {
-   "full_name": "YeonwooSung/my-claude-code-mods",
-   "owner": "YeonwooSung",
-   "name": "my-claude-code-mods",
-   "url": "https://github.com/YeonwooSung/my-claude-code-mods",
-   "description": "Custom Claude Code Mods that I need",
-   "stars": 1105,
-   "topics": [
-    "claude-code",
-    "claude-code-mod",
-    "claude-code-mods",
-    "claude-code-plugin"
-   ],
-   "license": "Apache-2.0",
-   "created_at": "2026-10-09T13:09:11Z",
-   "pushed_at": "2026-11-01T05:18:11Z",
-   "scout": "plugins",
-   "kinds": [
-    "plugin"
-   ],
-   "checks": {
-    "plugin_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "valid .claude-plugin/marketplace.json"
-   ],
-   "score": 98,
-   "category": "Skills & Plugins",
-   "first_scouted": "2026-10-31T06:12:28.025310+00:00",
-   "demoed_at": "2026-11-01T06:16:37.664715+00:00"
-  },
-  {
-   "full_name": "PapilotAI/papilot",
-   "owner": "PapilotAI",
-   "name": "papilot",
-   "url": "https://github.com/PapilotAI/papilot",
-   "description": "A Cursor-like workspace for your papers: annotate and review PDFs directly without ever touching LaTeX.",
-   "stars": 58,
-   "topics": [
-    "academic-writing",
-    "ai-agents",
-    "ai-writing",
-    "latex",
-    "pdf-diff",
-    "research-tool",
-    "tex"
-   ],
-   "license": "MIT",
-   "created_at": "2026-10-26T07:50:28Z",
-   "pushed_at": "2026-11-01T02:28:40Z",
-   "scout": "repos",
-   "kinds": [
-    "agent",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "1 skill with a valid SKILL.md (e.g. vendor/latex-review/SKILL.md)",
-    "uses the Anthropic / Claude Agent SDK"
-   ],
-   "score": 90,
-   "category": "Agents & SDK",
-   "first_scouted": "2026-10-31T06:12:28.025310+00:00",
-   "demoed_at": "2026-11-01T06:16:37.664715+00:00"
-  },
-  {
-   "full_name": "EvannZhongg/Nosis",
-   "owner": "EvannZhongg",
-   "name": "Nosis",
-   "url": "https://github.com/EvannZhongg/Nosis",
-   "description": "Nosis is a lightweight personal agent runtime: per-session execution boundaries with OS-level sandboxing, computer use, a full built-in toolset, Skill / Plugin / MCP extensions, one runtime shared by GUI and TUI, and file-persisted sessions, plans, and memory.",
-   "stars": 117,
-   "topics": [
-    "agent-framework",
-    "agent-runtime",
-    "agent-skills",
-    "ai-agent",
-    "ai-assistants",
-    "computer-use",
-    "context-engineering",
-    "human-in-the-loop"
-   ],
-   "license": "MIT",
-   "created_at": "2026-09-09T09:12:08Z",
-   "pushed_at": "2026-11-01T05:22:19Z",
-   "scout": "skills",
-   "kinds": [
-    "mcp",
-    "skill"
-   ],
-   "checks": {
-    "skill_manifest": true,
-    "readme": true,
-    "licence": true,
-    "active": true,
-    "has_files": true
-   },
-   "notes": [
-    "4 skills with a valid SKILL.md (e.g. agent_runtime/defaults/skills/plugin-creator/SKILL.md)",
-    "depends on an MCP SDK"
-   ],
-   "score": 92,
-   "category": "MCP Servers",
-   "first_scouted": "2026-10-30T06:16:12.427136+00:00",
-   "demoed_at": "2026-11-01T06:16:37.664715+00:00"
   }
  ]
 }
