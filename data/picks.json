@@ -1,19 +1,7 @@
 {
- "updated": "2026-11-16T07:10:55.641565+00:00",
+ "updated": "2026-11-17T06:37:17.725213+00:00",
  "picks": {
   "MCP Servers": [
-   {
-    "full_name": "zhuyansen/new-term-radar",
-    "owner": "zhuyansen",
-    "name": "new-term-radar",
-    "url": "https://github.com/zhuyansen/new-term-radar",
-    "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
-    "stars": 2053,
-    "score": 99,
-    "senior": "MCP senior",
-    "reason": "new-term-radar depends on an MCP SDK; 3 skills with a valid SKILL.md (e.g. skills/ai-listening/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
    {
     "full_name": "DIYgod/pinky",
     "owner": "DIYgod",
@@ -27,12 +15,24 @@
     "approved_at": "2026-11-09T06:38:27.154982+00:00"
    },
    {
+    "full_name": "JosssphZhou/poki",
+    "owner": "JosssphZhou",
+    "name": "poki",
+    "url": "https://github.com/JosssphZhou/poki",
+    "description": "Poki uses your iPhone like you do. An open-source agent that sees your screen and taps, types, and swipes across any app on your real device. Runs locally, plugs right into Claude Code and any MCP agent.",
+    "stars": 1532,
+    "score": 99,
+    "senior": "MCP senior",
+    "reason": "poki depends on an MCP SDK; 4 skills with a valid SKILL.md (e.g. agent/skills/iphone-unlock/SKILL.md)",
+    "approved_at": "2026-11-17T06:37:17.725213+00:00"
+   },
+   {
     "full_name": "sno-ai/sno-station",
     "owner": "sno-ai",
     "name": "sno-station",
     "url": "https://github.com/sno-ai/sno-station",
     "description": "When Claude Code hits its usage limit, Codex picks the task up from the same memory. Sno Station puts Codex, Claude Code, Cursor, Hermes Agent and OpenClaw on one squad: they hand work to each other and review each other's code. Open source, runs on your computer.",
-    "stars": 1020,
+    "stars": 1022,
     "score": 98,
     "senior": "MCP senior",
     "reason": "sno-station depends on an MCP SDK; 11 skills with a valid SKILL.md (e.g. apps/mem-claude/skills/sno-mem-claude/SKILL.md)",
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 37244,
+    "stars": 37764,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -106,7 +106,7 @@
     "name": "lemo-opuscar",
     "url": "https://github.com/lemomo-ai/lemo-opuscar",
     "description": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a99 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
-    "stars": 15001,
+    "stars": 17387,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -192,8 +192,8 @@
     "name": "claude-web",
     "url": "https://github.com/ypyik0669/claude-web",
     "description": "A GUI workbench for Claude Code and other CLI agents \u00b7 Claude Code \u7684\u53ef\u89c6\u5316\u5de5\u4f5c\u53f0\uff08\u7f51\u9875 + \u684c\u9762\uff09\uff0c\u4e5f\u80fd\u9a71\u52a8 Codex / Gemini CLI / Qwen / OpenCode \u7b49 CLI agent",
-    "stars": 61,
-    "score": 90,
+    "stars": 72,
+    "score": 91,
     "senior": "Agents senior",
     "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
