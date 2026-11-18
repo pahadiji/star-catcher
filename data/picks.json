@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T06:37:17.725213+00:00",
+ "updated": "2026-11-18T06:37:05.174841+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -32,10 +32,10 @@
     "name": "sno-station",
     "url": "https://github.com/sno-ai/sno-station",
     "description": "When Claude Code hits its usage limit, Codex picks the task up from the same memory. Sno Station puts Codex, Claude Code, Cursor, Hermes Agent and OpenClaw on one squad: they hand work to each other and review each other's code. Open source, runs on your computer.",
-    "stars": 1022,
+    "stars": 1026,
     "score": 98,
     "senior": "MCP senior",
-    "reason": "sno-station depends on an MCP SDK; 11 skills with a valid SKILL.md (e.g. apps/mem-claude/skills/sno-mem-claude/SKILL.md)",
+    "reason": "sno-station depends on an MCP SDK; 10 skills with a valid SKILL.md (e.g. apps/mem-claude/skills/sno-mem-claude/SKILL.md)",
     "approved_at": "2026-11-16T07:10:55.641565+00:00"
    },
    {
@@ -51,6 +51,18 @@
     "approved_at": "2026-11-10T06:30:29.004276+00:00"
    },
    {
+    "full_name": "Cygnux-Labs/Tracekit",
+    "owner": "Cygnux-Labs",
+    "name": "Tracekit",
+    "url": "https://github.com/Cygnux-Labs/Tracekit",
+    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
+    "stars": 769,
+    "score": 97,
+    "senior": "MCP senior",
+    "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-11T06:32:43.780007+00:00"
+   },
+   {
     "full_name": "INSANE0777/Awwwards-mcp",
     "owner": "INSANE0777",
     "name": "Awwwards-mcp",
@@ -61,18 +73,6 @@
     "senior": "MCP senior",
     "reason": "Awwwards-mcp depends on an MCP SDK",
     "approved_at": "2026-11-15T06:28:11.112700+00:00"
-   },
-   {
-    "full_name": "Cygnux-Labs/Tracekit",
-    "owner": "Cygnux-Labs",
-    "name": "Tracekit",
-    "url": "https://github.com/Cygnux-Labs/Tracekit",
-    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-    "stars": 727,
-    "score": 97,
-    "senior": "MCP senior",
-    "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-11T06:32:43.780007+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 37764,
+    "stars": 38329,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -113,40 +113,40 @@
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
-    "full_name": "rehan-remade/universal-modder",
-    "owner": "rehan-remade",
-    "name": "universal-modder",
-    "url": "https://github.com/rehan-remade/universal-modder",
-    "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9722,
-    "score": 100,
-    "senior": "Skills & plugins senior",
-    "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
     "full_name": "JuneYaooo/rea-video",
     "owner": "JuneYaooo",
     "name": "rea-video",
     "url": "https://github.com/JuneYaooo/rea-video",
     "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
-    "stars": 9361,
+    "stars": 10405,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-11-11T06:32:43.780007+00:00"
    },
    {
-    "full_name": "alchaincyf/huashu-art-motion",
-    "owner": "alchaincyf",
-    "name": "huashu-art-motion",
-    "url": "https://github.com/alchaincyf/huashu-art-motion",
-    "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
-    "stars": 6999,
+    "full_name": "rehan-remade/universal-modder",
+    "owner": "rehan-remade",
+    "name": "universal-modder",
+    "url": "https://github.com/rehan-remade/universal-modder",
+    "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
+    "stars": 9753,
     "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "huashu-art-motion ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. SKILL.md)",
-    "approved_at": "2026-11-10T06:30:29.004276+00:00"
+    "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-27T06:55:26.329705+00:00"
+   },
+   {
+    "full_name": "openfilm/openfilm",
+    "owner": "openfilm",
+    "name": "openfilm",
+    "url": "https://github.com/openfilm/openfilm",
+    "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
+    "stars": 8170,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "openfilm ships a valid SKILL.md or plugin manifest; 4 skills with a valid SKILL.md (e.g. packages/openfilm/manual/canvas/SKILL.md)",
+    "approved_at": "2026-11-18T06:37:05.174841+00:00"
    }
   ],
   "Agents & SDK": [
