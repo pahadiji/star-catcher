@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T06:37:05.174841+00:00",
+ "updated": "2026-11-19T06:33:57.205056+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -20,7 +20,7 @@
     "name": "poki",
     "url": "https://github.com/JosssphZhou/poki",
     "description": "Poki uses your iPhone like you do. An open-source agent that sees your screen and taps, types, and swipes across any app on your real device. Runs locally, plugs right into Claude Code and any MCP agent.",
-    "stars": 1532,
+    "stars": 1610,
     "score": 99,
     "senior": "MCP senior",
     "reason": "poki depends on an MCP SDK; 4 skills with a valid SKILL.md (e.g. agent/skills/iphone-unlock/SKILL.md)",
@@ -51,28 +51,28 @@
     "approved_at": "2026-11-10T06:30:29.004276+00:00"
    },
    {
+    "full_name": "codepawl/crucible",
+    "owner": "codepawl",
+    "name": "crucible",
+    "url": "https://github.com/codepawl/crucible",
+    "description": "3D engine that AI agents drive",
+    "stars": 787,
+    "score": 97,
+    "senior": "MCP senior",
+    "reason": "crucible depends on an MCP SDK; 2 skills with a valid SKILL.md (e.g. skills/build-crucible-scene/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-19T06:33:57.205056+00:00"
+   },
+   {
     "full_name": "Cygnux-Labs/Tracekit",
     "owner": "Cygnux-Labs",
     "name": "Tracekit",
     "url": "https://github.com/Cygnux-Labs/Tracekit",
     "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-    "stars": 769,
+    "stars": 774,
     "score": 97,
     "senior": "MCP senior",
     "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-11-11T06:32:43.780007+00:00"
-   },
-   {
-    "full_name": "INSANE0777/Awwwards-mcp",
-    "owner": "INSANE0777",
-    "name": "Awwwards-mcp",
-    "url": "https://github.com/INSANE0777/Awwwards-mcp",
-    "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-    "stars": 761,
-    "score": 97,
-    "senior": "MCP senior",
-    "reason": "Awwwards-mcp depends on an MCP SDK",
-    "approved_at": "2026-11-15T06:28:11.112700+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 38329,
+    "stars": 38764,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -192,7 +192,7 @@
     "name": "claude-web",
     "url": "https://github.com/ypyik0669/claude-web",
     "description": "A GUI workbench for Claude Code and other CLI agents \u00b7 Claude Code \u7684\u53ef\u89c6\u5316\u5de5\u4f5c\u53f0\uff08\u7f51\u9875 + \u684c\u9762\uff09\uff0c\u4e5f\u80fd\u9a71\u52a8 Codex / Gemini CLI / Qwen / OpenCode \u7b49 CLI agent",
-    "stars": 72,
+    "stars": 74,
     "score": 91,
     "senior": "Agents senior",
     "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
