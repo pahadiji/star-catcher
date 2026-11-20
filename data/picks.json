@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T06:33:57.205056+00:00",
+ "updated": "2026-11-20T06:35:53.052118+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -56,23 +56,23 @@
     "name": "crucible",
     "url": "https://github.com/codepawl/crucible",
     "description": "3D engine that AI agents drive",
-    "stars": 787,
+    "stars": 823,
     "score": 97,
     "senior": "MCP senior",
     "reason": "crucible depends on an MCP SDK; 2 skills with a valid SKILL.md (e.g. skills/build-crucible-scene/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-11-19T06:33:57.205056+00:00"
    },
    {
-    "full_name": "Cygnux-Labs/Tracekit",
-    "owner": "Cygnux-Labs",
-    "name": "Tracekit",
-    "url": "https://github.com/Cygnux-Labs/Tracekit",
-    "description": "Tamper-evident tracing, policy gates and cross-checks for AI agents: see what the agent did, and why.",
-    "stars": 774,
+    "full_name": "INSANE0777/Awwwards-mcp",
+    "owner": "INSANE0777",
+    "name": "Awwwards-mcp",
+    "url": "https://github.com/INSANE0777/Awwwards-mcp",
+    "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
+    "stars": 761,
     "score": 97,
     "senior": "MCP senior",
-    "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-11T06:32:43.780007+00:00"
+    "reason": "Awwwards-mcp depends on an MCP SDK",
+    "approved_at": "2026-11-20T06:35:53.052118+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -82,11 +82,23 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 38764,
+    "stars": 39214,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
+   },
+   {
+    "full_name": "lemomo-ai/lemo-opuscar",
+    "owner": "lemomo-ai",
+    "name": "lemo-opuscar",
+    "url": "https://github.com/lemomo-ai/lemo-opuscar",
+    "description": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a99 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
+    "stars": 18821,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
     "full_name": "google/elephant-goldfish-model",
@@ -101,24 +113,12 @@
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
-    "full_name": "lemomo-ai/lemo-opuscar",
-    "owner": "lemomo-ai",
-    "name": "lemo-opuscar",
-    "url": "https://github.com/lemomo-ai/lemo-opuscar",
-    "description": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a99 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
-    "stars": 17387,
-    "score": 100,
-    "senior": "Skills & plugins senior",
-    "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-29T06:18:15.914700+00:00"
-   },
-   {
     "full_name": "JuneYaooo/rea-video",
     "owner": "JuneYaooo",
     "name": "rea-video",
     "url": "https://github.com/JuneYaooo/rea-video",
     "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
-    "stars": 10405,
+    "stars": 11157,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -192,7 +192,7 @@
     "name": "claude-web",
     "url": "https://github.com/ypyik0669/claude-web",
     "description": "A GUI workbench for Claude Code and other CLI agents \u00b7 Claude Code \u7684\u53ef\u89c6\u5316\u5de5\u4f5c\u53f0\uff08\u7f51\u9875 + \u684c\u9762\uff09\uff0c\u4e5f\u80fd\u9a71\u52a8 Codex / Gemini CLI / Qwen / OpenCode \u7b49 CLI agent",
-    "stars": 74,
+    "stars": 75,
     "score": 91,
     "senior": "Agents senior",
     "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
