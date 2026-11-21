@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T06:35:53.052118+00:00",
+ "updated": "2026-11-21T06:32:21.973799+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -82,7 +82,7 @@
     "name": "magpie",
     "url": "https://github.com/yetone/magpie",
     "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "stars": 39214,
+    "stars": 39598,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "magpie ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. internal/sessions/testdata/droid-skills/skills/greet-user/SKILL.md)",
@@ -130,7 +130,7 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9753,
+    "stars": 9818,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -161,6 +161,18 @@
     "senior": "Agents senior",
     "reason": "dsh-claude-style is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-11-10T06:30:29.004276+00:00"
+   },
+   {
+    "full_name": "PapilotAI/papilot",
+    "owner": "PapilotAI",
+    "name": "papilot",
+    "url": "https://github.com/PapilotAI/papilot",
+    "description": "Next-Generation AI LaTeX Editor: annotate the PDF, review typeset diffs, and live-sync with Overleaf. Works with Claude Code, Codex, Cursor, Copilot and more.",
+    "stars": 405,
+    "score": 95,
+    "senior": "Agents senior",
+    "reason": "papilot is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-11-21T06:32:21.973799+00:00"
    },
    {
     "full_name": "cryer/star-cli",
