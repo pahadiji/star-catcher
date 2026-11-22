@@ -1,7 +1,19 @@
 {
- "updated": "2026-11-21T06:32:21.973799+00:00",
+ "updated": "2026-11-22T06:29:42.254306+00:00",
  "picks": {
   "MCP Servers": [
+   {
+    "full_name": "zhuyansen/new-term-radar",
+    "owner": "zhuyansen",
+    "name": "new-term-radar",
+    "url": "https://github.com/zhuyansen/new-term-radar",
+    "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+    "stars": 2206,
+    "score": 100,
+    "senior": "MCP senior",
+    "reason": "new-term-radar depends on an MCP SDK; 3 skills with a valid SKILL.md (e.g. skills/ai-listening/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-22T06:29:42.254306+00:00"
+   },
    {
     "full_name": "DIYgod/pinky",
     "owner": "DIYgod",
@@ -19,8 +31,8 @@
     "owner": "JosssphZhou",
     "name": "poki",
     "url": "https://github.com/JosssphZhou/poki",
-    "description": "Poki uses your iPhone like you do. An open-source agent that sees your screen and taps, types, and swipes across any app on your real device. Runs locally, plugs right into Claude Code and any MCP agent.",
-    "stars": 1610,
+    "description": "Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone, reads the screen, and taps, types and swipes in real apps with your own model account.",
+    "stars": 1758,
     "score": 99,
     "senior": "MCP senior",
     "reason": "poki depends on an MCP SDK; 4 skills with a valid SKILL.md (e.g. agent/skills/iphone-unlock/SKILL.md)",
@@ -61,18 +73,6 @@
     "senior": "MCP senior",
     "reason": "crucible depends on an MCP SDK; 2 skills with a valid SKILL.md (e.g. skills/build-crucible-scene/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-11-19T06:33:57.205056+00:00"
-   },
-   {
-    "full_name": "INSANE0777/Awwwards-mcp",
-    "owner": "INSANE0777",
-    "name": "Awwwards-mcp",
-    "url": "https://github.com/INSANE0777/Awwwards-mcp",
-    "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-    "stars": 761,
-    "score": 97,
-    "senior": "MCP senior",
-    "reason": "Awwwards-mcp depends on an MCP SDK",
-    "approved_at": "2026-11-20T06:35:53.052118+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -130,7 +130,7 @@
     "name": "universal-modder",
     "url": "https://github.com/rehan-remade/universal-modder",
     "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-    "stars": 9818,
+    "stars": 9831,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "universal-modder ships a valid SKILL.md or plugin manifest; 39 skills with a valid SKILL.md (e.g. .agents/skills/asset-pipeline/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -209,6 +209,18 @@
     "senior": "Agents senior",
     "reason": "claude-web is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-10-30T06:18:39.239585+00:00"
+   },
+   {
+    "full_name": "Leonxlnx/sable",
+    "owner": "Leonxlnx",
+    "name": "sable",
+    "url": "https://github.com/Leonxlnx/sable",
+    "description": "A desktop agentic development environment for Claude Code and Codex",
+    "stars": 35,
+    "score": 89,
+    "senior": "Agents senior",
+    "reason": "sable is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-11-22T06:29:42.254306+00:00"
    }
   ],
   "Dev Tools & CLI": [],
