@@ -1,7 +1,19 @@
 {
- "updated": "2026-11-22T06:29:42.254306+00:00",
+ "updated": "2026-11-23T06:45:52.089942+00:00",
  "picks": {
   "MCP Servers": [
+   {
+    "full_name": "DIYgod/pinky",
+    "owner": "DIYgod",
+    "name": "pinky",
+    "url": "https://github.com/DIYgod/pinky",
+    "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+    "stars": 2691,
+    "score": 100,
+    "senior": "MCP senior",
+    "reason": "pinky depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. docs/SKILL.md)",
+    "approved_at": "2026-11-09T06:38:27.154982+00:00"
+   },
    {
     "full_name": "zhuyansen/new-term-radar",
     "owner": "zhuyansen",
@@ -15,24 +27,12 @@
     "approved_at": "2026-11-22T06:29:42.254306+00:00"
    },
    {
-    "full_name": "DIYgod/pinky",
-    "owner": "DIYgod",
-    "name": "pinky",
-    "url": "https://github.com/DIYgod/pinky",
-    "description": "Let AI agents use your phone, with you in the loop.",
-    "stars": 2033,
-    "score": 99,
-    "senior": "MCP senior",
-    "reason": "pinky depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. docs/SKILL.md)",
-    "approved_at": "2026-11-09T06:38:27.154982+00:00"
-   },
-   {
     "full_name": "JosssphZhou/poki",
     "owner": "JosssphZhou",
     "name": "poki",
     "url": "https://github.com/JosssphZhou/poki",
     "description": "Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone, reads the screen, and taps, types and swipes in real apps with your own model account.",
-    "stars": 1758,
+    "stars": 1857,
     "score": 99,
     "senior": "MCP senior",
     "reason": "poki depends on an MCP SDK; 4 skills with a valid SKILL.md (e.g. agent/skills/iphone-unlock/SKILL.md)",
@@ -51,16 +51,16 @@
     "approved_at": "2026-11-16T07:10:55.641565+00:00"
    },
    {
-    "full_name": "genex-games/genex-desktop",
-    "owner": "genex-games",
-    "name": "genex-desktop",
-    "url": "https://github.com/genex-games/genex-desktop",
-    "description": "Desktop app for game dev with AI: make games in Unreal Engine, Unity, Godot or the browser. The agent sets up the engine, builds your game and play-tests it by itself.",
-    "stars": 825,
+    "full_name": "Cygnux-Labs/Tracekit",
+    "owner": "Cygnux-Labs",
+    "name": "Tracekit",
+    "url": "https://github.com/Cygnux-Labs/Tracekit",
+    "description": "Tracekit records what your AI agents do, decides each tool call before it runs, and gives you a signed record anyone can verify offline: tamper-evident tracing, policy gates and cross-checks for AI agents.",
+    "stars": 841,
     "score": 97,
     "senior": "MCP senior",
-    "reason": "genex-desktop depends on an MCP SDK; 55 skills with a valid SKILL.md (e.g. .agents/skills/add-event-type/SKILL.md)",
-    "approved_at": "2026-11-10T06:30:29.004276+00:00"
+    "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-23T06:45:52.089942+00:00"
    },
    {
     "full_name": "codepawl/crucible",
@@ -94,7 +94,7 @@
     "name": "lemo-opuscar",
     "url": "https://github.com/lemomo-ai/lemo-opuscar",
     "description": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a99 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
-    "stars": 18821,
+    "stars": 20002,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "lemo-opuscar ships a valid SKILL.md or plugin manifest; 2 skills with a valid SKILL.md (e.g. plugin/skills/lemo-opuscar/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -118,7 +118,7 @@
     "name": "rea-video",
     "url": "https://github.com/JuneYaooo/rea-video",
     "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
-    "stars": 11157,
+    "stars": 12346,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -137,16 +137,16 @@
     "approved_at": "2026-10-27T06:55:26.329705+00:00"
    },
    {
-    "full_name": "openfilm/openfilm",
-    "owner": "openfilm",
-    "name": "openfilm",
-    "url": "https://github.com/openfilm/openfilm",
-    "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
-    "stars": 8170,
+    "full_name": "erkamyaman/rust-anything",
+    "owner": "erkamyaman",
+    "name": "rust-anything",
+    "url": "https://github.com/erkamyaman/rust-anything",
+    "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+    "stars": 8175,
     "score": 100,
     "senior": "Skills & plugins senior",
-    "reason": "openfilm ships a valid SKILL.md or plugin manifest; 4 skills with a valid SKILL.md (e.g. packages/openfilm/manual/canvas/SKILL.md)",
-    "approved_at": "2026-11-18T06:37:05.174841+00:00"
+    "reason": "rust-anything ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. directory/skills/rust-anything/SKILL.md); valid .claude-plugin/marketplace.json",
+    "approved_at": "2026-11-23T06:45:52.089942+00:00"
    }
   ],
   "Agents & SDK": [
@@ -173,18 +173,6 @@
     "senior": "Agents senior",
     "reason": "papilot is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-11-21T06:32:21.973799+00:00"
-   },
-   {
-    "full_name": "cryer/star-cli",
-    "owner": "cryer",
-    "name": "star-cli",
-    "url": "https://github.com/cryer/star-cli",
-    "description": "An AI agent command-line interface \u2014 multi-model LLM access, streaming terminal UI, tool calling, permission control, and session persistence.",
-    "stars": 110,
-    "score": 92,
-    "senior": "Agents senior",
-    "reason": "star-cli is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-11-09T06:38:27.154982+00:00"
    },
    {
     "full_name": "PBJ-2/clauderipple",
@@ -216,11 +204,23 @@
     "name": "sable",
     "url": "https://github.com/Leonxlnx/sable",
     "description": "A desktop agentic development environment for Claude Code and Codex",
-    "stars": 35,
+    "stars": 36,
     "score": 89,
     "senior": "Agents senior",
     "reason": "sable is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-11-22T06:29:42.254306+00:00"
+   },
+   {
+    "full_name": "xirichuyi/claude-mirror",
+    "owner": "xirichuyi",
+    "name": "claude-mirror",
+    "url": "https://github.com/xirichuyi/claude-mirror",
+    "description": "\u955c\u50cf Claude \u00b7 Claude Mirror \u2014 \u901a\u8fc7 SSH \u4f7f\u7528\u8fdc\u7aef Claude Code \u7684\u684c\u9762\u5ba2\u6237\u7aef\uff0c\u652f\u6301\u591a\u4e3b\u673a\u3001\u9879\u76ee\u4f1a\u8bdd\u3001\u6301\u4e45\u4efb\u52a1\u4e0e\u6587\u4ef6\u7ba1\u7406\u3002\u542b\u539f\u751f macOS \u4e0e Electron \u5b9e\u73b0\u3002",
+    "stars": 36,
+    "score": 89,
+    "senior": "Agents senior",
+    "reason": "claude-mirror is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
+    "approved_at": "2026-11-23T06:45:52.089942+00:00"
    }
   ],
   "Dev Tools & CLI": [],
