@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kordoc by chrisryugj — MCP Server for Claude | Star Catcher</title>
-<meta name="description" content="한국 문서를 읽고·고치고·새로 쓰는 AI 문서 도구 — HWP·HWPX·PDF·오피스·스캔(OCR)을 Markdown으로, 신구대조·서식 보존 편집·Markdown→HWPX 작성·HWP→HWPX 변환·양식 채우기·공문서 검수까지. 라이브러리·CLI·MCP | Read, diff">
+<meta name="description" content="📄 한국 공문서를 AI가 읽고 쓰게 합니다. HWP·HWPX·PDF·오피스·스캔 이미지를 Markdown으로, Markdown을 HWPX 공문서로 바꾸고 양식 채우기·신구대조·서식 보존 편집까지. 라이브러리·CLI·MCP 서버 | Korean documents for AI: H">
 <link rel="canonical" href="https://pahadiji.github.io/star-catcher/r/chrisryugj/kordoc/">
 <meta property="og:title" content="kordoc by chrisryugj — MCP Server for Claude | Star Catcher">
-<meta property="og:description" content="한국 문서를 읽고·고치고·새로 쓰는 AI 문서 도구 — HWP·HWPX·PDF·오피스·스캔(OCR)을 Markdown으로, 신구대조·서식 보존 편집·Markdown→HWPX 작성·HWP→HWPX 변환·양식 채우기·공문서 검수까지. 라이브러리·CLI·MCP | Read, diff">
+<meta property="og:description" content="📄 한국 공문서를 AI가 읽고 쓰게 합니다. HWP·HWPX·PDF·오피스·스캔 이미지를 Markdown으로, Markdown을 HWPX 공문서로 바꾸고 양식 채우기·신구대조·서식 보존 편집까지. 라이브러리·CLI·MCP 서버 | Korean documents for AI: H">
 <meta property="og:url" content="https://pahadiji.github.io/star-catcher/r/chrisryugj/kordoc/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://pahadiji.github.io/star-catcher/assets/page.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "kordoc", "author": {"@type": "Person", "name": "chrisryugj"}, "codeRepository": "https://github.com/chrisryugj/kordoc", "description": "\ud55c\uad6d \ubb38\uc11c\ub97c \uc77d\uace0\u00b7\uace0\uce58\uace0\u00b7\uc0c8\ub85c \uc4f0\ub294 AI \ubb38\uc11c \ub3c4\uad6c \u2014 HWP\u00b7HWPX\u00b7PDF\u00b7\uc624\ud53c\uc2a4\u00b7\uc2a4\uce94(OCR)\uc744 Markdown\uc73c\ub85c, \uc2e0\uad6c\ub300\uc870\u00b7\uc11c\uc2dd \ubcf4\uc874 \ud3b8\uc9d1\u00b7Markdown\u2192HWPX \uc791\uc131\u00b7HWP\u2192HWPX \ubcc0\ud658\u00b7\uc591\uc2dd \ucc44\uc6b0\uae30\u00b7\uacf5\ubb38\uc11c \uac80\uc218\uae4c\uc9c0. \ub77c\uc774\ube0c\ub7ec\ub9ac\u00b7CLI\u00b7MCP | Read, diff, edit, write and convert Korean documents (HWP, HWPX, PDF, Office, scans) \u2014 library, CLI and MCP server", "programmingLanguage": "TypeScript", "license": "MIT", "keywords": "cli, document-conversion, document-parser, docx, hancom, hwp, hwp-parser, hwpx"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "kordoc", "author": {"@type": "Person", "name": "chrisryugj"}, "codeRepository": "https://github.com/chrisryugj/kordoc", "description": "\ud83d\udcc4 \ud55c\uad6d \uacf5\ubb38\uc11c\ub97c AI\uac00 \uc77d\uace0 \uc4f0\uac8c \ud569\ub2c8\ub2e4. HWP\u00b7HWPX\u00b7PDF\u00b7\uc624\ud53c\uc2a4\u00b7\uc2a4\uce94 \uc774\ubbf8\uc9c0\ub97c Markdown\uc73c\ub85c, Markdown\uc744 HWPX \uacf5\ubb38\uc11c\ub85c \ubc14\uafb8\uace0 \uc591\uc2dd \ucc44\uc6b0\uae30\u00b7\uc2e0\uad6c\ub300\uc870\u00b7\uc11c\uc2dd \ubcf4\uc874 \ud3b8\uc9d1\uae4c\uc9c0. \ub77c\uc774\ube0c\ub7ec\ub9ac\u00b7CLI\u00b7MCP \uc11c\ubc84 | Korean documents for AI: HWP, HWPX, PDF, Office and scans to Markdown, and Markdown back to HWPX. Library, CLI and MCP server.", "programmingLanguage": "TypeScript", "license": "MIT", "keywords": "cli, document-conversion, document-parser, docx, hancom, hwp, hwp-parser, hwpx"}</script>
 </head>
 <body>
 <header class="bar"><a class="brand" href="https://pahadiji.github.io/star-catcher/">✳ Star Catcher</a><nav><a href="https://pahadiji.github.io/star-catcher/c/mcp-servers/">MCP</a><a href="https://pahadiji.github.io/star-catcher/c/skills-plugins/">Skills</a><a href="https://pahadiji.github.io/star-catcher/c/agents-sdk/">Agents</a><a href="https://pahadiji.github.io/star-catcher/new/">New</a><a href="https://pahadiji.github.io/star-catcher/trending/">Trending</a><a href="https://pahadiji.github.io/star-catcher/mcp/">MCP server</a><a class="go" href="https://pahadiji.github.io/star-catcher/">Open the galaxy</a></nav></header>
@@ -25,9 +25,9 @@
 <nav class="crumbs"><a href="https://pahadiji.github.io/star-catcher/">Galaxy</a> › <a href="https://pahadiji.github.io/star-catcher/c/mcp-servers/">MCP Nebula</a> › kordoc</nav>
 <article class="repo" style="--c:#4DA8FF">
   <div class="head"><span class="orb" aria-hidden="true"></span><div><h1>kordoc</h1><p class="by">by chrisryugj</p></div></div>
-  <p class="desc">한국 문서를 읽고·고치고·새로 쓰는 AI 문서 도구 — HWP·HWPX·PDF·오피스·스캔(OCR)을 Markdown으로, 신구대조·서식 보존 편집·Markdown→HWPX 작성·HWP→HWPX 변환·양식 채우기·공문서 검수까지. 라이브러리·CLI·MCP | Read, diff, edit, write and convert Korean documents (HWP, HWPX, PDF, Office, scans) — library, CLI and MCP server</p>
+  <p class="desc">📄 한국 공문서를 AI가 읽고 쓰게 합니다. HWP·HWPX·PDF·오피스·스캔 이미지를 Markdown으로, Markdown을 HWPX 공문서로 바꾸고 양식 채우기·신구대조·서식 보존 편집까지. 라이브러리·CLI·MCP 서버 | Korean documents for AI: HWP, HWPX, PDF, Office and scans to Markdown, and Markdown back to HWPX. Library, CLI and MCP server.</p>
   <ul class="pills"><li class="type">MCP Nebula</li><li>Rare</li><li>Star</li><li><a href="https://pahadiji.github.io/star-catcher/t/cli/">cli</a></li><li>document-conversion</li><li>document-parser</li><li>docx</li><li>hancom</li></ul>
-  <dl class="stats"><div><dt>Stars</dt><dd>★ 3.0k</dd></div><div><dt>Forks</dt><dd>525</dd></div><div><dt>Language</dt><dd>TypeScript</dd></div><div><dt>Last push</dt><dd>2026-11-15</dd></div></dl>
+  <dl class="stats"><div><dt>Stars</dt><dd>★ 3.1k</dd></div><div><dt>Forks</dt><dd>540</dd></div><div><dt>Language</dt><dd>TypeScript</dd></div><div><dt>Last push</dt><dd>2026-11-24</dd></div></dl>
   <div class="actions"><a class="btn go" href="https://pahadiji.github.io/star-catcher/?star=chrisryugj/kordoc">Find it in the galaxy</a><a class="btn" href="https://github.com/chrisryugj/kordoc" rel="noopener">Open on GitHub</a></div>
   <pre class="install"><code>git clone https://github.com/chrisryugj/kordoc.git</code></pre>
 </article>
