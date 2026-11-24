@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T06:45:52.089942+00:00",
+ "updated": "2026-11-24T06:30:07.127607+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -8,7 +8,7 @@
     "name": "pinky",
     "url": "https://github.com/DIYgod/pinky",
     "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
-    "stars": 2691,
+    "stars": 2726,
     "score": 100,
     "senior": "MCP senior",
     "reason": "pinky depends on an MCP SDK; 1 skill with a valid SKILL.md (e.g. docs/SKILL.md)",
@@ -56,7 +56,7 @@
     "name": "Tracekit",
     "url": "https://github.com/Cygnux-Labs/Tracekit",
     "description": "Tracekit records what your AI agents do, decides each tool call before it runs, and gives you a signed record anyone can verify offline: tamper-evident tracing, policy gates and cross-checks for AI agents.",
-    "stars": 841,
+    "stars": 876,
     "score": 97,
     "senior": "MCP senior",
     "reason": "Tracekit depends on an MCP SDK; 15 skills with a valid SKILL.md (e.g. .claude/skills/agent-flow-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -118,7 +118,7 @@
     "name": "rea-video",
     "url": "https://github.com/JuneYaooo/rea-video",
     "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
-    "stars": 12346,
+    "stars": 12765,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -142,7 +142,7 @@
     "name": "rust-anything",
     "url": "https://github.com/erkamyaman/rust-anything",
     "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
-    "stars": 8175,
+    "stars": 8858,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "rust-anything ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. directory/skills/rust-anything/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -204,7 +204,7 @@
     "name": "sable",
     "url": "https://github.com/Leonxlnx/sable",
     "description": "A desktop agentic development environment for Claude Code and Codex",
-    "stars": 36,
+    "stars": 43,
     "score": 89,
     "senior": "Agents senior",
     "reason": "sable is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
