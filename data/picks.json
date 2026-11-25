@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:30:07.127607+00:00",
+ "updated": "2026-11-25T06:31:18.217763+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -63,16 +63,16 @@
     "approved_at": "2026-11-23T06:45:52.089942+00:00"
    },
    {
-    "full_name": "codepawl/crucible",
-    "owner": "codepawl",
-    "name": "crucible",
-    "url": "https://github.com/codepawl/crucible",
-    "description": "3D engine that AI agents drive",
-    "stars": 823,
+    "full_name": "INSANE0777/Awwwards-mcp",
+    "owner": "INSANE0777",
+    "name": "Awwwards-mcp",
+    "url": "https://github.com/INSANE0777/Awwwards-mcp",
+    "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode\u2026) design inspiration from award-winning websites \u2014 search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
+    "stars": 761,
     "score": 97,
     "senior": "MCP senior",
-    "reason": "crucible depends on an MCP SDK; 2 skills with a valid SKILL.md (e.g. skills/build-crucible-scene/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-11-19T06:33:57.205056+00:00"
+    "reason": "Awwwards-mcp depends on an MCP SDK",
+    "approved_at": "2026-11-25T06:31:18.217763+00:00"
    }
   ],
   "Skills & Plugins": [
@@ -101,24 +101,12 @@
     "approved_at": "2026-10-29T06:18:15.914700+00:00"
    },
    {
-    "full_name": "google/elephant-goldfish-model",
-    "owner": "google",
-    "name": "elephant-goldfish-model",
-    "url": "https://github.com/google/elephant-goldfish-model",
-    "description": "Open-source plugin for designing and reviewing software with agents",
-    "stars": 17763,
-    "score": 100,
-    "senior": "Skills & plugins senior",
-    "reason": "elephant-goldfish-model ships a valid SKILL.md or plugin manifest; 14 skills with a valid SKILL.md (e.g. distributions/claude/skills/egm-bootstrap/SKILL.md); valid .claude-plugin/marketplace.json",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
     "full_name": "JuneYaooo/rea-video",
     "owner": "JuneYaooo",
     "name": "rea-video",
     "url": "https://github.com/JuneYaooo/rea-video",
     "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. \u9006\u5411\u4e00\u5207\u89c6\u9891\uff0c\u9010\u4e2a\u955c\u5934\u770b\u662f\u62cd\u7684\u3001AI \u751f\u6210\u7684\u8fd8\u662f\u4ee3\u7801\u505a\u7684\uff0c\u518d\u544a\u8bc9\u4f60\u600e\u4e48\u590d\u523b\uff1b\u62c6\u89e3\u7ed3\u679c\u6309 VIDEO.md \u683c\u5f0f\u8f93\u51fa\u3002",
-    "stars": 12765,
+    "stars": 13096,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "rea-video ships a valid SKILL.md or plugin manifest; 1 skill with a valid SKILL.md (e.g. skills/rea-video/SKILL.md); valid .claude-plugin/marketplace.json",
@@ -142,11 +130,23 @@
     "name": "rust-anything",
     "url": "https://github.com/erkamyaman/rust-anything",
     "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
-    "stars": 8858,
+    "stars": 9322,
     "score": 100,
     "senior": "Skills & plugins senior",
     "reason": "rust-anything ships a valid SKILL.md or plugin manifest; 3 skills with a valid SKILL.md (e.g. directory/skills/rust-anything/SKILL.md); valid .claude-plugin/marketplace.json",
     "approved_at": "2026-11-23T06:45:52.089942+00:00"
+   },
+   {
+    "full_name": "openfilm/openfilm",
+    "owner": "openfilm",
+    "name": "openfilm",
+    "url": "https://github.com/openfilm/openfilm",
+    "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
+    "stars": 8170,
+    "score": 100,
+    "senior": "Skills & plugins senior",
+    "reason": "openfilm ships a valid SKILL.md or plugin manifest; 4 skills with a valid SKILL.md (e.g. packages/openfilm/manual/canvas/SKILL.md)",
+    "approved_at": "2026-11-25T06:31:18.217763+00:00"
    }
   ],
   "Agents & SDK": [
@@ -175,18 +175,6 @@
     "approved_at": "2026-11-21T06:32:21.973799+00:00"
    },
    {
-    "full_name": "PBJ-2/clauderipple",
-    "owner": "PBJ-2",
-    "name": "clauderipple",
-    "url": "https://github.com/PBJ-2/clauderipple",
-    "description": "Use GPT, DeepSeek, GLM, Gemini, Kimi and 400+ models in Claude Desktop's own model picker and in Claude Code, while staying signed in to your Claude subscription (1P, no gateway mode). Auto reasoning effort per prompt, subagents routed by difficulty, cache and limit warnings. Claude inside Codex too",
-    "stars": 105,
-    "score": 92,
-    "senior": "Agents senior",
-    "reason": "clauderipple is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-10-27T06:55:26.329705+00:00"
-   },
-   {
     "full_name": "ypyik0669/claude-web",
     "owner": "ypyik0669",
     "name": "claude-web",
@@ -204,8 +192,8 @@
     "name": "sable",
     "url": "https://github.com/Leonxlnx/sable",
     "description": "A desktop agentic development environment for Claude Code and Codex",
-    "stars": 43,
-    "score": 89,
+    "stars": 50,
+    "score": 90,
     "senior": "Agents senior",
     "reason": "sable is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
     "approved_at": "2026-11-22T06:29:42.254306+00:00"
