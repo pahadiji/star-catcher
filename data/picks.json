@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T06:31:18.217763+00:00",
+ "updated": "2026-11-26T06:30:46.220055+00:00",
  "picks": {
   "MCP Servers": [
    {
@@ -150,18 +150,6 @@
    }
   ],
   "Agents & SDK": [
-   {
-    "full_name": "Nwflower/dsh-claude-style",
-    "owner": "Nwflower",
-    "name": "dsh-claude-style",
-    "url": "https://github.com/Nwflower/dsh-claude-style",
-    "description": "Claude Code Desktop theme for DeepSeek Harness\uff5c \u4e3a DeepSeek Harness \u590d\u523b Claude Code Desktop \u98ce\u683c\u4e0e\u4ea4\u4e92\u4f53\u9a8c\u7684\u4e3b\u9898\u63d2\u4ef6",
-    "stars": 585,
-    "score": 96,
-    "senior": "Agents senior",
-    "reason": "dsh-claude-style is built on the Anthropic / Claude Agent SDK or MCP; uses the Anthropic / Claude Agent SDK",
-    "approved_at": "2026-11-10T06:30:29.004276+00:00"
-   },
    {
     "full_name": "PapilotAI/papilot",
     "owner": "PapilotAI",
